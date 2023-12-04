@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
+
 <body class="page__body">
   <header class="header">
     <a class="header__logo-link" href="#">
@@ -47,17 +48,19 @@
     </header>
     <div class="form-wrapper">
       <form action="https://echo.htmlacademy.ru/" method="get">
-        <div class="form__wrapper">
-          <label class="form__label label" for="name">Имя<sup>*</sup></label>
-          <input class="form__input input" type="text" id="name" placeholder="Барсик" required>
-        </div>
-        <div class="form__wrapper">
-          <label class="form__label label" for="weight">Вес (кг):<sup>*</sup></label>
-          <input class="form__input input" type="number" id="weight" placeholder="7" required>
-        </div>
-        <div class="form__wrapper">
-          <label class="form__label label" for="age">Возраст (лет):</label>
-          <input class="form__input input" type="number" id="age" placeholder="7">
+        <div class="form-section">
+          <div class="form-section__wrapper">
+            <label class="form__label label" for="name">Имя<sup>*</sup></label>
+            <input class="form__input input" type="text" id="name" placeholder="Барсик" required>
+          </div>
+          <div class="form-section__wrapper">
+            <label class="form__label label" for="weight">Вес (кг):<sup>*</sup></label>
+            <input class="form__input input" type="number" id="weight" placeholder="7" required>
+          </div>
+          <div class="form-section__wrapper">
+            <label class="form__label label" for="age">Возраст (лет):</label>
+            <input class="form__input input" type="number" id="age" placeholder="7">
+          </div>
         </div>
         <fieldset class="fieldset-form">
           <legend class="visually-hidden">Выберите желаемый результат.</legend>
@@ -84,8 +87,18 @@
               </label>
             </li>
           </ul>
-
         </fieldset>
+        <div class="form__section">
+          <h2 class="form-section__title title">Контактные данные (владельца кота)</h2>
+          <div class="form__wrapper">
+            <label class="form__label label" for="email">E-mail:<sup>*</sup></label>
+            <input class="form__input form__input--email input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="form__wrapper">
+            <label class="form__label label" for="phone">Телефон:<sup>*</sup></label>
+            <input class="form__input input form__input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+          </div>
+        </div>
       </form>
     </div>
   </main>
