@@ -47,7 +47,45 @@
     </header>
     <div class="form-wrapper">
       <form action="https://echo.htmlacademy.ru/" method="get">
+        <div class="form__wrapper">
+          <label class="form__label label" for="name">Имя<sup>*</sup></label>
+          <input class="form__input input" type="text" id="name" placeholder="Барсик" required>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label label" for="weight">Вес (кг):<sup>*</sup></label>
+          <input class="form__input input" type="number" id="weight" placeholder="7" required>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label label" for="age">Возраст (лет):</label>
+          <input class="form__input input" type="number" id="age" placeholder="7">
+        </div>
+        <fieldset class="fieldset-form">
+          <legend class="visually-hidden">Выберите желаемый результат.</legend>
+          <ul class="fieldset__list list">
+            <li class="fieldset__item">
+              <label class="label label--radio">
+                <input class="visually-hidden input__radio--hidden" type="radio" value="thin" name="thin" checked>
+                <span class="input__radio"></span>
+                <span class="form__label label">Похудение</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="label label--radio">
+                <input class="visually-hidden input__radio--hidden" type="radio" value="fat" name="fat">
+                <span class="input__radio"></span>
+                <span class="form__label label">Набор массы</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="label label--radio">
+                <input class="visually-hidden input__radio--hidden" type="radio" value="help" name="help">
+                <span class="input__radio"></span>
+                <span class="form__label label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
 
+        </fieldset>
       </form>
     </div>
   </main>
