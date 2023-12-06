@@ -39,44 +39,47 @@
     </nav>
   </header>
   <main class="form">
-    <header class="form__header">
+    <header class="form-header">
       <h1 class="form-header__title">Подбор программы</h1>
       <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </header>
     <div class="form-wrapper">
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form-section">
-          <div class="form-section__wrapper">
-            <label class="form__label label" for="name">Имя<sup>*</sup></label>
-            <input class="form__input input" type="text" id="name" placeholder="Барсик" required>
-          </div>
-          <div class="form-section__wrapper">
-            <label class="form__label label" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="form__input input" type="number" id="weight" placeholder="7" required>
-          </div>
-          <div class="form-section__wrapper">
-            <label class="form__label label" for="age">Возраст (лет):</label>
-            <input class="form__input input" type="number" id="age" placeholder="7">
-          </div>
-        </div>
-        <fieldset class="fieldset-form">
+        <fieldset class="form-section">
+          <legend class="visually-hidden">Данные кота.</legend>
+          <ul class="form-section__list list-reset">
+            <li class="form-section__item">
+              <label class="form__label label" for="name">Имя<sup>*</sup></label>
+              <input class="form__input input" type="text" id="name" placeholder="Барсик" required>
+            </li>
+            <li class="form-section__item">
+              <label class="form__label label" for="weight">Вес (кг):<sup>*</sup></label>
+              <input class="form__input input" type="number" id="weight" placeholder="7" required>
+            </li>
+            <li class="form-section__item">
+              <label class="form__label label" for="age">Возраст (лет):</label>
+              <input class="form__input input" type="number" id="age" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-section">
           <legend class="visually-hidden">Выберите желаемый результат.</legend>
-          <ul class="fieldset__list list-reset">
-            <li class="fieldset__item">
+          <ul class="form-section__list list-reset">
+            <li class="form-section__item">
               <label class="label label--radio">
                 <input class="visually-hidden input__radio--hidden" type="radio" value="thin" name="thin" checked>
                 <span class="input__radio"></span>
                 <span class="form__label label">Похудение</span>
               </label>
             </li>
-            <li class="fieldset__item">
+            <li class="form-section__item">
               <label class="label label--radio">
                 <input class="visually-hidden input__radio--hidden" type="radio" value="fat" name="fat">
                 <span class="input__radio"></span>
                 <span class="form__label label">Набор массы</span>
               </label>
             </li>
-            <li class="fieldset__item">
+            <li class="form-section__item">
               <label class="label label--radio">
                 <input class="visually-hidden input__radio--hidden" type="radio" value="help" name="help">
                 <span class="input__radio"></span>
@@ -85,7 +88,7 @@
             </li>
           </ul>
         </fieldset>
-        <div class="form__section">
+        <div class="form-section">
           <h2 class="form-section__title">Контактные данные (владельца кота)</h2>
           <div class="form__wrapper">
             <label class="form__label label" for="email">E-mail:<sup>*</sup></label>
@@ -96,7 +99,7 @@
             <input class="form__input input form__input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
           </div>
         </div>
-        <div class="form__section">
+        <div class="form-section">
           <h2 class="form-section__title">Комментарий</h2>
           <div class="form__wrapper">
             <label class="form__label label" for="comment">Телефон:<sup>*</sup></label>
