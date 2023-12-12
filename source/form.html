@@ -49,15 +49,15 @@
           <ul class="form-cat-info__list list-reset">
             <li class="form-cat-info__item">
               <label class="form-cat-info__label label" for="name">Имя<sup>*</sup></label>
-              <input class="form-cat-info__input input" type="text" id="name" placeholder="Барсик" required>
+              <input class="form-cat-info__input input" type="text" id="name" name="name" placeholder="Барсик" required>
             </li>
             <li class="form-cat-info__item">
               <label class="form-cat-info__label label" for="weight">Вес (кг):<sup>*</sup></label>
-              <input class="form-cat-info__input input" type="number" id="weight" placeholder="7" required>
+              <input class="form-cat-info__input input" type="number" id="weight" name="weight" placeholder="7" required>
             </li>
             <li class="form-cat-info__item">
               <label class="form-cat-info__label label" for="age">Возраст (лет):</label>
-              <input class="form-cat-info__input input" type="number" id="age" placeholder="7">
+              <input class="form-cat-info__input input" type="number" id="age" name="age" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -92,18 +92,18 @@
           <ul class="form-contacts__list list-reset">
             <li class="form-contacts__item">
               <label class="form-contacts__label" for="email">E-mail:<sup>*</sup></label>
-              <input class="form-contacts__input form-contacts__input--email input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <input class="form-contacts__input form-contacts__input--email input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="form-contacts__item">
                 <label class="form-contacts__label label" for="phone">Телефон:<sup>*</sup></label>
-                <input class="form-contacts__input form-contacts__input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form-contacts__input form-contacts__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-comment">
           <legend class="form-comment__title">Комментарий</legend>
           <label class="form__label label" for="comment">Телефон:<sup>*</sup></label>
-          <textarea class="form__input input form__input--phone" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__input input form__input--phone" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form-about">
           <legend class="form-about__title">Дополнительно</legend>
