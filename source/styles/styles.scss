@@ -3,8 +3,15 @@
 @import "./global/global.scss";
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
+@import "./global/list-reset.scss";
+@import "./global/button.scss";
 
 /* BLOCKS */
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";
+@import "./blocks/main-wrapper.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/program.scss";
+
+
