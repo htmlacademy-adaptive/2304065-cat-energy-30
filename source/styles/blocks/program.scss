@@ -23,7 +23,7 @@
 }
 
 .program__title {
-
+  @include title(24px, 37px);
 }
 
 .program__description {

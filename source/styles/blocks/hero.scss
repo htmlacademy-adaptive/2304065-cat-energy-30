@@ -1,7 +1,7 @@
 .hero{
-  font-family: "Oswald";
+  @include title;
   color: $color-title-text-white;
-  background-image: linear-gradient(to bottom, $bg-basic-green 50%, #ffffff 50%);
+  background-image: linear-gradient(to bottom, $bg-basic-green 65.65%, #ffffff 65.65%);
 }
 
 .hero__wrapper {
@@ -11,12 +11,12 @@
 .hero__title {
   font-size: 36px;
   line-height: 36px;
+  text-transform: none;
 }
 
 .hero__description {
   font-size: 14px;
   line-height: 14px;
-  text-transform: uppercase;
 }
 
 .hero__img {

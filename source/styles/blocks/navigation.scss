@@ -16,10 +16,5 @@
 }
 
 .navigation__link {
-  font-family: "Oswald";
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $color-title-text;
-  text-decoration: none;
+  @include title;
 }
