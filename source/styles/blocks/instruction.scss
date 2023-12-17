@@ -7,7 +7,7 @@
 }
 
 .instruction__title {
-  @include title(36px, normal);
+  @include title(36px, 40px, normal);
   text-transform: none;
 }
 

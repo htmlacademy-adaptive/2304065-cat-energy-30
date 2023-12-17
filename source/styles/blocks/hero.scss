@@ -1,6 +1,5 @@
 .hero{
-  @include title;
-  color: $color-title-text-white;
+  @include title(14px, 14px, $color-title-text-white);
   background-image: linear-gradient(to bottom, $bg-basic-green 65.65%, #ffffff 65.65%);
 }
 
@@ -11,12 +10,12 @@
 .hero__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   text-transform: none;
 }
 
 .hero__description {
-  font-size: 14px;
-  line-height: 14px;
+
 }
 
 .hero__img {
