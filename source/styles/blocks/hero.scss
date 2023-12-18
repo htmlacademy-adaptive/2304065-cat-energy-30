@@ -8,14 +8,12 @@
 }
 
 .hero__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
+  @include title(36px, 36px, $color-title-text-white);
   text-transform: none;
 }
 
 .hero__description {
-
+  margin: 0;
 }
 
 .hero__img {

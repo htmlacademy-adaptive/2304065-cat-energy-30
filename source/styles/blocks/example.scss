@@ -7,11 +7,12 @@
 }
 
 .example__title {
-
+  @include title(36px, 40px);
+  text-transform: none;
 }
 
 .example__description {
-
+  margin: 0;
 }
 
 .example__list {
