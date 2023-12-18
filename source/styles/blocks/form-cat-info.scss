@@ -1,5 +1,5 @@
 .form-cat-info {
-
+  @include list-reset();
 }
 
 .form-cat-info__list {
@@ -11,7 +11,7 @@
 }
 
 .form-cat-info__label {
-
+  @include title(16px, 18px, $color-base-text);
 }
 
 .form-cat-info__input {

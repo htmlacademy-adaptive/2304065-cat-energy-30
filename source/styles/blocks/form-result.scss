@@ -1,5 +1,5 @@
 .form-result {
-
+  @include list-reset();
 }
 
 .form-result__list {
@@ -27,5 +27,5 @@
 }
 
 .form-result__description {
-
+  @include title(16px, 18px, $color-base-text);
 }

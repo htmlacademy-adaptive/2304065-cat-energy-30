@@ -1,9 +1,11 @@
 .form-about {
-
+  @include list-reset();
 }
 
 .form-about__title {
-
+  @include title(24px, 26px);
+  padding: 0;
+  text-transform: none;
 }
 
 .form-about__list {
@@ -31,5 +33,5 @@
 }
 
 .form-about__description {
-
+  @include title(16px, 18px, $color-base-text);
 }

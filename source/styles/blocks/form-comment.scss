@@ -1,9 +1,11 @@
 .form-comment {
-
+  @include list-reset();
 }
 
 .form-comment__title {
-
+  @include title(24px, 26px);
+  padding: 0;
+  text-transform: none;
 }
 
 .form-comment__input {

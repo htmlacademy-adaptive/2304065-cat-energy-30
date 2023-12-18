@@ -8,5 +8,5 @@
 }
 
 .form-header__description {
-
+  @include title(14px, 18px);
 }
