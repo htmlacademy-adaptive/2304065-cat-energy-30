@@ -31,3 +31,11 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@mixin main-text($font-size: 14px, $line-height: 18px, $color: $color-base-text) {
+  margin: 0;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: $color;
+}

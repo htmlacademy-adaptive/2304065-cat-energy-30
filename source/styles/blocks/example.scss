@@ -28,15 +28,15 @@
 }
 
 .example__number {
-
+  @include title(24px, 24px)
 }
 
 .example__description {
-
+  @include main-text(12px, normal)
 }
 
 .example__result {
-
+  @include title(14px)
 }
 
 .example__slider {
