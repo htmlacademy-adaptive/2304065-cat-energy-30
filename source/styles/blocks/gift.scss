@@ -1,0 +1,7 @@
+.gift {
+  background-color: rgba($bg-basic-green, 0.85);
+}
+
+.gift__title {
+  @include main-text(16px, 20px, $color-title-text-white);
+}
