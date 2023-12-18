@@ -10,6 +10,7 @@
 
 }
 
+
 .product__link-img {
 
 }
@@ -19,13 +20,17 @@
 }
 
 .product__link-title {
-
+  text-decoration: none;
 }
 
 .product__title {
+  @include title(16px, 20px, $color-special-dark-grey-2);
+}
 
+.product__title--show-more {
+  color: $color-special-dark-grey-1;
 }
 
 .product__description {
-
+  @include main-text(12px, 16px);
 }
