@@ -7,7 +7,7 @@
 }
 
 .about-us__title {
-  @include title(16px, 20px, $text-transform, $color-special-dark-grey-1);
+  @include title(16px, 20px, uppercase, $color-special-dark-grey-1);
 }
 
 .about-us__address {

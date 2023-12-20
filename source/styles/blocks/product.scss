@@ -24,7 +24,7 @@
 }
 
 .product__title {
-  @include title(16px, 20px,, $text-transform, $color-special-dark-grey-2);
+  @include title(16px, 20px, uppercase, $color-special-dark-grey-2);
 }
 
 .product__title--show-more {
