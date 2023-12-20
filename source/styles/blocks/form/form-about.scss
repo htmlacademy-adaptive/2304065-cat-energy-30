@@ -2,38 +2,38 @@
   @include list-reset();
 }
 
-// .form__about {
+.form__about {
 
-// }
+}
 
 .form-about__title {
   @include title(24px, 26px, none);
   padding: 0;
 }
 
-// .form-about__list {
+.form-about__list {
 
-// }
+}
 
-// .form-about__item {
+.form-about__item {
 
-// }
+}
 
-// .form-about__label {
+.form-about__label {
 
-// }
+}
 
-// .form-about__input {
+.form-about__input {
 
-// }
+}
 
-// .form-about__input--hidden {
+.form-about__input--hidden {
 
-// }
+}
 
-// .form-about__input--checkbox {
+.form-about__input--checkbox {
 
-// }
+}
 
 .form-about__description {
   @include title(16px, 18px, uppercase, $color-base-text);

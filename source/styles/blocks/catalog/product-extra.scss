@@ -1,18 +1,18 @@
-// .product-extra {
+.product-extra {
 
-// }
+}
 
 .product-extra__title {
   @include title(24px, 24px, none);
 }
 
-// .product-extra__list {
+.product-extra__list {
 
-// }
+}
 
-// .product-extra__item {
+.product-extra__item {
 
-// }
+}
 
 .product-extra__item-title {
   @include title(16px, 16px, uppercase, $color-special-dark-grey-2);
@@ -23,10 +23,10 @@
   padding: 0;
 }
 
-// .product-extra__description--parameter {
+.product-extra__description--parameter {
 
-// }
+}
 
-// .product-extra__description--value {
+.product-extra__description--value {
 
-// }
+}
