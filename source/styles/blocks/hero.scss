@@ -8,8 +8,7 @@
 }
 
 .hero__title {
-  @include title(36px, 36px, $color-title-text-white);
-  text-transform: none;
+  @include title(36px, 36px, none, $color-title-text-white);
 }
 
 .hero__description {

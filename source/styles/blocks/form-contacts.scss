@@ -3,9 +3,8 @@
 }
 
 .form-contacts__title {
-  @include title(24px, 26px);
+  @include title(24px, 26px, none);
   padding: 0;
-  text-transform: none;
 }
 
 .form-contacts__list {
@@ -17,7 +16,7 @@
 }
 
 .form-contacts__label {
-  @include title(16px, 18px, $color-base-text);
+  @include title(16px, 18px, $text-transform, $color-base-text);
 }
 
 .form-contacts__input {

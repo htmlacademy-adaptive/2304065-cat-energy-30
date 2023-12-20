@@ -7,8 +7,7 @@
 }
 
 .example__title {
-  @include title(36px, 40px);
-  text-transform: none;
+  @include title(36px, 40px, none);
 }
 
 .example__description {

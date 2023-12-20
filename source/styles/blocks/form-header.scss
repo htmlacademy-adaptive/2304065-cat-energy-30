@@ -3,8 +3,7 @@
 }
 
 .form-header__title {
-  @include title(36px, 36px);
-  text-transform: none;
+  @include title(36px, 36px, none);
 }
 
 .form-header__description {

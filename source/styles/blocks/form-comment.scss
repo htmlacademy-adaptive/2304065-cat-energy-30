@@ -3,9 +3,8 @@
 }
 
 .form-comment__title {
-  @include title(24px, 26px);
+  @include title(24px, 26px, none);
   padding: 0;
-  text-transform: none;
 }
 
 .form-comment__input {

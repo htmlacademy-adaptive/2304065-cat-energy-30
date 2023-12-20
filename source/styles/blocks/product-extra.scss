@@ -3,8 +3,7 @@
 }
 
 .product-extra__title {
-  @include title(24px, 24px);
-  text-transform: none;
+  @include title(24px, 24px, none);
 }
 
 .product-extra__list {
@@ -16,7 +15,7 @@
 }
 
 .product-extra__item-title {
-  @include title(16px, 16px, $color-special-dark-grey-2);
+  @include title(16px, 16px, $text-transform, $color-special-dark-grey-2);
 }
 
 .product-extra__description {

@@ -21,14 +21,14 @@
   border: none;
 }
 
-@mixin title($font-size: 20px, $line-height: 20px, $color: $color-title-text) {
+@mixin title($font-size: 20px, $line-height: 20px, $text-transform: uppercase, $color: $color-title-text) {
   margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: 400;
   color: $color;
-  text-transform: uppercase;
+  text-transform: $text-transform;
   text-decoration: none;
 }
 
@@ -40,8 +40,8 @@
   color: $color;
 }
 
-@mixin list-reset($margin: 0, $padding: 0, $list-style-type: none) {
-  margin: $margin;
-  padding: $padding;
-  list-style-type: $list-style-type;
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
