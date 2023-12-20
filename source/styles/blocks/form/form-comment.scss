@@ -2,6 +2,10 @@
   @include list-reset();
 }
 
+.form__comment {
+
+}
+
 .form-comment__title {
   @include title(24px, 26px, none);
   padding: 0;

@@ -41,30 +41,31 @@
         </ul>
       </nav>
     </header>
-    <main class="form">
+    <main class="form-wrapper">
       <header class="form-header">
         <h1 class="form-header__title">Подбор программы</h1>
         <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </header>
-      <form class="form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form-cat-info">
+
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form__cat-info form-cat-info">
           <legend class="visually-hidden">Данные кота.</legend>
           <ul class="form-cat-info__list list-reset">
             <li class="form-cat-info__item">
               <label class="form-cat-info__label label" for="name">Имя<sup>*</sup></label>
               <input class="form-cat-info__input input" type="text" id="name" name="name" placeholder="Барсик" required>
             </li>
-            <li class="form-cat-info__item">
+            <li class="form__item form-cat-info">
               <label class="form-cat-info__label label" for="weight">Вес (кг):<sup>*</sup></label>
               <input class="form-cat-info__input input" type="number" id="weight" name="weight" placeholder="7" required>
             </li>
-            <li class="form-cat-info__item">
+            <li class="form__item form-cat-info">
               <label class="form-cat-info__label label" for="age">Возраст (лет):</label>
               <input class="form-cat-info__input input" type="number" id="age" name="age" placeholder="7">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-result">
+        <fieldset class="form__result form-result">
           <legend class="visually-hidden">Выберите желаемый результат.</legend>
           <ul class="form-result__list list-reset">
             <li class="form-result__item">
@@ -90,7 +91,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-contacts">
+        <fieldset class="form__contacts form-contacts">
           <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
           <ul class="form-contacts__list list-reset">
             <li class="form-contacts__item">
@@ -103,11 +104,11 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-comment">
+        <fieldset class="form__comment form-comment">
           <legend class="form-comment__title">Комментарий</legend>
           <textarea class="form-comment__input input form-comment__input-text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form-about">
+        <fieldset class="form__about form-about">
           <legend class="form-about__title">Дополнительно</legend>
           <ul class="form-about__list list-reset">
             <li class="form-about__item">

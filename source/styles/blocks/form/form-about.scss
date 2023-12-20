@@ -2,6 +2,10 @@
   @include list-reset();
 }
 
+.form__about {
+
+}
+
 .form-about__title {
   @include title(24px, 26px, none);
   padding: 0;
