@@ -2,35 +2,35 @@
   @include list-reset();
 }
 
-.form__contacts {
+// .form__contacts {
 
-}
+// }
 
 .form-contacts__title {
   @include title(24px, 26px, none);
   padding: 0;
 }
 
-.form-contacts__list {
+// .form-contacts__list {
 
-}
+// }
 
-.form-contacts__item {
+// .form-contacts__item {
 
-}
+// }
 
 .form-contacts__label {
   @include title(16px, 18px, uppercase, $color-base-text);
 }
 
-.form-contacts__input {
+// .form-contacts__input {
 
-}
+// }
 
-.form-contacts__input--email {
+// .form-contacts__input--email {
 
-}
+// }
 
-.form-contacts__input--phone {
+// .form-contacts__input--phone {
 
-}
+// }

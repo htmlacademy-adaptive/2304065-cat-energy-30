@@ -1,10 +1,10 @@
-.example {
+// .example {
 
-}
+// }
 
-.example__wrapper {
+// .example__wrapper {
 
-}
+// }
 
 .example__title {
   @include title(36px, 40px, none);
@@ -14,17 +14,17 @@
   margin: 0;
 }
 
-.example__list {
+// .example__list {
 
-}
+// }
 
-.example__item {
+// .example__item {
 
-}
+// }
 
-.example__item-wrapper {
+// .example__item-wrapper {
 
-}
+// }
 
 .example__number {
   @include title(24px, 24px)
@@ -38,6 +38,6 @@
   @include title(14px)
 }
 
-.example__slider {
+// .example__slider {
 
-}
+// }
