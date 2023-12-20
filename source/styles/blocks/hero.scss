@@ -12,6 +12,7 @@
 }
 
 .hero__description {
+  @include title(14px, 14px, uppercase, $color-title-text-white);
   margin: 0;
 }
 

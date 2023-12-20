@@ -32,5 +32,5 @@
 }
 
 .form-about__description {
-  @include title(16px, 18px, $text-transform, $color-base-text);
+  @include title(16px, 18px, uppercase, $color-base-text);
 }

@@ -11,7 +11,7 @@
 }
 
 .form-cat-info__label {
-  @include title(16px, 18px, $text-transform, $color-base-text);
+  @include title(16px, 18px, uppercase, $color-base-text);
 }
 
 .form-cat-info__input {

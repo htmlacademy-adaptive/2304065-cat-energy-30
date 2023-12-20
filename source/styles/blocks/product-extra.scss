@@ -15,7 +15,7 @@
 }
 
 .product-extra__item-title {
-  @include title(16px, 16px, $text-transform, $color-special-dark-grey-2);
+  @include title(16px, 16px, uppercase, $color-special-dark-grey-2);
 }
 
 .product-extra__description {
