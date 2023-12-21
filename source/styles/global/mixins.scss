@@ -1,0 +1,47 @@
+@mixin font-face($font-family, $font-src, $font-size, $line-height) {
+  @font-face {
+    font-family: $font-family;
+    src: $font-src;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: 400;
+    font-display: swap;
+  }
+}
+
+@mixin button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+@mixin title($font-size: 20px, $line-height: 20px, $text-transform: uppercase, $color: $color-title-text) {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: $color;
+  text-transform: $text-transform;
+  text-decoration: none;
+}
+
+@mixin main-text($font-size: 14px, $line-height: 18px, $color: $color-base-text) {
+  margin: 0;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

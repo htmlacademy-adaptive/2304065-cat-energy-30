@@ -1,0 +1,7 @@
+.catalog {
+  background-color: transparent;
+}
+
+.catalog__title {
+  @include title(36px, 36px, none);
+}

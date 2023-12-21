@@ -1,0 +1,40 @@
+.form-about {
+  @include list-reset();
+}
+
+.form__about {
+  background-color: transparent;
+}
+
+.form-about__title {
+  @include title(24px, 26px, none);
+  padding: 0;
+}
+
+.form-about__list {
+  background-color: transparent;
+}
+
+.form-about__item {
+  background-color: transparent;
+}
+
+.form-about__label {
+  background-color: transparent;
+}
+
+.form-about__input {
+  background-color: transparent;
+}
+
+.form-about__input--hidden {
+  background-color: transparent;
+}
+
+.form-about__input--checkbox {
+  background-color: transparent;
+}
+
+.form-about__description {
+  @include title(16px, 18px, uppercase, $color-base-text);
+}

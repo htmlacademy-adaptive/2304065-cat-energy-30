@@ -1,0 +1,39 @@
+.instruction {
+  background-color: transparent;
+}
+
+.instruction__wrapper {
+  background-color: transparent;
+}
+
+.instruction__title {
+  @include title(36px, 40px, none);
+}
+
+.instruction__list {
+  background-color: transparent;
+}
+
+.instruction__item {
+  background-color: transparent;
+}
+
+.instruction__item--benefit {
+  background-color: transparent;
+}
+
+.instruction__item--powder {
+  background-color: transparent;
+}
+
+.instruction__item--replacement {
+  background-color: transparent;
+}
+
+.instruction__item--changes {
+  background-color: transparent;
+}
+
+.instruction__description {
+  margin: 0;
+}

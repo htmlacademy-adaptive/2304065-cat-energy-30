@@ -1,0 +1,23 @@
+.form-cat-info {
+  @include list-reset();
+}
+
+.form__cat-info {
+  background-color: transparent;
+}
+
+.form-cat-info__list {
+  background-color: transparent;
+}
+
+.form-cat-info__item {
+  background-color: transparent;
+}
+
+.form-cat-info__label {
+  @include title(16px, 18px, uppercase, $color-base-text);
+}
+
+.form-cat-info__input {
+  background-color: transparent;
+}

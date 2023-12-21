@@ -1,0 +1,20 @@
+.form-comment {
+  @include list-reset();
+}
+
+.form__comment {
+  background-color: transparent;
+}
+
+.form-comment__title {
+  @include title(24px, 26px, none);
+  padding: 0;
+}
+
+.form-comment__input {
+  background-color: transparent;
+}
+
+.form-comment__input-text {
+  background-color: transparent;
+}

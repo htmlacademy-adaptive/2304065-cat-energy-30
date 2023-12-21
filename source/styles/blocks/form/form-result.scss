@@ -1,0 +1,35 @@
+.form-result {
+  @include list-reset();
+}
+
+.form__result {
+  background-color: transparent;
+}
+
+.form-result__list {
+  background-color: transparent;
+}
+
+.form-result__item {
+  background-color: transparent;
+}
+
+.form-result__label {
+  background-color: transparent;
+}
+
+.form-result__input {
+  background-color: transparent;
+}
+
+.form-result__input--hidden {
+  background-color: transparent;
+}
+
+.form-result__input--radio {
+  background-color: transparent;
+}
+
+.form-result__description {
+  @include title(16px, 18px, uppercase, $color-base-text);
+}

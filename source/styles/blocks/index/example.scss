@@ -1,0 +1,40 @@
+.example {
+  background-color: transparent;
+}
+
+.example__wrapper {
+  background-color: transparent;
+}
+
+.example__title {
+  @include title(36px, 40px, none);
+}
+
+.example__description {
+  @include main-text(12px, normal);
+  margin: 0;
+}
+
+.example__list {
+  background-color: transparent;
+}
+
+.example__item {
+  background-color: transparent;
+}
+
+.example__item-wrapper {
+  background-color: transparent;
+}
+
+.example__number {
+  @include title(24px, 24px);
+}
+
+.example__result {
+  @include title(14px);
+}
+
+.example__slider {
+  background-color: transparent;
+}

@@ -1,0 +1,32 @@
+.product-extra {
+  background-color: transparent;
+}
+
+.product-extra__title {
+  @include title(24px, 24px, none);
+}
+
+.product-extra__list {
+  background-color: transparent;
+}
+
+.product-extra__item {
+  background-color: transparent;
+}
+
+.product-extra__item-title {
+  @include title(16px, 16px, uppercase, $color-special-dark-grey-2);
+}
+
+.product-extra__description {
+  @include main-text(14px, 14px);
+  padding: 0;
+}
+
+.product-extra__description--parameter {
+  background-color: transparent;
+}
+
+.product-extra__description--value {
+  background-color: transparent;
+}

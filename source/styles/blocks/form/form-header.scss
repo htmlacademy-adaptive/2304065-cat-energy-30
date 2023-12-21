@@ -1,0 +1,11 @@
+.form-header {
+  background-color: transparent;
+}
+
+.form-header__title {
+  @include title(36px, 36px, none);
+}
+
+.form-header__description {
+  @include title(14px, 18px);
+}

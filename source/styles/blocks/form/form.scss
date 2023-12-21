@@ -1,0 +1,7 @@
+.form {
+  background-color: transparent;
+}
+
+.form__description {
+  @include main-text(14px, 16px, $color-title-text);
+}

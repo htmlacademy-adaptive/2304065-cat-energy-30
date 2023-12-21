@@ -1,0 +1,35 @@
+.product {
+  background-color: transparent;
+}
+
+.product__list {
+  background-color: transparent;
+}
+
+.product__item {
+  background-color: transparent;
+}
+
+.product__link-img {
+  background-color: transparent;
+}
+
+.product__img {
+  background-color: transparent;
+}
+
+.product__link-title {
+  text-decoration: none;
+}
+
+.product__title {
+  @include title(16px, 20px, uppercase, $color-special-dark-grey-2);
+}
+
+.product__title--show-more {
+  color: $color-special-dark-grey-1;
+}
+
+.product__description {
+  @include main-text(12px, 16px);
+}

@@ -1,0 +1,35 @@
+.program {
+  background-color: transparent;
+}
+
+.program__wrapper {
+  background-color: transparent;
+}
+
+.program__list {
+  background-color: transparent;
+}
+
+.program__item {
+  background-color: transparent;
+}
+
+.program__item--thin {
+  background-color: transparent;
+}
+
+.program__item--fat {
+  background-color: transparent;
+}
+
+.program__title {
+  @include title(24px, 37px);
+}
+
+.program__description {
+  margin: 0;
+}
+
+.program__link {
+  @include title(16px, 16px);
+}

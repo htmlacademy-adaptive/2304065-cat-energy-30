@@ -1,7 +1,36 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/list-reset.scss";
+@import "./global/button.scss";
+@import "./global/label.scss";
+@import "./global/input.scss";
 
 /* BLOCKS */
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/index/main-wrapper.scss";
+@import "./blocks/index/hero.scss";
+@import "./blocks/index/program.scss";
+@import "./blocks/index/instruction.scss";
+@import "./blocks/index/example.scss";
+@import "./blocks/index/slider.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/product.scss";
+@import "./blocks/catalog/product-description.scss";
+@import "./blocks/catalog/product-extra.scss";
+@import "./blocks/catalog/gift.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/form/form-header.scss";
+@import "./blocks/form/form-cat-info.scss";
+@import "./blocks/form/form-result.scss";
+@import "./blocks/form/form-contacts.scss";
+@import "./blocks/form/form-comment.scss";
+@import "./blocks/form/form-about.scss";
+@import "./blocks/about-us.scss";
+@import "./blocks/social.scss";
+@import "./blocks/footer.scss";

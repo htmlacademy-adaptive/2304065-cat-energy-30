@@ -1,0 +1,28 @@
+.about-us {
+  background-color: transparent;
+}
+
+.about-us__wrapper {
+  background-color: transparent;
+}
+
+.about-us__title {
+  @include title(16px, 20px, uppercase, $color-special-dark-grey-1);
+}
+
+.about-us__address {
+  background-color: transparent;
+}
+
+.about-us__description {
+  margin: 0;
+  font-style: normal;
+}
+
+.about-us__map {
+  background-color: transparent;
+}
+
+.about-us__map-point {
+  background-color: transparent;
+}

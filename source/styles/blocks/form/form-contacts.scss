@@ -1,0 +1,36 @@
+.form-contacts {
+  @include list-reset();
+}
+
+.form__contacts {
+  background-color: transparent;
+}
+
+.form-contacts__title {
+  @include title(24px, 26px, none);
+  padding: 0;
+}
+
+.form-contacts__list {
+  background-color: transparent;
+}
+
+.form-contacts__item {
+  background-color: transparent;
+}
+
+.form-contacts__label {
+  @include title(16px, 18px, uppercase, $color-base-text);
+}
+
+.form-contacts__input {
+  background-color: transparent;
+}
+
+.form-contacts__input--email {
+  background-color: transparent;
+}
+
+.form-contacts__input--phone {
+  background-color: transparent;
+}

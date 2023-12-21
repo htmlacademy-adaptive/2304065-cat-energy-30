@@ -1,0 +1,19 @@
+.navigation {
+  background-color: transparent;
+}
+
+.navigation__toogle {
+  background-color: transparent;
+}
+
+.navigation__list {
+  background-color: transparent;
+}
+
+.navigation__item {
+  background-color: transparent;
+}
+
+.navigation__link {
+  @include title;
+}
