@@ -11,8 +11,8 @@
 }
 
 .example__description {
-  margin: 0;
   @include main-text(12px, normal);
+  margin: 0;
 }
 
 .example__list {
