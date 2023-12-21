@@ -12,6 +12,7 @@
 
 .example__description {
   margin: 0;
+  @include main-text(12px, normal);
 }
 
 .example__list {
@@ -28,10 +29,6 @@
 
 .example__number {
   @include title(24px, 24px);
-}
-
-.example__description {
-  @include main-text(12px, normal);
 }
 
 .example__result {
