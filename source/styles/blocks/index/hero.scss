@@ -1,4 +1,4 @@
-.hero{
+.hero {
   @include title(14px, 14px, $color-title-text-white);
   background-image: linear-gradient(to bottom, $bg-basic-green 65.65%, #ffffff 65.65%);
 }
