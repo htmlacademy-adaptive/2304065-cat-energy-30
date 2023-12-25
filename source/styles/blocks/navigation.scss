@@ -3,7 +3,17 @@
 }
 
 .navigation__toogle {
-  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../images/icons/button-burger.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 24px 24px;
+  background-color: #000000;
+  border: none;
 }
 
 .navigation__list {
