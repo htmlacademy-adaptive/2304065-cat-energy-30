@@ -12,8 +12,21 @@
   mask-position: center;
   mask-repeat: no-repeat;
   mask-size: 24px 24px;
-  background-color: #000000;
+  background-color: $color-title-text;
   border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $bg-basic-green;
+    transition: background-color 0.3s linear;
+  }
+
+  &:active {
+    background-color: $bg-basic-green;
+    opacity: 0.3;
+    transition: background-color 0.3s linear;
+  }
 }
 
 .navigation__list {
