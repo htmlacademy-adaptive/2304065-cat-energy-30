@@ -23,5 +23,24 @@
 }
 
 .slider__button {
-  background-color: transparent;
+  width: 40px;
+  height: 256px;
+  mask-image: url("../../images/icons/stack.svg#index_icon-slider-button");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 40px 256px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: $bg-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &:active {
+    background-color: $bg-basic-green-2;
+    opacity: 0.6;
+    transition: opacity 0.2s linear;
+  }
 }

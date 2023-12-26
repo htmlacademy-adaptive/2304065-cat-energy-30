@@ -15,6 +15,7 @@
   background-color: $color-title-text;
   border: none;
   cursor: pointer;
+  transition: background-color 0.2s linear;
 
   &:hover,
   &:focus-visible {
