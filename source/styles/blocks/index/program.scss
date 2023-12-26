@@ -35,7 +35,7 @@
   }
 
   &::before {
-    @mixin decorative-backing(50, 50, 50%);
+    @include decorative-backing(50px, 50px, 50%);
   }
 }
 
@@ -54,7 +54,8 @@
   }
 
   &::before {
-    @mixin decorative-backing(50, 50, 50%);
+    @include decorative-backing(50px, 50px, 50%);
+  }
 }
 
 .program__description {
