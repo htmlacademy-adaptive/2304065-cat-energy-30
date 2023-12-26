@@ -3,5 +3,10 @@
 }
 
 .footer__logo-link {
-  background-color: transparent;
+  @include main-text(16px, 20px);
+  text-decoration: none;
+}
+
+.footer__logo-text {
+
 }

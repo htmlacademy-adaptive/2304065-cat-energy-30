@@ -71,6 +71,7 @@
 
   &::after {
     content: "";
+    z-index: 1;
     width: 32px;
     height: 10px;
     margin-left: 25px;
@@ -79,6 +80,22 @@
     mask-repeat: no-repeat;
     mask-size: 24px 10px;
     background-color: #000000;
+    transition: 0.5s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 113px;
+    width: 12px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &:hover::after {
+    transform: translateX(10px);
+    transition: 0.5s;
   }
 
   &:active {
