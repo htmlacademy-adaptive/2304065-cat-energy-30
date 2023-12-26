@@ -26,11 +26,9 @@
 
 .instruction__item--benefit {
   &::after {
+    @include flexbox(center, center);
     content: "";
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 60px;
     height: 60px;
     background-image: url("../../images/icons/stack.svg#index_icon-benefit");
@@ -42,11 +40,9 @@
 
 .instruction__item--powder {
   &::after {
+    @include flexbox(center, center);
     content: "";
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 60px;
     height: 60px;
     background-image: url("../../images/icons/stack.svg#index_icon-powder");
@@ -58,11 +54,9 @@
 
 .instruction__item--replacement {
   &::after {
+    @include flexbox(center, center);
     content: "";
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 60px;
     height: 60px;
     background-image: url("../../images/icons/stack.svg#index_icon-replacement");
@@ -74,11 +68,9 @@
 
 .instruction__item--changes {
   &::after {
+    @include flexbox(center, center);
     content: "";
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 60px;
     height: 60px;
     background-image: url("../../images/icons/stack.svg#index_icon-changes");
