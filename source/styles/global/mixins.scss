@@ -48,11 +48,10 @@
 
 @mixin decorative-backing($width, $height, $border-radius, $background-color: $bg-basic-green) {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: $width;
   height: $height;
+  margin-right: 20px;
   background-color: $background-color;
   border-radius: $border-radius;
 }

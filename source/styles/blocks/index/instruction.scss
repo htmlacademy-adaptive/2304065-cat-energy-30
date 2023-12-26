@@ -15,23 +15,77 @@
 }
 
 .instruction__item {
-  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    @include decorative-backing(60px, 60px, 0);
+  }
 }
 
 .instruction__item--benefit {
-  background-color: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../images/icons/stack.svg#index_icon-benefit");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+  }
 }
 
 .instruction__item--powder {
-  background-color: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../images/icons/stack.svg#index_icon-powder");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 28px;
+  }
 }
 
 .instruction__item--replacement {
-  background-color: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../images/icons/stack.svg#index_icon-replacement");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 30px;
+  }
 }
 
 .instruction__item--changes {
-  background-color: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../images/icons/stack.svg#index_icon-changes");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 31px;
+  }
 }
 
 .instruction__description {

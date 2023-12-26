@@ -17,7 +17,12 @@
 .program__title {
   @include title(24px, 37px);
   position: relative;
-  margin-left: 70px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    @include decorative-backing(50px, 50px, 50%);
+  }
 }
 
 .program__item--thin {
@@ -34,16 +39,14 @@
     background-size: 36px 50px;
   }
 
-  &::before {
-    @include decorative-backing(50px, 50px, 50%);
-  }
+
 }
 
 .program__item--fat {
   &::after {
     content: "";
     position: absolute;
-    top: 11px;
+    top: 25px;
     left: -8px;
     width: 67px;
     height: 28px;
