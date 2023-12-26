@@ -64,4 +64,24 @@
 
 .program__link {
   @include title(16px, 16px);
-}
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    margin-left: 25px;
+    mask-image: url("../../images/icons/stack.svg#index_icon-arrow");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 24px 10px;
+    background-color: #000000;
+  }
+
+  &:active {
+    opacity: 0.3;
+    }
+  }
+
