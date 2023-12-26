@@ -55,3 +55,11 @@
   background-color: $background-color;
   border-radius: $border-radius;
 }
+
+@mixin flexbox($justify-content, $align-items, $flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+
+}
