@@ -45,3 +45,14 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin decorative-backing($width, $height, $border-radius, $background-color: $bg-basic-green) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $width;
+  height: $height;
+  background-color: $background-color;
+  border-radius: $border-radius;
+}
