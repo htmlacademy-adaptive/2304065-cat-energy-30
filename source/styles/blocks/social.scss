@@ -7,17 +7,40 @@
 }
 
 .social__link {
-  background-color: transparent;
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $bg-special-grey;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: $bg-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.2s linear;
+  }
 }
 
 .social__link--vk {
-  background-color: transparent;
+  mask-image: url("../../images/icons/stack.svg#footer_icon-social-vk");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
 }
 
 .social__link--yt {
-  background-color: transparent;
+  mask-image: url("../../images/icons/stack.svg#footer_icon-social-yt");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
 }
 
 .social__link--tg {
-  background-color: transparent;
+  mask-image: url("../../images/icons/stack.svg#footer_icon-social-tg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
 }
