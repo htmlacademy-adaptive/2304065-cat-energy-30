@@ -11,7 +11,7 @@
 }
 
 .example__description {
-  @include main-text(12px, normal);
+  @include main-text(16px, 24px);
   margin: 0;
 }
 
@@ -31,8 +31,13 @@
   @include title(24px, 24px);
 }
 
+.example__number-description {
+  @include main-text(14px, 14px);
+  margin: 0;
+}
+
 .example__result {
-  @include title(14px);
+  @include title(20px);
 }
 
 .example__slider {
