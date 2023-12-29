@@ -24,7 +24,9 @@
 }
 
 .form-about__input {
-  background-color: transparent;
+  position: absolute;
+  width: 30px;
+  height: 30px;
 }
 
 .form-about__input--hidden {
@@ -32,9 +34,10 @@
 }
 
 .form-about__input--checkbox {
-  background-color: transparent;
+  border: 1px solid #cdcdcd;
 }
 
 .form-about__description {
   @include title(16px, 18px, uppercase, $color-base-text);
+  margin-left: 45px;
 }

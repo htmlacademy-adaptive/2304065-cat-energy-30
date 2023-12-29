@@ -15,21 +15,33 @@
 }
 
 .form-result__label {
-  background-color: transparent;
+  @include flexbox(start, center);
 }
 
 .form-result__input {
-  background-color: transparent;
+  position: absolute;
+  width: 30px;
+  height: 30px;
 }
 
 .form-result__input--hidden {
-  background-color: transparent;
+  &[type="radio"]:checked + .form-result__input--radio::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: $bg-basic-green;
+    border-radius: 50%;
+  }
 }
 
 .form-result__input--radio {
-  background-color: transparent;
+  @include flexbox(center, center);
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
 }
 
 .form-result__description {
   @include title(16px, 18px, uppercase, $color-base-text);
+  margin-left: 45px;
 }
