@@ -25,7 +25,31 @@
 }
 
 .form-contacts__input {
-  background-color: transparent;
+  &:hover + .form-contacts__icon {
+    background-color: $color-special-dark-grey-2;
+    transition: background-color 0.2s linear;
+  }
+
+  &:focus-visible {
+    border: 1px solid $color-base-text;
+    outline: 1px solid $color-base-text;
+    transition: outline 0.2s linear;
+  }
+
+  &:focus-visible + .form-contacts__icon {
+    background-color: $bg-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 1px solid $color-status-error;
+    outline: 1px solid $color-status-error;
+  }
+
+  &:invalid:not(:placeholder-shown) + .form-contacts__icon {
+    background-color: $color-status-error;
+    transition: background-color 0.2s linear;
+  }
 }
 
 .form-contacts__icon {
@@ -37,6 +61,7 @@
   width: 20px;
   height: 20px;
   background-color: $color-title-text;
+  transition: background-color 0.2s linear;
 }
 
 .form-contacts__icon--email {
