@@ -13,9 +13,8 @@
 .product__item--show-more {
   &::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
+    position: relative;
+    display: block;
     width: 30px;
     height: 30px;
     mask-image: url("../../images/icons/stack.svg#catalog_icon-show-more");

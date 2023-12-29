@@ -1,9 +1,18 @@
 .gift {
+  position: relative;
   background-color: rgba($bg-basic-green, 0.85);
-  background-image: url("../../images/icons/stack.svg#catalog_icon-gift");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 78px 80px;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../images/icons/stack.svg#catalog_icon-gift");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+  }
 }
 
 .gift__title {
