@@ -1,3 +1,9 @@
 .input {
-  background-color: transparent;
+  @include title(16px, 18px, uppercase, $color-base-text);
+  padding: 14px 0 13px 15px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    @include title(16px, 18px, uppercase, $color-base-text);
+  }
 }
