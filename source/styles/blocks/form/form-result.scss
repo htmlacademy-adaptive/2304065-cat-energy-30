@@ -37,6 +37,14 @@
     background-color: $bg-basic-green;
     border-radius: 50%;
   }
+
+  &[type="radio"]:disabled ~ span {
+    opacity: 0.3;
+  }
+
+  &[type="radio"]:checked:disabled ~ span {
+    opacity: 0.3;
+  }
 }
 
 .form-result__input--radio {

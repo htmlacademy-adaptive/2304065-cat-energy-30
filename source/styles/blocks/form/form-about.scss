@@ -42,6 +42,14 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &[type="checkbox"]:disabled ~ span {
+    opacity: 0.3;
+  }
+
+  &[type="checkbox"]:checked:disabled ~ span {
+    opacity: 0.3;
+  }
 }
 
 .form-about__input--checkbox {
