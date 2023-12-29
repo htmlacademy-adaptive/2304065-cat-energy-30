@@ -21,6 +21,7 @@
 
 .form-contacts__label {
   @include title(16px, 18px, uppercase, $color-base-text);
+  position: relative;
 }
 
 .form-contacts__input {
@@ -28,13 +29,26 @@
 }
 
 .form-contacts__icon {
-  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
 }
 
 .form-contacts__icon--email {
-  background-color: transparent;
+  mask-image: url("../../images/icons/stack.svg#form_icon-email");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
 }
 
 .form-contacts__icon--phone {
-  background-color: transparent;
+  mask-image: url("../../images/icons/stack.svg#form_icon-phone");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
 }
