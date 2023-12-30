@@ -2,7 +2,7 @@
   background-color: transparent;
 }
 
-.footer__logo-link {
+.footer__logo-link-icon {
   transition: opacity 0.2s linear;
 
   &:hover {
@@ -14,6 +14,12 @@
     opacity: 0.6;
     transition: opacity 0.2s linear;
   }
+}
+
+.footer__logo-link {
+  @include main-text(16px, 20px);
+  text-decoration: none;
+  transition: opacity 0.2s linear;
 }
 
 .footer__logo-text {
