@@ -188,7 +188,12 @@
     </ul>
     <a class="footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
       <p class="footer__logo-text">HTML Academy</p>
-      <img src="#" width="27" height="34" alt="Логотип HTML Academy.">
+      <picture>
+        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-html-academy.svg" width="27" height="34">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-html-academy.svg" width="27" height="34">
+        <source type="image/svg+xml" media="(min-width:320px)" srcset="images/logo-html-academy.svg" width="27" height="34">
+        <img src="images/logo-html-academy.svg" width="27" height="34" alt="Логотип HTML Academy.">
+      </picture>
     </a>
   </footer>
 </body>
