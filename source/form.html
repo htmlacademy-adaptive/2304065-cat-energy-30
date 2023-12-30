@@ -15,7 +15,12 @@
   <body class="page__body">
     <header class="header">
       <a class="header__logo-link" href="#">
-        <img class="header__logo-img" src="#" width="33" height="38" alt="Логотип Кэт энерджи.">
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <source type="image/svg+xml" media="(min-width:320px)" srcset="images/logo-mobile.svg" width="33" height="38">
+          <img class="header__logo-img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи.">
+        </picture>
         <img class="header__logo-text" src="№" width="101" height="18" alt="Кэт энерджи.">
       </a>
       <nav class="navigation">
