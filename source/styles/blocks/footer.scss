@@ -23,5 +23,18 @@
 }
 
 .footer__logo-text {
+  position: relative;
   margin: 0;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../images/icons/stack.svg#footer_logo-html-academy");
+    mask-position: center right;
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    background-color: $bg-special-grey;
+  }
 }
