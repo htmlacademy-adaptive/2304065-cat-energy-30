@@ -12,16 +12,12 @@
 
 .product__item--show-more {
   &::before {
+    @include mask-image(url("../../images/icons/stack.svg#catalog_icon-show-more"), 30px 30px, $color-light-grey);
     content: "";
     position: relative;
     display: block;
     width: 30px;
     height: 30px;
-    mask-image: url("../../images/icons/stack.svg#catalog_icon-show-more");
-    mask-position: top center;
-    mask-repeat: no-repeat;
-    mask-size: 30px 30px;
-    background-color: #d3d3d3;
   }
 }
 

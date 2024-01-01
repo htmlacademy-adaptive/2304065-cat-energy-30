@@ -3,15 +3,12 @@
   background-color: rgba($color-basic-green, 0.85);
 
   &::before {
+    @include mask-image(url("../../images/icons/stack.svg#catalog_icon-gift"), 78px 80px, $color-title-text-white);
     content: "";
     position: relative;
     display: block;
     width: 78px;
     height: 80px;
-    background-image: url("../../images/icons/stack.svg#catalog_icon-gift");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 78px 80px;
   }
 }
 
