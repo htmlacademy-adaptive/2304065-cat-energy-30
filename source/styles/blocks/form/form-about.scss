@@ -35,12 +35,10 @@
 
 .form-about__input--hidden {
   &[type="checkbox"]:checked + .form-about__input--checkbox::before {
+    @include mask-image(url("../../images/icons/stack.svg#form_icon-checkmark"), 26px 26px, $color-basic-green);
     content: "";
     width: 26px;
     height: 26px;
-    background-image: url("../../images/icons/stack.svg#form_icon-checkmark");
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   &[type="checkbox"]:disabled ~ span {

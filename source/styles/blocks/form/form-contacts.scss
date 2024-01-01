@@ -60,20 +60,13 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-color: $color-title-text;
   transition: background-color 0.2s linear;
 }
 
 .form-contacts__icon--email {
-  mask-image: url("../../images/icons/stack.svg#form_icon-email");
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 20px 20px;
-}
+  @include mask-image(url("../../images/icons/stack.svg#form_icon-email"), 20px 20px, $color-title-text);
+  }
 
 .form-contacts__icon--phone {
-  mask-image: url("../../images/icons/stack.svg#form_icon-phone");
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 20px 20px;
+  @include mask-image(url("../../images/icons/stack.svg#form_icon-phone"), 20px 20px, $color-title-text);
 }

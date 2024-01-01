@@ -70,16 +70,12 @@
   align-items: center;
 
   &::after {
+    @include mask-image(url("../../images/icons/stack.svg#index_icon-arrow"), 24px 10px, $color-title-text);
     content: "";
     z-index: 1;
     width: 32px;
     height: 10px;
     margin-left: 25px;
-    mask-image: url("../../images/icons/stack.svg#index_icon-arrow");
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: 24px 10px;
-    background-color: #000000;
     transition: 0.5s;
   }
 
