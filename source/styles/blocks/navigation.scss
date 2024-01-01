@@ -19,12 +19,12 @@
 
   &:hover,
   &:focus-visible {
-    background-color: $bg-basic-green;
+    background-color: $color-basic-green;
     transition: background-color 0.2s linear;
   }
 
   &:active {
-    background-color: $bg-basic-green;
+    background-color: $color-basic-green;
     opacity: 0.3;
     transition: background-color 0.2s linear;
   }

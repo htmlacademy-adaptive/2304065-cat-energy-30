@@ -47,7 +47,7 @@
   list-style-type: none;
 }
 
-@mixin decorative-backing($width, $height, $border-radius, $background-color: $bg-basic-green) {
+@mixin decorative-backing($width, $height, $border-radius, $background-color: $color-basic-green) {
   content: "";
   position: relative;
   width: $width;

@@ -35,12 +35,12 @@
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 27px 34px;
-    background-color: $bg-special-grey;
+    background-color: $color-special-grey;
     transition: background-color 0.2s linear;
   }
 
   &:hover::after {
-    background-color: $bg-basic-green;
+    background-color: $color-basic-green;
     transition: background-color 0.2s linear;
   }
 

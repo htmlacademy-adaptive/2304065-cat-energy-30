@@ -34,12 +34,12 @@
   transition: background-color 0.2s linear;
 
   &:hover {
-    background-color: $bg-basic-green;
+    background-color: $color-basic-green;
     transition: background-color 0.2s linear;
   }
 
   &:active {
-    background-color: $bg-basic-green-2;
+    background-color: $color-basic-green-2;
     opacity: 0.6;
     transition: opacity 0.2s linear;
   }
