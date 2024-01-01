@@ -23,19 +23,31 @@
 }
 
 .slider__button {
-  @include mask-image(url("../../images/icons/stack.svg#index_icon-slider-button"), 40px 256px, $color-special-grey);
+  position: relative;
   width: 40px;
   height: 256px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s linear;
 
-  &:hover {
+  &::after {
+    @include mask-image(url("../../images/icons/stack.svg#index_icon-slider-button"), 24px 18px, $color-special-grey);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 18px;
+  }
+
+  &:hover::after {
     background-color: $color-basic-green;
     transition: background-color 0.2s linear;
   }
 
-  &:active {
+  &:active::after {
     background-color: $color-basic-green-2;
     opacity: 0.6;
     transition: opacity 0.2s linear;
