@@ -27,15 +27,11 @@
   margin: 0;
 
   &::after {
+    @include mask-image(url("../../images/icons/stack.svg#footer_logo-html-academy"), 27px 34px, $color-special-grey);
     content: "";
     display: inline-block;
     width: 27px;
     height: 34px;
-    mask-image: url("../../images/icons/stack.svg#footer_logo-html-academy");
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: 27px 34px;
-    background-color: $color-special-grey;
     transition: background-color 0.2s linear;
   }
 

@@ -1,3 +1,5 @@
+// font
+
 @mixin font-face($font-family, $font-src, $font-size, $line-height) {
   @font-face {
     font-family: $font-family;
@@ -10,6 +12,8 @@
   }
 }
 
+// button
+
 @mixin button {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -21,6 +25,8 @@
   border: none;
   cursor: pointer;
 }
+
+// text and title
 
 @mixin title($font-size: 20px, $line-height: 20px, $text-transform: uppercase, $color: $color-title-text) {
   margin: 0;
@@ -41,11 +47,15 @@
   color: $color;
 }
 
+// reset
+
 @mixin list-reset() {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
+// decor
 
 @mixin decorative-backing($width, $height, $border-radius, $background-color: $color-basic-green) {
   content: "";
@@ -56,6 +66,16 @@
   background-color: $background-color;
   border-radius: $border-radius;
 }
+
+@mixin mask-image($mask-src, $mask-size, $background-color, $mask-position: center, $mask-repeat: no-repeat) {
+  mask-image: $mask-src;
+  mask-position: $mask-position;
+  mask-repeat: $mask-repeat;
+  mask-size: $mask-size;
+  background-color: $background-color;
+}
+
+// flex and grid
 
 @mixin flexbox($justify-content, $align-items, $flex-direction: row) {
   display: flex;

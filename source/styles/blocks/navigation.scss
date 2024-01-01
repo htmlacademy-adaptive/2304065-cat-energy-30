@@ -3,16 +3,9 @@
 }
 
 .navigation__toogle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mask-image(url("../../images/icons/stack.svg#button-burger"), 24px 24px, $color-title-text);
   width: 24px;
   height: 24px;
-  mask-image: url("../../images/icons/stack.svg#button-burger");
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 24px 24px;
-  background-color: $color-title-text;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s linear;
