@@ -14,9 +14,19 @@
 
   <body class="page__body">
     <header class="header">
-      <a class="header__logo-link" href="#">
-        <img class="header__logo-img" src="#" width="33" height="38" alt="Логотип Кэт энерджи.">
-        <img class="header__logo-text" src="№" width="101" height="18" alt="Кэт энерджи.">
+      <a class="header__logo-link" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <source type="image/svg+xml" media="(min-width:320px)" srcset="images/logo-mobile.svg" width="33" height="38">
+          <img class="header__logo-img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи.">
+        </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-text.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text.svg" width="101" height="18">
+          <source type="image/svg+xml" media="(min-width:320px)" srcset="images/logo-text-mobile.svg" width="101" height="18">
+          <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи.">
+        </picture>
       </a>
       <nav class="navigation">
         <button class="navigation__toogle" type="button">
@@ -70,21 +80,21 @@
           <ul class="form-result__list list-reset">
             <li class="form-result__item">
               <label class="form-result__label">
-                <input class="visually-hidden form-result__input form-result__input--hidden" type="radio" value="thin" name="thin" checked>
+                <input class="visually-hidden form-result__input form-result__input--hidden" type="radio" value="thin" name="result" checked>
                 <span class="form-result__input form-result__input--radio"></span>
                 <span class="form-result__description">Похудение</span>
               </label>
             </li>
             <li class="form-result__label">
               <label class="form-result__label">
-                <input class="visually-hidden form-result__input form-result__input--hidden" type="radio" value="fat" name="fat">
+                <input class="visually-hidden form-result__input form-result__input--hidden" type="radio" value="fat" name="result">
                 <span class="form-result__input form-result__input--radio"></span>
                 <span class="form-result__description">Набор массы</span>
               </label>
             </li>
             <li class="form-result__item">
               <label class="form-result__label">
-                <input class="visually-hidden form-result__input form-result__input--hidden" type="radio" value="help" name="help">
+                <input class="visually-hidden form-result__input form-result__input--hidden" type="radio" value="help" name="result">
                 <span class="form-result__input form-result__input--radio"></span>
                 <span class="form-result__description">Не знаю (Нужен ваш совет)</span>
               </label>
@@ -95,12 +105,16 @@
           <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
           <ul class="form-contacts__list list-reset">
             <li class="form-contacts__item">
-              <label class="form-contacts__label" for="email">E-mail:<sup>*</sup></label>
-              <input class="form-contacts__input form-contacts__input--email input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <label class="form-contacts__label">E-mail:<sup>*</sup>
+                <input class="form-contacts__input input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <span class="form-contacts__icon form-contacts__icon--email"></span>
+              </label>
             </li>
             <li class="form-contacts__item">
-                <label class="form-contacts__label label" for="phone">Телефон:<sup>*</sup></label>
-                <input class="form-contacts__input form-contacts__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                <label class="form-contacts__label label">Телефон:<sup>*</sup>
+                  <input class="form-contacts__input input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <span class="form-contacts__icon form-contacts__icon--phone"></span>
+                </label>
             </li>
           </ul>
         </fieldset>
@@ -159,8 +173,8 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="footer__logo-link" href="#">
-        <img src="#" width="128" height="24" alt="Логотип Кэт энерджи.">
+      <a class="footer__logo-link-icon" href="#">
+        <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Логотип Кэт энерджи.">
       </a>
       <ul class="social list-reset">
         <li class="social__item">
@@ -180,8 +194,7 @@
         </li>
       </ul>
       <a class="footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
-        <img src="#" width="113" height="20" alt="Логотип HTML Academy.">
-        <img src="#" width="27" height="34" alt="Логотип HTML Academy.">
+        <p class="footer__logo-text">HTML Academy</p>
       </a>
     </footer>
   </body>

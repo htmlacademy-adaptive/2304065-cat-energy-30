@@ -7,17 +7,30 @@
 }
 
 .social__link {
-  background-color: transparent;
+  display: block;
+  width: 28px;
+  height: 22px;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: $color-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.2s linear;
+  }
 }
 
 .social__link--vk {
-  background-color: transparent;
+  @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-vk"), 28px 22px, $color-special-grey);
 }
 
 .social__link--yt {
-  background-color: transparent;
+  @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-yt"), 28px 22px, $color-special-grey);
 }
 
 .social__link--tg {
-  background-color: transparent;
+  @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-tg"), 28px 22px, $color-special-grey);
 }

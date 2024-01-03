@@ -15,21 +15,45 @@
 }
 
 .form-result__label {
-  background-color: transparent;
+  &:hover .form-result__input {
+    border: 1px solid #bababa;
+    transition: background-color 0.2s linear;
+  }
 }
 
 .form-result__input {
-  background-color: transparent;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transition: background-color 0.2s linear;
 }
 
 .form-result__input--hidden {
-  background-color: transparent;
+  &[type="radio"]:checked + .form-result__input--radio::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: $color-basic-green;
+    border-radius: 50%;
+  }
+
+  &[type="radio"]:disabled ~ span {
+    opacity: 0.3;
+  }
+
+  &[type="radio"]:checked:disabled ~ span {
+    opacity: 0.3;
+  }
 }
 
 .form-result__input--radio {
-  background-color: transparent;
+  @include flexbox(center, center);
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
 }
 
 .form-result__description {
   @include title(16px, 18px, uppercase, $color-base-text);
+  margin-left: 45px;
 }

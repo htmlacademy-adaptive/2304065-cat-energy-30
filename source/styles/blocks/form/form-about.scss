@@ -20,21 +20,42 @@
 }
 
 .form-about__label {
-  background-color: transparent;
+  &:hover .form-about__input {
+    border: 1px solid #bababa;
+    transition: background-color 0.2s linear;
+  }
 }
 
 .form-about__input {
-  background-color: transparent;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transition: background-color 0.2s linear;
 }
 
 .form-about__input--hidden {
-  background-color: transparent;
+  &[type="checkbox"]:checked + .form-about__input--checkbox::before {
+    @include mask-image(url("../../images/icons/stack.svg#form_icon-checkmark"), 26px 26px, $color-basic-green);
+    content: "";
+    width: 26px;
+    height: 26px;
+  }
+
+  &[type="checkbox"]:disabled ~ span {
+    opacity: 0.3;
+  }
+
+  &[type="checkbox"]:checked:disabled ~ span {
+    opacity: 0.3;
+  }
 }
 
 .form-about__input--checkbox {
-  background-color: transparent;
+  @include flexbox(center, center);
+  border: 1px solid #cdcdcd;
 }
 
 .form-about__description {
   @include title(16px, 18px, uppercase, $color-base-text);
+  margin-left: 45px;
 }

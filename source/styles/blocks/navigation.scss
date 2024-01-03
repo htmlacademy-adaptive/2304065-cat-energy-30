@@ -3,7 +3,24 @@
 }
 
 .navigation__toogle {
-  background-color: transparent;
+  @include mask-image(url("../../images/icons/stack.svg#button-burger"), 24px 24px, $color-title-text);
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &:active {
+    background-color: $color-basic-green;
+    opacity: 0.3;
+    transition: background-color 0.2s linear;
+  }
 }
 
 .navigation__list {

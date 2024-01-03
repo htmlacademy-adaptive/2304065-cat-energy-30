@@ -1,7 +1,18 @@
 .gift {
-  background-color: rgba($bg-basic-green, 0.85);
+  position: relative;
+  background-color: rgba($color-basic-green, 0.85);
+
+  &::before {
+    @include mask-image(url("../../images/icons/stack.svg#catalog_icon-gift"), 78px 80px, $color-title-text-white);
+    content: "";
+    position: relative;
+    display: block;
+    width: 78px;
+    height: 80px;
+  }
 }
 
 .gift__title {
   @include main-text(16px, 20px, $color-title-text-white);
+  text-align: center;
 }

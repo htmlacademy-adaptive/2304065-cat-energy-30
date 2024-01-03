@@ -13,9 +13,19 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo-link" href="#">
-        <img class="header__logo-img" src="#" width="33" height="38" alt="Логотип Кэт энерджи.">
-        <img class="header__logo-text" src="№" width="101" height="18" alt="Кэт энерджи.">
+      <a class="header__logo-link" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <source type="image/svg+xml" media="(min-width:320px)" srcset="images/logo-mobile.svg" width="33" height="38">
+          <img class="header__logo-img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи.">
+        </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-text.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text.svg" width="101" height="18">
+          <source type="image/svg+xml" media="(min-width:320px)" srcset="images/logo-text-mobile.svg" width="101" height="18">
+          <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи.">
+        </picture>
       </a>
       <nav class="navigation">
         <button class="navigation__toogle" type="button">
@@ -255,7 +265,7 @@
             </table>
             <button class="button button--primary" type="button">Заказать</button>
           </li>
-          <li class="product__item">
+          <li class="product__item product__item--show-more">
             <h3 class="product__title product__title--show-more">Показать еще 100500 товаров</h3>
             <p class="product__description">На самом деле вкусов гораздо больше!</p>
             <button class="button button--secondary" type="button">Показать все</button>
@@ -309,8 +319,8 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="footer__logo-link" href="#">
-        <img src="#" width="128" height="24" alt="Логотип Кэт энерджи.">
+      <a class="footer__logo-link-icon" href="#">
+        <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Логотип Кэт энерджи.">
       </a>
       <ul class="social list-reset">
         <li class="social__item">
@@ -330,8 +340,7 @@
         </li>
       </ul>
       <a class="footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
-        <img src="#" width="113" height="20" alt="Логотип HTML Academy.">
-        <img src="#" width="27" height="34" alt="Логотип HTML Academy.">
+        <p class="footer__logo-text">HTML Academy</p>
       </a>
     </footer>
 

@@ -1,11 +1,19 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
   padding: 10px 15px;
 }
 
 .header__logo-link {
-  background-color: transparent;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s linear;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: opacity 0.2s linear;
+  }
 }
 
 .header__logo-img {

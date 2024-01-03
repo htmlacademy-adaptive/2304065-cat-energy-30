@@ -15,23 +15,57 @@
 }
 
 .instruction__item {
-  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    @include decorative-backing(60px, 60px, 0);
+  }
 }
 
 .instruction__item--benefit {
-  background-color: transparent;
+  &::after {
+    @include flexbox(center, center);
+    @include mask-image(url("../../images/icons/stack.svg#index_icon-benefit"), 30px 32px, $color-title-text-white);
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .instruction__item--powder {
-  background-color: transparent;
+  &::after {
+    @include flexbox(center, center);
+    @include mask-image(url("../../images/icons/stack.svg#index_icon-powder"), 26px 28px, $color-title-text-white);
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .instruction__item--replacement {
-  background-color: transparent;
+  &::after {
+    @include flexbox(center, center);
+    @include mask-image(url("../../images/icons/stack.svg#index_icon-replacement"), 25px 30px, $color-title-text-white);
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .instruction__item--changes {
-  background-color: transparent;
+  &::after {
+    @include flexbox(center, center);
+    @include mask-image(url("../../images/icons/stack.svg#index_icon-changes"), 26px 31px, $color-title-text-white);
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .instruction__description {
