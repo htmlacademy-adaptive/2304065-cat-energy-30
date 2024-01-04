@@ -1,6 +1,10 @@
 .header {
   @include flexbox(space-between, center);
   padding: 13px 21px 14px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 33px 0 30px;
+  }
 }
 
 .header__logo-link {
@@ -16,6 +20,10 @@
   &:active {
     opacity: 0.6;
     transition: opacity 0.2s linear;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
   }
 }
 
