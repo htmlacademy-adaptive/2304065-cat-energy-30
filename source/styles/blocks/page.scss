@@ -1,7 +1,9 @@
 .page {
-  background-color: transparent;
+  height: 100%;
 }
 
 .page__body {
-  background-color: transparent;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
 }
