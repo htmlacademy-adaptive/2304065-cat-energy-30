@@ -1,5 +1,7 @@
 .button {
   @include button;
+  display: block;
+  padding: 10px 0;
 }
 
 .button--primary {
