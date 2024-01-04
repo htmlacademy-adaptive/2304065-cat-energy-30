@@ -1,5 +1,5 @@
 .navigation {
-  background-color: transparent;
+  position: relative;
 }
 
 .navigation__toogle {
@@ -24,13 +24,19 @@
 }
 
 .navigation__list {
-  background-color: transparent;
+  position: absolute;
+  top: 48px;
+  right: -36px;
+  width: 320px;
+  background-color: $color-title-text-white;
 }
 
 .navigation__item {
-  background-color: transparent;
+  @include flexbox(center, center);
 }
 
 .navigation__link {
   @include title;
+  display: inline-block;
+  padding: 21px 0 23px;
 }
