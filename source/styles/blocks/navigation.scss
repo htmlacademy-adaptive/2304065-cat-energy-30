@@ -32,14 +32,24 @@
   position: absolute;
   top: 48px;
   right: -36px;
+  z-index: 2;
   width: 320px;
   background-color: $color-title-text-white;
 
   @media (min-width: $tablet-width) {
-    @include flexbox(center, center, row);
+    @include flexbox(end, center, row);
     position: static;
     gap: 33px;
     width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flexbox(end, center, row);
+    position: static;
+    gap: 33px;
+    width: 600px;
+    // временный томат
+    background-color: tomato;
   }
 }
 
@@ -54,6 +64,11 @@
 
   @media (min-width: $tablet-width) {
     @include title (18px, 24px);
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include title (20px, normal, uppercase, $color-title-text-white);
     padding: 0;
   }
 }

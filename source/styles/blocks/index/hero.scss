@@ -4,16 +4,18 @@
 }
 
 .hero__wrapper {
-  background-color: transparent;
+  padding-top: 27px;
+  text-align: center
 }
 
 .hero__title {
   @include title(36px, 36px, none, $color-title-text-white);
+  margin-bottom: 25px;
 }
 
 .hero__description {
   @include title(14px, 14px, uppercase, $color-title-text-white);
-  margin: 0;
+  margin: 0 0 27px;
 }
 
 .hero__img {

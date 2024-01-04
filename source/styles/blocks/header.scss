@@ -5,11 +5,15 @@
   @media (min-width: $tablet-width) {
     padding: 25px 33px 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+  }
 }
 
 .header__logo-link {
   @include flexbox(space-between, center);
-  width: 190px;
+  gap: 56px;
   transition: opacity 0.2s linear;
 
   &:hover {
@@ -23,14 +27,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 174px;
+   gap: 13px;
   }
-}
 
-.header__logo-img {
-  background-color: transparent;
-}
-
-.header__logo-text {
-  background-color: transparent;
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }
