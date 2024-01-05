@@ -19,6 +19,7 @@
 .program__item {
   position: relative;
   padding: 20px 20px 18px;
+  width: 280px;
   background-color: $color-basic-grey;
 
   @media (min-width: $tablet-width) {
@@ -95,8 +96,20 @@
     background-size: 67px 28px;
   }
 
-  &::before {
-    @include decorative-backing(50px, 50px, 50%);
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 135px;
+      left: 411px;
+      z-index: 1;
+      width: 270px;
+      height: 112px;
+      background-image: url("../../images/icons/stack.svg#index_icon-cat-pro");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 270px 112px;
+    }
   }
 }
 
@@ -146,5 +159,19 @@
     opacity: 0.3;
     transition: opacity 0.2s linear;
     }
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, normal);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 133px;
+      width: 12px;
+      height: 2px;
+      background-color: #000000;
+    }
   }
+}
 
