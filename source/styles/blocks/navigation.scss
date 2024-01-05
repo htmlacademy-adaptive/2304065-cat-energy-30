@@ -47,9 +47,8 @@
     @include flexbox(end, center, row);
     position: static;
     gap: 33px;
-    width: 600px;
-    // временный томат
-    background-color: tomato;
+    width: 580px;
+    background-color: transparent;
   }
 }
 

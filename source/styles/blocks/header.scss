@@ -1,14 +1,23 @@
 .header {
   @include flexbox(space-between, center);
+}
+
+.header__wrapper {
+  margin: 0 auto;
   padding: 13px 21px 14px 15px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 33px 0 30px;
+    padding-top: 25px;
+    width: 704px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px 0;
+    z-index: 1;
+    padding-top: 55px;
+    width: 1220px;
   }
+
 }
 
 .header__logo-link {
