@@ -83,3 +83,11 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+// position
+
+@mixin position($top: 0, $left: 0, $position: absolute) {
+  position: $position;
+  top: $top;
+  left: $left;
+}

@@ -3,7 +3,12 @@
 }
 
 .program__wrapper {
-  background-color: transparent;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }
 
 .program__list {
@@ -15,6 +20,11 @@
   position: relative;
   padding: 20px 20px 18px;
   background-color: $color-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 57px 52px;
+    width: 708px;
+  }
 }
 
 .program__title {
@@ -27,6 +37,18 @@
   &::before {
     @include decorative-backing(50px, 50px, 50%);
   }
+
+  @media (min-width: $tablet-width) {
+    @include title(36px, 36px);
+    margin-bottom: 24px;
+    width: 340px;
+
+    &::before {
+      @include decorative-backing(200px, 200px, 50%);
+      @include position(15px, 393px);
+      margin-right: 0;
+    }
+  }
 }
 
 .program__item--thin {
@@ -34,13 +56,28 @@
     content: "";
     position: absolute;
     top: 17px;
-    left: 20;
+    left: 20px;
     width: 50px;
     height: 53px;
     background-image: url("../../images/icons/stack.svg#index_icon-cat-slim");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 36px 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 81px;
+      left: 475px;
+      width: 140px;
+      height: 194px;
+      background-image: url("../../images/icons/stack.svg#index_icon-cat-slim");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 140px 194px;
+    }
   }
 }
 
@@ -64,7 +101,14 @@
 }
 
 .program__description {
+  width: 227px;
   margin: 0 0 38px;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 24px, $color-title-text);
+    width: 340px;
+    margin-bottom: 52px;
+  }
 }
 
 .program__link {
