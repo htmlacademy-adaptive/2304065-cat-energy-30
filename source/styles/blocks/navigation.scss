@@ -30,8 +30,8 @@
 .navigation__list {
   @include flexbox(center, center, column);
   position: absolute;
-  top: 48px;
-  right: -36px;
+  top: 47px;
+  right: -21px;
   z-index: 2;
   width: 320px;
   background-color: $color-title-text-white;

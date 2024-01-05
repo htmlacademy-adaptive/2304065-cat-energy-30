@@ -15,9 +15,14 @@
 
 .hero__wrapper {
   position: relative;
-  margin-bottom: 3px;
+  margin-bottom: 20px;
   padding-top: 27px;
   text-align: center;
+
+  .button {
+    margin: 0 auto;
+    width: 280px;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
