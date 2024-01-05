@@ -34,7 +34,7 @@
       </button>
       <!-- navigation__list--visible открывает меню -->
       <!-- display none временно -->
-      <ul class="navigation__list navigation__list--visible list-reset" style="display: none;">
+      <ul class="navigation__list navigation__list--visible list-reset">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--current" href="index.html">
             Главная
@@ -59,14 +59,16 @@
       <div class="hero__wrapper">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/webp" media="(min-width:1440px)" srcset="images/index/index-can-desktop@1x.webp 1x, images/index/index-can-desktop@2x.webp 2x" width="552" height="499">
-          <source type="image/webp" media="(min-width:768px)" srcset="images/index/index-can-tablet@1x.webp 1x, images/index/index-can-tablet@2x.webp 2x" width="709" height="609">
-          <source type="image/webp" media="(min-width:320px)" srcset="images/index/index-can-mobile@1x.webp 1x, images/index/index-can-mobile@2x.webp 2x" width="280" height="270" >
-          <source type="image/png" media="(min-width:1440px)" srcset="images/index/index-can-desktop@1x.png 1x, images/index/index-can-desktop@2x.png 2x" width="552" height="499" >
-          <source type="image/png" media="(min-width:768px)" srcset="images/index/index-can-tablet@1x.png 1x, images/index/index-can-tablet@2x.png 2x" width="709" height="609" >
-          <img class="hero__img" src="images/index/index-can-mobile@1x.png" srcset="images/index/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм Cat Energy Pro с курицей.">
-        </picture>
+        <div class="hero__wrapper-img">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)" srcset="images/index/index-can-desktop@1x.webp 1x, images/index/index-can-desktop@2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width:768px)" srcset="images/index/index-can-tablet@1x.webp 1x, images/index/index-can-tablet@2x.webp 2x" width="709" height="609">
+            <source type="image/webp" media="(min-width:320px)" srcset="images/index/index-can-mobile@1x.webp 1x, images/index/index-can-mobile@2x.webp 2x" width="280" height="270" >
+            <source type="image/png" media="(min-width:1440px)" srcset="images/index/index-can-desktop@1x.png 1x, images/index/index-can-desktop@2x.png 2x" width="552" height="499" >
+            <source type="image/png" media="(min-width:768px)" srcset="images/index/index-can-tablet@1x.png 1x, images/index/index-can-tablet@2x.png 2x" width="709" height="609" >
+            <img class="hero__img" src="images/index/index-can-mobile@1x.png" srcset="images/index/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм Cat Energy Pro с курицей.">
+          </picture>
+        </div>
         <a class="button button--primary" href="#">Подобрать программу</a>
       </div>
     </section>
