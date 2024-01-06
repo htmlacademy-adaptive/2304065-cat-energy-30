@@ -5,16 +5,30 @@
 .instruction__wrapper {
   margin: 0 auto 49px;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }
 
 .instruction__title {
   @include title(36px, 40px, none);
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    @include title(60px, 60px, none);
+    margin-bottom: 72px;
+  }
 }
 
 .instruction__list {
   @include flexbox(baseline, center, column);
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+   display: grid;
+   grid-template-columns: auto auto;
+  }
 }
 
 .instruction__item {
@@ -24,6 +38,21 @@
 
   &::before {
     @include decorative-backing(60px, 60px, 0);
+    margin-right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include flexbox(start, start, column);
+    margin-bottom: 134px;
+
+    &:nth-child(even) {
+      justify-self: end;
+    }
+
+    &::before {
+      @include decorative-backing(80px, 80px, 0);
+      margin-bottom: 31px;
+    }
   }
 }
 
@@ -36,6 +65,17 @@
     width: 60px;
     height: 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    .instruction__description {
+      width: 230px;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 .instruction__item--powder {
@@ -46,6 +86,17 @@
     position: absolute;
     width: 60px;
     height: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .instruction__description {
+      width: 246px;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -58,6 +109,17 @@
     width: 60px;
     height: 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    .instruction__description {
+      width: 247px;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 .instruction__item--changes {
@@ -69,9 +131,24 @@
     width: 60px;
     height: 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    .instruction__description {
+      width: 249px;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 .instruction__description {
   width: 200px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 24px);
+  }
 }
