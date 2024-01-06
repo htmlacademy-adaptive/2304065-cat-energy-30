@@ -7,16 +7,21 @@
   grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
   margin: 0 auto;
+}
 
-  // @media (min-width: $mobile-width) {
-  //   width: 320px;
-  // }
+.page__body-header {
+  margin: 0 auto;
+  padding: 13px 21px 14px 15px;
+  width: 320px;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 768px;
-  // }
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    width: 704px;
+  }
 
-  // @media (min-width: $desktop-width) {
-  //   width: 1440px;
-  // }
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    padding-top: 55px;
+    width: 1220px;
+  }
 }
