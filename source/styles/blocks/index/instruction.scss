@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     width: 708px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper;
+  }
 }
 
 .instruction__title {
@@ -26,8 +30,13 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-   display: grid;
-   grid-template-columns: auto auto;
+    @include flexbox(space-between, start, row);
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
   }
 }
 
@@ -45,9 +54,15 @@
     @include flexbox(start, start, column);
     margin-bottom: 134px;
 
-    &:nth-child(even) {
-      justify-self: end;
+    &::before {
+      @include decorative-backing(80px, 80px, 0);
+      margin-bottom: 31px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flexbox(start, start, column);
+    margin-bottom: 126px;
 
     &::before {
       @include decorative-backing(80px, 80px, 0);
