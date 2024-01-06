@@ -3,15 +3,18 @@
 }
 
 .instruction__wrapper {
-  background-color: transparent;
+  margin: 0 auto 49px;
+  width: 280px;
 }
 
 .instruction__title {
   @include title(36px, 40px, none);
+  margin-bottom: 49px;
 }
 
 .instruction__list {
-  background-color: transparent;
+  @include flexbox(baseline, center, column);
+  gap: 20px;
 }
 
 .instruction__item {
@@ -69,5 +72,6 @@
 }
 
 .instruction__description {
+  width: 200px;
   margin: 0;
 }
