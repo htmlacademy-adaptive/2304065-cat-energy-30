@@ -3,6 +3,13 @@
   gap: 20px;
   padding: 40px 20px;
   background-color: $color-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 226px);
+    gap: 15px;
+    padding: 55px 30px;
+  }
 }
 
 .footer__logo-link-icon {
@@ -24,6 +31,11 @@
   width: $mobile-wrapper;
   text-decoration: none;
   transition: opacity 0.2s linear;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    margin-left: auto;
+  }
 }
 
 .footer__logo-text {
