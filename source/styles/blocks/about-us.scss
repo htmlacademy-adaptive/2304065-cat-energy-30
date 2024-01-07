@@ -3,15 +3,34 @@
 }
 
 .about-us__wrapper {
-  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-wrapper;
+    padding: 61px 40px;
+  }
 }
 
 .about-us__title {
   @include title(16px, 20px, uppercase, $color-special-dark-grey-1);
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, 26px, uppercase);
+    width: 160px;
+  }
 }
 
 .about-us__address {
-  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 20px);
+    width: 160px;
+  }
 }
 
 .about-us__description {
