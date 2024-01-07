@@ -6,16 +6,36 @@
   width: $mobile-wrapper;
   margin: 0 auto;
   padding: 25px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 367px 241px;
+    column-gap: 100px;
+    width: $tablet-wrapper;
+    padding: 45px 0 101px;
+  }
 }
 
 .example__title {
   @include title(36px, 40px, none);
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include title(60px, 60px, none);
+    grid-column: 1/-1;
+    margin-bottom: 60px;
+  }
 }
 
 .example__description {
   @include main-text(14px, 18px);
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 24px);
+    grid-column: 1/-1;
+    margin-bottom: 55px;
+  }
 }
 
 .example__list {
@@ -23,6 +43,11 @@
   grid-template-columns: repeat(2, 124px);
   gap: 32px;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    gap: 43px;
+  }
 }
 
 .example__item {
@@ -36,12 +61,20 @@
 .example__number {
   @include title(24px, 24px);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include title(30px, 37px);
+  }
 }
 
 .example__number-description {
-  @include main-text(14px, 14px);
+  @include main-text(12px, 12px);
   margin: 0;
-  text-align: center
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(14px, 14px);
+  }
 }
 
 .example__result {
