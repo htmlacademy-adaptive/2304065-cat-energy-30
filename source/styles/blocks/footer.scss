@@ -10,6 +10,13 @@
     gap: 15px;
     padding: 55px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    column-gap: 80px;
+    padding: 66px 110px;
+  }
 }
 
 .footer__logo-link-icon {

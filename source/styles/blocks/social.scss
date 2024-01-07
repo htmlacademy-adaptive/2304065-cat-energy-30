@@ -9,6 +9,10 @@
     width: auto;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+  }
 }
 
 .social__item {
