@@ -1,22 +1,28 @@
 .example {
-  background-color: transparent;
+  background-color: $color-lighy-grey-2;
 }
 
 .example__wrapper {
-  background-color: transparent;
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  padding: 25px 0 40px;
 }
 
 .example__title {
   @include title(36px, 40px, none);
+  margin-bottom: 40px;
 }
 
 .example__description {
-  @include main-text(16px, 24px);
-  margin: 0;
+  @include main-text(14px, 18px);
+  margin: 0 0 20px;
 }
 
 .example__list {
-  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  gap: 32px;
+  margin-bottom: 34px;
 }
 
 .example__item {
@@ -29,15 +35,17 @@
 
 .example__number {
   @include title(24px, 24px);
+  text-align: center;
 }
 
 .example__number-description {
   @include main-text(14px, 14px);
   margin: 0;
+  text-align: center
 }
 
 .example__result {
-  @include title(20px);
+  @include title(14px, 20px);
 }
 
 .example__slider {
