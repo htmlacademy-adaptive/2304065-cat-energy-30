@@ -15,6 +15,11 @@
     width: $tablet-wrapper;
     padding: 61px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    background-color: tomato;
+  }
 }
 
 .about-us__title {
