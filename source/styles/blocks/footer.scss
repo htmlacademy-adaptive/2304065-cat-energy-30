@@ -1,5 +1,8 @@
 .footer {
-  background-color: transparent;
+  @include flexbox(center, center, column);
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: $color-basic-grey;
 }
 
 .footer__logo-link-icon {
@@ -18,11 +21,13 @@
 
 .footer__logo-link {
   @include main-text(16px, 20px);
+  width: $mobile-wrapper;
   text-decoration: none;
   transition: opacity 0.2s linear;
 }
 
 .footer__logo-text {
+  @include flexbox(space-between, center);
   position: relative;
   margin: 0;
 

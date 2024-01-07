@@ -1,5 +1,9 @@
 .social {
-  background-color: transparent;
+  @include flexbox(center, center);
+  gap: 24px;
+  flex-wrap: wrap;
+  width: $mobile-wrapper;
+  padding: 20px 0;
 }
 
 .social__item {
