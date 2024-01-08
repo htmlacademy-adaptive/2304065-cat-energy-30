@@ -5,6 +5,7 @@ $color-base-text: #444444;
 $color-title-text: #000000;
 $color-title-text-white: #ffffff;
 $color-light-grey: #d3d3d3;
+$color-lighy-grey-2: #eaeaea;
 $color-basic-grey: #f2f2f2;
 $color-special-dark-grey-1: #111111;
 $color-special-dark-grey-2: #222222;
@@ -13,4 +14,14 @@ $color-status-error: #ff8282;
 $color-basic-green: #68b738;
 $color-basic-green-2: #5eaa2f;
 
-//
+// устройства
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// устройства и wrappers
+
+$mobile-wrapper: 280px;
+$tablet-wrapper: 708px;
+$desktop-wrapper: 1220px;

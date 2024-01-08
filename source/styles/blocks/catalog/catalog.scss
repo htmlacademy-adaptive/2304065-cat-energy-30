@@ -2,6 +2,36 @@
   background-color: transparent;
 }
 
+.catalog__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-wrapper;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper;
+    margin: 0 auto;
+  }
+}
+
 .catalog__title {
   @include title(36px, 36px, none);
+  width: $mobile-width;
+  margin: 0 auto 41px;
+  padding: 20px 27px 0;
+
+  @media (min-width: $tablet-width) {
+    @include title(60px, 60px, none);
+    width: $tablet-wrapper;
+    margin: 0 auto 84px;
+    padding: 65px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper;
+    margin: 0 auto 84px;
+  }
 }
