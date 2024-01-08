@@ -9,12 +9,17 @@
     gap: 60px;
     width: $tablet-wrapper;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
 }
 
 .product__item {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  width: $mobile-wrapper;
   padding: 20px 20px 25px;
 
   .button {
@@ -24,8 +29,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: 210px auto;
-    width: 324px;
-    padding: 0 37px 40px;
+    grid-template-columns: auto;
+    padding: 10px 37px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 38px 40px;
   }
 }
 
