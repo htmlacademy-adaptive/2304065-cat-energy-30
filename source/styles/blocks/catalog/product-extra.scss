@@ -9,6 +9,14 @@
   @media (min-width: $tablet-width) {
     width: $tablet-wrapper;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 855px 245px;
+    column-gap: 60px;
+    width: $desktop-wrapper;
+    margin-bottom: 87px;
+  }
 }
 
 .product-extra__title {
@@ -19,6 +27,10 @@
     @include title(36px, 36px, none);
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .product-extra__list {
@@ -26,6 +38,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin-bottom: 0;
   }
 }
 
@@ -42,6 +59,15 @@
     grid-template-columns: 400px 140px 90px;
     padding: 26px 38px 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px 60px 245px 60px 245px;
+    padding: 15px 0 17px;
+
+    .button {
+      grid-column: 5/6;
+    }
+  }
 }
 
 .product-extra__item-title {
@@ -53,6 +79,12 @@
     @include title(20px, 20px, uppercase, $color-special-dark-grey-2);
     grid-column: 1/2;
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin: 0;
+    align-self: center;
   }
 }
 
@@ -71,8 +103,20 @@
     grid-column: 2/3;
     justify-self: end;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    justify-self: start;
+    align-self: center;
+  }
 }
 
 .product-extra__description--value {
   justify-self: end;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+    justify-self: start;
+    align-self: center;
+  }
 }

@@ -28,6 +28,24 @@
       margin: 0
     }
   }
+
+  @media (min-width: $desktop-width) {
+    @include flexbox(start, center, column);
+    position: relative;
+    grid-column: 2/3;
+    padding: 59px 0 43px;
+
+    &::before {
+      @include mask-image(url("../../images/icons/stack.svg#catalog_icon-gift"), 78px 80px, $color-title-text-white);
+      content: "";
+      position: relative;
+      display: block;
+      width: 80px;
+      height: 83px;
+      margin: 0 auto;
+      margin-bottom: 46px;
+    }
+  }
 }
 
 .gift__title {
@@ -39,5 +57,9 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
