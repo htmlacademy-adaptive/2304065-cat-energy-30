@@ -5,15 +5,28 @@
 .product-extra__wrapper {
   width: $mobile-wrapper;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-wrapper;
+  }
 }
 
 .product-extra__title {
   @include title(24px, 24px, none);
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    @include title(36px, 36px, none);
+    margin-bottom: 80px;
+  }
 }
 
 .product-extra__list {
-  background-color: transparent;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .product-extra__item {
@@ -24,22 +37,40 @@
   .button {
     grid-column: 1/-1;
   }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 400px 140px 90px;
+    padding: 26px 38px 28px;
+  }
 }
 
 .product-extra__item-title {
   @include title(16px, 16px, uppercase, $color-special-dark-grey-2);
   grid-column: 1/-1;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, 20px, uppercase, $color-special-dark-grey-2);
+    grid-column: 1/2;
+    margin-bottom: 25px;
+  }
 }
 
 .product-extra__description {
   @include main-text(14px, 14px);
   margin-bottom: 15px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 20px);
+  }
 }
 
 .product-extra__description--parameter {
-  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    justify-self: end;
+  }
 }
 
 .product-extra__description--value {

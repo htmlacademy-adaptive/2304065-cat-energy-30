@@ -1,5 +1,6 @@
 .gift {
   position: relative;
+  padding: 59px 0 43px;
   background-color: rgba($color-basic-green, 0.85);
 
   &::before {
@@ -9,10 +10,34 @@
     display: block;
     width: 78px;
     height: 80px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include flexbox(space-between, center);
+    padding: 55px 125px 60px 77px;
+
+    &::before {
+      @include mask-image(url("../../images/icons/stack.svg#catalog_icon-gift"), 78px 80px, $color-title-text-white);
+      content: "";
+      position: relative;
+      display: block;
+      width: 80px;
+      height: 83px;
+      margin: 0
+    }
   }
 }
 
 .gift__title {
   @include main-text(16px, 20px, $color-title-text-white);
+  width: 165px;
+  margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
+  }
 }
