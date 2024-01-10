@@ -1,18 +1,22 @@
 .form-contacts {
-  @include list-reset();
+  background-color: transparent
 }
 
 .form__contacts {
-  background-color: transparent;
+  @include list-reset();
+  border: none
 }
 
 .form-contacts__title {
   @include title(24px, 26px, none);
+  margin-bottom: 35px;
   padding: 0;
 }
 
 .form-contacts__list {
-  background-color: transparent;
+  @include flexbox(flex-start, normal, column);
+  gap: 14px;
+  margin-bottom: 24px;
 }
 
 .form-contacts__item {
@@ -21,10 +25,14 @@
 
 .form-contacts__label {
   @include title(16px, 18px, uppercase, $color-base-text);
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
 .form-contacts__input {
+  width: 100%;
+  margin-left: 13px;
   &:hover + .form-contacts__icon {
     background-color: $color-special-dark-grey-2;
     transition: background-color 0.2s linear;
