@@ -1,18 +1,27 @@
 .form-comment {
-  @include list-reset();
+  background-color: transparent
 }
 
 .form__comment {
-  background-color: transparent;
+  @include list-reset();
+  margin-bottom: 23px;
+  border: none
 }
 
 .form-comment__title {
   @include title(24px, 26px, none);
+  margin-bottom: 38px;
   padding: 0;
 }
 
 .form-comment__input {
-  background-color: transparent;
+  width: $mobile-wrapper;
+  padding: 14px 14px 14px 15px;
+  resize: none;
+
+  &::placeholder {
+    @include title(16px, 18px);
+  }
 }
 
 .form-comment__input-text {
