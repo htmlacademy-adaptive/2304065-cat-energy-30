@@ -3,7 +3,7 @@
 }
 
 .form__cat-info {
-  background-color: transparent;
+  border: none;
 }
 
 .form-cat-info__list {
@@ -11,13 +11,19 @@
 }
 
 .form-cat-info__item {
-  background-color: transparent;
+  @include flexbox(space-between, center);
+  gap: 13px;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
 }
 
 .form-cat-info__label {
   @include title(16px, 18px, uppercase, $color-base-text);
+  width: auto;
 }
 
 .form-cat-info__input {
-  background-color: transparent;
+  width: 100%;
 }
