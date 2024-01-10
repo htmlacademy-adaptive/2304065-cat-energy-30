@@ -4,8 +4,11 @@
 
 .form-header__title {
   @include title(36px, 36px, none);
+  margin-bottom: 37px;
 }
 
 .form-header__description {
   @include title(14px, 18px);
+  width: 225px;
+  margin-bottom: 39px;
 }
