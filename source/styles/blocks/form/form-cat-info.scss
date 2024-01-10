@@ -7,16 +7,14 @@
 }
 
 .form-cat-info__list {
-  background-color: transparent;
+  @include flexbox(flex-start, normal, column);
+  gap: 14px;
+  margin-bottom: 28px;
 }
 
 .form-cat-info__item {
   @include flexbox(space-between, center);
   gap: 13px;
-
-  &:not(:last-child) {
-    margin-bottom: 14px;
-  }
 }
 
 .form-cat-info__label {

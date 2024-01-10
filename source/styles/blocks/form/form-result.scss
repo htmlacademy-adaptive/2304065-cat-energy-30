@@ -1,13 +1,16 @@
 .form-result {
-  @include list-reset();
+  background-color: transparent
 }
 
 .form__result {
-  background-color: transparent;
+  @include list-reset();
+  border: none;
 }
 
 .form-result__list {
-  background-color: transparent;
+  @include flexbox(flex-start, normal, column);
+  gap: 25px;
+  margin-bottom: 51px;
 }
 
 .form-result__item {
@@ -15,6 +18,8 @@
 }
 
 .form-result__label {
+  @include flexbox(normal, center);
+
   &:hover .form-result__input {
     border: 1px solid #bababa;
     transition: background-color 0.2s linear;
