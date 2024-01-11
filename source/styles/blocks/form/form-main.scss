@@ -5,4 +5,9 @@
 .form-main__wrapper {
   width: $mobile-wrapper;
   margin: 0 auto;
+
+  .button {
+    width: 100%;
+    margin-bottom: 21px;
+  }
 }

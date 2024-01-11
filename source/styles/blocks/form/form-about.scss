@@ -1,5 +1,6 @@
 .form-about {
   @include list-reset();
+  border: none;
 }
 
 .form__about {
@@ -8,11 +9,14 @@
 
 .form-about__title {
   @include title(24px, 26px, none);
+  margin-bottom: 40px;
   padding: 0;
 }
 
 .form-about__list {
-  background-color: transparent;
+  @include flexbox(normal, normal, column);
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
 .form-about__item {
@@ -20,6 +24,8 @@
 }
 
 .form-about__label {
+  @include flexbox(flex-start, center);
+
   &:hover .form-about__input {
     border: 1px solid #bababa;
     transition: background-color 0.2s linear;
