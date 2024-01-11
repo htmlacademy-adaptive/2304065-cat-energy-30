@@ -29,6 +29,12 @@
     gap: 42px 60px;
     margin-bottom: 57px;
   }
+
+  @media (min-width: $desktop-wrapper) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+  }
 }
 
 .form-about__item {
