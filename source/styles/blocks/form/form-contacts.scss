@@ -11,12 +11,22 @@
   @include title(24px, 26px, none);
   margin-bottom: 35px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title(36px, 36px, none);
+    margin-bottom: 76px;
+  }
 }
 
 .form-contacts__list {
   @include flexbox(flex-start, normal, column);
   gap: 14px;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    margin-bottom: 65px;
+  }
 }
 
 .form-contacts__item {
@@ -28,6 +38,8 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  @include title(20px, normal, uppercase, $color-base-text);
 }
 
 .form-contacts__input {
