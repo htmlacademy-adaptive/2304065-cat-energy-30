@@ -14,5 +14,15 @@
   @media (min-width: $tablet-width) {
     width: $tablet-wrapper;
     padding: 0 40px;
+
+    .button {
+      @include title(20px, 26px, uppercase, $color-title-text-white);
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper;
+    padding: 0;
   }
 }

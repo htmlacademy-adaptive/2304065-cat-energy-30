@@ -1,8 +1,18 @@
 .form {
-  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 284px);
+    column-gap: 60px;
+  }
 }
 
 .form__description {
   @include main-text(14px, 16px, $color-title-text);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 16px, $color-title-text);
+    align-self: center;
+    text-align: left;
+  }
 }

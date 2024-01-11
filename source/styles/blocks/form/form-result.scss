@@ -1,9 +1,9 @@
 .form-result {
-  background-color: transparent
+  @include list-reset();
+  grid-column: 1/-1;
 }
 
 .form__result {
-  @include list-reset();
   border: none;
 }
 

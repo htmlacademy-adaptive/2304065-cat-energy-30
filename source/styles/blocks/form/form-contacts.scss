@@ -1,9 +1,9 @@
 .form-contacts {
-  background-color: transparent
+  @include list-reset();
+  grid-column: 1/-1;
 }
 
 .form__contacts {
-  @include list-reset();
   border: none
 }
 

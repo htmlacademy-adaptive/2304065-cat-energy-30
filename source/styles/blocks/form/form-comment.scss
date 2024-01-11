@@ -1,17 +1,26 @@
 .form-comment {
-  background-color: transparent
+  @include list-reset();
+  grid-column: 1/-1;
 }
 
 .form__comment {
-  @include list-reset();
   margin-bottom: 23px;
-  border: none
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .form-comment__title {
   @include title(24px, 26px, none);
   margin-bottom: 38px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title(36px, 36px, none);
+    margin-bottom: 87px;
+  }
 }
 
 .form-comment__input {
@@ -22,6 +31,16 @@
 
   &::placeholder {
     @include title(16px, 18px);
+
+    @media (min-width: $tablet-width) {
+      @include title(20px, 30px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    height: 175px;
+    padding: 11px 20px;
   }
 }
 
