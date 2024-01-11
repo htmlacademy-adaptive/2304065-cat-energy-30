@@ -11,6 +11,12 @@
   @include flexbox(flex-start, normal, column);
   gap: 25px;
   margin-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+    margin-bottom: 65px;
+    padding: 28px 0 32px;
+  }
 }
 
 .form-result__item {
@@ -31,6 +37,11 @@
   width: 30px;
   height: 30px;
   transition: background-color 0.2s linear;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form-result__input--hidden {
@@ -41,6 +52,11 @@
     height: 13px;
     background-color: $color-basic-green;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &[type="radio"]:disabled ~ span {
@@ -61,4 +77,9 @@
 .form-result__description {
   @include title(16px, 18px, uppercase, $color-base-text);
   margin-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, normal, uppercase, $color-base-text);
+    margin-left: 60px;
+  }
 }

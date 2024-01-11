@@ -10,6 +10,11 @@
   @include flexbox(flex-start, normal, column);
   gap: 14px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    gap: 42px;
+    margin-bottom: 84px;
+  }
 }
 
 .form-cat-info__item {
@@ -20,6 +25,10 @@
 .form-cat-info__label {
   @include title(16px, 18px, uppercase, $color-base-text);
   width: auto;
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, normal, uppercase, $color-base-text);
+  }
 }
 
 .form-cat-info__input {

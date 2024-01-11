@@ -10,4 +10,9 @@
     width: 100%;
     margin-bottom: 21px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-wrapper;
+    padding: 0 40px;
+  }
 }

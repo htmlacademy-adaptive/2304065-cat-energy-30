@@ -5,5 +5,14 @@
 
   &::placeholder {
     @include title(16px, 18px, uppercase, $color-base-text);
+
+    @media (min-width: $tablet-width) {
+      @include title(20px, normal, uppercase, $color-base-text);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, normal, uppercase, $color-base-text);
+    padding: 11px 34px 11px 20px;
   }
 }
