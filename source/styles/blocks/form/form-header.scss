@@ -10,6 +10,10 @@
     @include title(60px, 60px, none);
     margin-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .form-header__description {

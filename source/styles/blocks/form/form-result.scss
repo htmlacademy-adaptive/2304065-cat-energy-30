@@ -1,6 +1,10 @@
 .form-result {
   @include list-reset();
   grid-column: 1/-1;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .form__result {
@@ -16,6 +20,10 @@
     gap: 23px;
     margin-bottom: 65px;
     padding: 28px 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
