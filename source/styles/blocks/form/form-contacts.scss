@@ -4,7 +4,7 @@
 }
 
 .form__contacts {
-  border: none
+  border: none;
 }
 
 .form-contacts__title {
@@ -52,6 +52,7 @@
 .form-contacts__input {
   width: 100%;
   margin-left: 13px;
+
   &:hover + .form-contacts__icon {
     background-color: $color-special-dark-grey-2;
     transition: background-color 0.2s linear;
