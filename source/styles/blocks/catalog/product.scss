@@ -98,12 +98,12 @@
 }
 
 .product__title {
-  @include title(16px, 20px, uppercase, $color-special-dark-grey-2);
+  @include title(16px, 20px, uppercase, $color-special-light-dark-grey);
   width: 80px;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    @include title(20px, 24px, uppercase, $color-special-dark-grey-2);
+    @include title(20px, 24px, uppercase, $color-special-light-dark-grey);
     width: 100px;
     margin-bottom: 0;
     text-align: center;
@@ -111,7 +111,7 @@
 }
 
 .product__title-show-more {
-  color: $color-special-dark-grey-1;
+  color: $color-special-dark-grey;
   grid-column: 1/-1;
   width: auto;
   margin: 0 auto 8px;

@@ -71,12 +71,12 @@
 }
 
 .product-extra__item-title {
-  @include title(16px, 16px, uppercase, $color-special-dark-grey-2);
+  @include title(16px, 16px, uppercase, $color-special-light-dark-grey);
   grid-column: 1/-1;
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    @include title(20px, 20px, uppercase, $color-special-dark-grey-2);
+    @include title(20px, 20px, uppercase, $color-special-light-dark-grey);
     grid-column: 1/2;
     margin-bottom: 25px;
   }
