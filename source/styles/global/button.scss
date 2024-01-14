@@ -2,9 +2,9 @@
   @include button;
   display: block;
   padding: 10px 0;
-}
 
-.button--primary {
-  color: $color-title-text-white;
-  background-color: $color-basic-green;
+  &--primary {
+    color: $color-title-text-white;
+    background-color: $color-basic-green;
+  }
 }

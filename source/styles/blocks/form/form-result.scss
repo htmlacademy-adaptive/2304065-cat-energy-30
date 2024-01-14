@@ -45,6 +45,12 @@
     width: 40px;
     height: 40px;
   }
+
+  &--radio {
+    @include flexbox(center, center);
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
 }
 
 .form-result__input--hidden[type="radio"] {
@@ -69,12 +75,6 @@
   &:checked:disabled ~ span {
     opacity: 0.3;
   }
-}
-
-.form-result__input--radio {
-  @include flexbox(center, center);
-  border: 1px solid #cdcdcd;
-  border-radius: 50%;
 }
 
 .form-result__description {

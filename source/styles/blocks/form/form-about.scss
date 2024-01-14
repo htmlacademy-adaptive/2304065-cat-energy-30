@@ -55,6 +55,11 @@
     width: 40px;
     height: 40px;
   }
+
+  &--checkbox {
+    @include flexbox(center, center);
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .form-about__input--hidden[type="checkbox"] {
@@ -72,11 +77,6 @@
   &:checked:disabled ~ span {
     opacity: 0.3;
   }
-}
-
-.form-about__input--checkbox {
-  @include flexbox(center, center);
-  border: 1px solid #cdcdcd;
 }
 
 .form-about__description {

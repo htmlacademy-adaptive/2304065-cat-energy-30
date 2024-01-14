@@ -74,8 +74,9 @@
   &--dark {
     color: $color-special-dark-grey;
   }
+
+  &--current {
+    background: transparent;
+  }
 }
 
-.navigation__link--current {
-  background: transparent;
-}

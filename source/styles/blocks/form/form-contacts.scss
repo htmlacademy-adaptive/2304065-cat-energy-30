@@ -84,12 +84,12 @@
   width: 20px;
   height: 20px;
   transition: background-color 0.2s linear;
-}
 
-.form-contacts__icon--email {
-  @include mask-image(url("../../images/icons/stack.svg#form_icon-email"), 20px 20px, $color-title-text);
+  &--email {
+    @include mask-image(url("../../images/icons/stack.svg#form_icon-email"), 20px 20px, $color-title-text);
   }
 
-.form-contacts__icon--phone {
-  @include mask-image(url("../../images/icons/stack.svg#form_icon-phone"), 20px 20px, $color-title-text);
+  &--phone {
+    @include mask-image(url("../../images/icons/stack.svg#form_icon-phone"), 20px 20px, $color-title-text);
+  }
 }

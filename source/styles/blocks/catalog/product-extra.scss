@@ -12,8 +12,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 855px 245px;
-    column-gap: 60px;
+    grid-template-columns: 895px 245px;
+    column-gap: 80px;
     width: $desktop-wrapper;
     margin-bottom: 87px;
   }
@@ -61,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 245px 60px 245px 60px 245px;
+    grid-template-columns: 245px 80px 245px 80px 245px;
     padding: 15px 0 17px;
 
     .button {
@@ -96,27 +96,27 @@
   @media (min-width: $tablet-width) {
     @include main-text(16px, 20px);
   }
-}
 
-.product-extra__description--parameter {
-  @media (min-width: $tablet-width) {
-    grid-column: 2/3;
+  &--parameter {
+    @media (min-width: $tablet-width) {
+      grid-column: 2/3;
+      justify-self: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 3/4;
+      justify-self: start;
+      align-self: center;
+    }
+  }
+
+  &--value {
     justify-self: end;
-  }
 
-  @media (min-width: $desktop-width) {
-    grid-column: 3/4;
-    justify-self: start;
-    align-self: center;
-  }
-}
-
-.product-extra__description--value {
-  justify-self: end;
-
-  @media (min-width: $desktop-width) {
-    grid-column: 4/5;
-    justify-self: start;
-    align-self: center;
+    @media (min-width: $desktop-width) {
+      grid-column: 4/5;
+      justify-self: start;
+      align-self: center;
+    }
   }
 }

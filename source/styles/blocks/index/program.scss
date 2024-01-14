@@ -221,7 +221,7 @@
   &:active {
     opacity: 0.3;
     transition: opacity 0.2s linear;
-    }
+  }
 
   @media (min-width: $tablet-width) {
     @include title(20px, normal);
