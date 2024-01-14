@@ -1,18 +1,34 @@
 .form-contacts {
-  @include list-reset();
-}
-
-.form__contacts {
-  background-color: transparent;
+  grid-column: 1/-1;
 }
 
 .form-contacts__title {
   @include title(24px, 26px, none);
+  margin-bottom: 35px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title(36px, 36px, none);
+    margin-bottom: 76px;
+  }
 }
 
 .form-contacts__list {
-  background-color: transparent;
+  @include flexbox(flex-start, normal, column);
+  gap: 14px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+    margin-bottom: 0;
+  }
 }
 
 .form-contacts__item {
@@ -21,12 +37,19 @@
 
 .form-contacts__label {
   @include title(16px, 18px, uppercase, $color-base-text);
+  display: flex;
+  align-items: center;
   position: relative;
+
+  @include title(20px, normal, uppercase, $color-base-text);
 }
 
 .form-contacts__input {
+  width: 100%;
+  margin-left: 13px;
+
   &:hover + .form-contacts__icon {
-    background-color: $color-special-dark-grey-2;
+    background-color: $color-special-light-dark-grey;
     transition: background-color 0.2s linear;
   }
 
@@ -61,12 +84,12 @@
   width: 20px;
   height: 20px;
   transition: background-color 0.2s linear;
-}
 
-.form-contacts__icon--email {
-  @include mask-image(url("../../images/icons/stack.svg#form_icon-email"), 20px 20px, $color-title-text);
+  &--email {
+    @include mask-image(url("../../images/icons/stack.svg#form_icon-email"), 20px 20px, $color-title-text);
   }
 
-.form-contacts__icon--phone {
-  @include mask-image(url("../../images/icons/stack.svg#form_icon-phone"), 20px 20px, $color-title-text);
+  &--phone {
+    @include mask-image(url("../../images/icons/stack.svg#form_icon-phone"), 20px 20px, $color-title-text);
+  }
 }

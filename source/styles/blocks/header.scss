@@ -1,8 +1,10 @@
 .header {
-  padding: 10px 15px;
+  @include flexbox(space-between, center);
 }
 
 .header__logo-link {
+  @include flexbox(space-between, center);
+  gap: 56px;
   transition: opacity 0.2s linear;
 
   &:hover {
@@ -14,16 +16,12 @@
     opacity: 0.6;
     transition: opacity 0.2s linear;
   }
-}
 
-.header__logo-img {
-  background-color: transparent;
-}
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
 
-.header__logo-text {
-  background-color: transparent;
-}
-
-.navigation__link {
-  background-color: transparent;
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }

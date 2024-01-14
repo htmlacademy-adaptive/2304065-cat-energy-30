@@ -13,7 +13,7 @@
   </head>
 
   <body class="page__body">
-    <header class="header">
+    <header class="header page__body-header">
       <a class="header__logo-link" href="index.html">
         <picture>
           <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
@@ -34,30 +34,30 @@
         </button>
         <ul class="navigation__list list-reset">
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html">
+            <a class="navigation__link navigation__link--dark" href="index.html">
               Главная
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">
+            <a class="navigation__link navigation__link--dark" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="form.html">
+            <a class="navigation__link navigation__link--dark navigation__link--current" href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="form-wrapper">
-      <header class="form-header">
+    <main class="form-main">
+      <header class="form-header form-main__wrapper">
         <h1 class="form-header__title">Подбор программы</h1>
         <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </header>
 
-      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form form-main__wrapper" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__cat-info form-cat-info">
           <legend class="visually-hidden">Данные кота.</legend>
           <ul class="form-cat-info__list list-reset">
@@ -65,12 +65,12 @@
               <label class="form-cat-info__label label" for="name">Имя<sup>*</sup></label>
               <input class="form-cat-info__input input" type="text" id="name" name="name" placeholder="Барсик" required>
             </li>
-            <li class="form__item form-cat-info">
-              <label class="form-cat-info__label label" for="weight">Вес (кг):<sup>*</sup></label>
+            <li class="form-cat-info__item">
+              <label class="form-cat-info__label label" for="weight">Вес&nbsp;(кг):<sup>*</sup></label>
               <input class="form-cat-info__input input" type="number" id="weight" name="weight" placeholder="7" required>
             </li>
-            <li class="form__item form-cat-info">
-              <label class="form-cat-info__label label" for="age">Возраст (лет):</label>
+            <li class="form-cat-info__item">
+              <label class="form-cat-info__label label" for="age">Возраст&nbsp;(лет):</label>
               <input class="form-cat-info__input input" type="number" id="age" name="age" placeholder="7">
             </li>
           </ul>
@@ -105,7 +105,7 @@
           <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
           <ul class="form-contacts__list list-reset">
             <li class="form-contacts__item">
-              <label class="form-contacts__label">E-mail:<sup>*</sup>
+              <label class="form-contacts__label">E-&nbsp;mail:<sup>*</sup>
                 <input class="form-contacts__input input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 <span class="form-contacts__icon form-contacts__icon--email"></span>
               </label>

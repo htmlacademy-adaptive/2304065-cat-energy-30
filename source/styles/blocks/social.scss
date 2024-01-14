@@ -1,5 +1,18 @@
 .social {
-  background-color: transparent;
+  @include flexbox(center, center);
+  gap: 24px;
+  flex-wrap: wrap;
+  width: $mobile-wrapper;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .social__item {
@@ -21,16 +34,16 @@
     opacity: 0.3;
     transition: opacity 0.2s linear;
   }
-}
 
-.social__link--vk {
-  @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-vk"), 28px 22px, $color-special-grey);
-}
+  &--vk {
+    @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-vk"), 28px 22px, $color-special-grey);
+  }
 
-.social__link--yt {
-  @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-yt"), 28px 22px, $color-special-grey);
-}
+  &--yt {
+    @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-yt"), 28px 22px, $color-special-grey);
+  }
 
-.social__link--tg {
-  @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-tg"), 28px 22px, $color-special-grey);
+  &--tg {
+    @include mask-image(url("../../images/icons/stack.svg#footer_icon-social-tg"), 28px 22px, $color-special-grey);
+  }
 }

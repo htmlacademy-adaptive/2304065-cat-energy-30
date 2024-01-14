@@ -1,23 +1,41 @@
 .form-cat-info {
-  @include list-reset();
-}
+  grid-column: 1/-1;
 
-.form__cat-info {
-  background-color: transparent;
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
 .form-cat-info__list {
-  background-color: transparent;
+  @include flexbox(flex-start, normal, column);
+  gap: 14px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    gap: 42px;
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .form-cat-info__item {
-  background-color: transparent;
+  @include flexbox(space-between, center);
+  gap: 13px;
 }
 
 .form-cat-info__label {
   @include title(16px, 18px, uppercase, $color-base-text);
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, normal, uppercase, $color-base-text);
+  }
 }
 
 .form-cat-info__input {
-  background-color: transparent;
+  width: 100%;
 }

@@ -1,22 +1,71 @@
 .example {
-  background-color: transparent;
+  background-color: $color-ultra-light-grey;
 }
 
 .example__wrapper {
-  background-color: transparent;
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  padding: 25px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 367px 241px;
+    column-gap: 100px;
+    width: $tablet-wrapper;
+    padding: 45px 0 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+    width: $desktop-wrapper;
+  }
 }
 
 .example__title {
   @include title(36px, 40px, none);
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include title(60px, 60px, none);
+    grid-column: 1/-1;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
-  @include main-text(16px, 24px);
-  margin: 0;
+  @include main-text(14px, 18px);
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 24px);
+    grid-column: 1/-1;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    width: 435px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__list {
-  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  gap: 32px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    gap: 43px;
+  }
 }
 
 .example__item {
@@ -29,17 +78,35 @@
 
 .example__number {
   @include title(24px, 24px);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include title(30px, 37px);
+  }
 }
 
 .example__number-description {
-  @include main-text(14px, 14px);
+  @include main-text(12px, 12px);
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(14px, 14px);
+  }
 }
 
 .example__result {
-  @include title(20px);
+  @include title(14px, 20px);
+  width: $mobile-wrapper;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
 .example__slider {
-  background-color: transparent;
+  grid-column: 2/3;
+  grid-row: 1/-1;
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <title>Кэт энерджи</title>
@@ -12,7 +11,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header page__body-header">
       <a class="header__logo-link" href="index.html">
         <picture>
           <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
@@ -33,17 +32,17 @@
         </button>
         <ul class="navigation__list list-reset">
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html">
+            <a class="navigation__link navigation__link--dark" href="index.html">
               Главная
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="catalog.html">
+            <a class="navigation__link navigation__link--dark navigation__link--current" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">
+            <a class="navigation__link navigation__link--dark" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -52,7 +51,7 @@
     </header>
     <main class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
-      <section class="product">
+      <section class="product catalog__wrapper">
         <h2 class="visually-hidden">Основные товары.</h2>
         <ul class="product__list list-reset">
           <li class="product__item">
@@ -265,43 +264,45 @@
             </table>
             <button class="button button--primary" type="button">Заказать</button>
           </li>
-          <li class="product__item product__item--show-more">
-            <h3 class="product__title product__title--show-more">Показать еще 100500 товаров</h3>
-            <p class="product__description">На самом деле вкусов гораздо больше!</p>
+          <li class="product__item product__item-show-more">
+            <h3 class="product__title product__title-show-more">Показать еще 100500 товаров</h3>
+            <p class="product__description product__description-show-more">На самом деле вкусов гораздо больше!</p>
             <button class="button button--secondary" type="button">Показать все</button>
           </li>
         </ul>
       </section>
       <section class="product-extra">
-        <h2 class="product-extra__title">Дополнительные товары</h2>
-        <ul class="product-extra__list list-reset">
-          <li class="product-extra__item">
-            <h3 class="product-extra__item-title">Сахарозаменитель</h3>
-            <p class="product-extra__description product-extra__description--parameter">1 упаковка (100 г)</p>
-            <p class="product-extra__description product-extra__description--value">200 ₽</p>
-            <button class="button button--primary" type="button">Заказать</button>
-          </li>
-          <li class="product-extra__item">
-            <h3 class="product-extra__item-title">Питьевая вода</h3>
-            <p class="product-extra__description product-extra__description--parameter">5 литров</p>
-            <p class="product-extra__description product-extra__description--value">50 ₽</p>
-            <button class="button button--primary" type="button">Заказать</button>
-          </li>
-          <li class="product-extra__item">
-            <h3 class="product-extra__item-title">Молоко</h3>
-            <p class="product-extra__description product-extra__description--parameter">1 литр</p>
-            <p class="product-extra__description product-extra__description--value">100 ₽</p>
-            <button class="button button--primary" type="button">Заказать</button>
-          </li>
-          <li class="product-extra__item">
-            <h3 class="product-extra__item-title">Витамины</h3>
-            <p class="product-extra__description product-extra__description--parameter">1 упаковка (100 г)</p>
-            <p class="product-extra__description product-extra__description--value">200 г</p>
-            <button class="button button--primary" type="button">Заказать</button>
-          </li>
-        </ul>
-        <div class="gift">
-          <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
+        <div class="product-extra__wrapper">
+          <h2 class="product-extra__title">Дополнительные товары</h2>
+          <ul class="product-extra__list list-reset">
+            <li class="product-extra__item">
+              <h3 class="product-extra__item-title">Сахарозаменитель</h3>
+              <p class="product-extra__description product-extra__description--parameter">1 упаковка (100 г)</p>
+              <p class="product-extra__description product-extra__description--value">200 ₽</p>
+              <button class="button button--primary" type="button">Заказать</button>
+            </li>
+            <li class="product-extra__item">
+              <h3 class="product-extra__item-title">Питьевая вода</h3>
+              <p class="product-extra__description product-extra__description--parameter">5 литров</p>
+              <p class="product-extra__description product-extra__description--value">50 ₽</p>
+              <button class="button button--primary" type="button">Заказать</button>
+            </li>
+            <li class="product-extra__item">
+              <h3 class="product-extra__item-title">Молоко</h3>
+              <p class="product-extra__description product-extra__description--parameter">1 литр</p>
+              <p class="product-extra__description product-extra__description--value">100 ₽</p>
+              <button class="button button--primary" type="button">Заказать</button>
+            </li>
+            <li class="product-extra__item">
+              <h3 class="product-extra__item-title">Витамины</h3>
+              <p class="product-extra__description product-extra__description--parameter">1 упаковка (100 г)</p>
+              <p class="product-extra__description product-extra__description--value">200 г</p>
+              <button class="button button--primary" type="button">Заказать</button>
+            </li>
+          </ul>
+          <div class="gift">
+            <h2 class="gift__title">Закажите все и&nbsp;получите чехол для кота в подарок!</h2>
+          </div>
         </div>
       </section>
       <section class="about-us">
@@ -343,6 +344,5 @@
         <p class="footer__logo-text">HTML Academy</p>
       </a>
     </footer>
-
   </body>
 </html>

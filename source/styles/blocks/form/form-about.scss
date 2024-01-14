@@ -1,18 +1,35 @@
 .form-about {
-  @include list-reset();
-}
-
-.form__about {
-  background-color: transparent;
+  grid-column: 1/-1;
 }
 
 .form-about__title {
   @include title(24px, 26px, none);
+  margin-bottom: 40px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title(36px, 36px, none);
+    margin-bottom: 57px;
+  }
 }
 
 .form-about__list {
-  background-color: transparent;
+  @include flexbox(normal, normal, column);
+  gap: 25px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 284px);
+    gap: 42px 60px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+  }
 }
 
 .form-about__item {
@@ -20,6 +37,8 @@
 }
 
 .form-about__label {
+  @include flexbox(flex-start, center);
+
   &:hover .form-about__input {
     border: 1px solid #bababa;
     transition: background-color 0.2s linear;
@@ -31,31 +50,41 @@
   width: 30px;
   height: 30px;
   transition: background-color 0.2s linear;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &--checkbox {
+    @include flexbox(center, center);
+    border: 1px solid #cdcdcd;
+  }
 }
 
-.form-about__input--hidden {
-  &[type="checkbox"]:checked + .form-about__input--checkbox::before {
+.form-about__input--hidden[type="checkbox"] {
+  &:checked + .form-about__input--checkbox::before {
     @include mask-image(url("../../images/icons/stack.svg#form_icon-checkmark"), 26px 26px, $color-basic-green);
     content: "";
     width: 26px;
     height: 26px;
   }
 
-  &[type="checkbox"]:disabled ~ span {
+  &:disabled ~ span {
     opacity: 0.3;
   }
 
-  &[type="checkbox"]:checked:disabled ~ span {
+  &:checked:disabled ~ span {
     opacity: 0.3;
   }
-}
-
-.form-about__input--checkbox {
-  @include flexbox(center, center);
-  border: 1px solid #cdcdcd;
 }
 
 .form-about__description {
   @include title(16px, 18px, uppercase, $color-base-text);
   margin-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, normal, uppercase, $color-base-text);
+    margin-left: 60px;
+  }
 }

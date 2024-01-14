@@ -1,21 +1,110 @@
 .hero {
-  @include title(14px, 14px, $color-title-text-white);
-  background-image: linear-gradient(to bottom, $color-basic-green 65.65%, #ffffff 65.65%);
+  @include title(14px, 14px, none, $color-title-text-white);
+  position: relative;
+  background-image: linear-gradient(to bottom, $color-basic-green 65.65%, $color-title-text-white 65.65%);
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -126px;
+    background-image: linear-gradient(to right, $color-title-text-white 50%, $color-basic-green 50%);
+  }
 }
 
 .hero__wrapper {
-  background-color: transparent;
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 27px;
+  text-align: center;
+
+  .button {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 90px 529px 90px;
+    margin: 0 auto;
+    padding-top: 65px;
+    width: 709px;
+
+    .button {
+      position: absolute;
+      top: 295px;
+      left: 0;
+      grid-column: 2/-1;
+      width: 244px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 80px 530px 720px;
+    grid-template-rows: 224px auto auto auto 184px;
+    margin: 0 auto;
+    width: 1330px;
+
+    .button {
+      position: static;
+      grid-column: 2/3;
+      grid-row: 4/5;
+      margin: 0;
+      width: 244px;
+    }
+  }
 }
+
+.hero__wrapper-img {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 143px;
+    left: 467px;
+  }
+}
+
 
 .hero__title {
   @include title(36px, 36px, none, $color-title-text-white);
+  width: 250px;
+  margin: 0 auto 25px;
+
+  @media (min-width: $tablet-width) {
+    @include title(60px, 60px, none, $color-title-text);
+    grid-column: 2/-1;
+    width: 500px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include title(60px, 60px, none, $color-title-text);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__description {
   @include title(14px, 14px, uppercase, $color-title-text-white);
-  margin: 0;
+  width: 250px;
+  margin: 0 auto 27px;
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, 20px, uppercase, $color-title-text);
+    grid-column: 2/-1;
+    margin-bottom: 21px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-bottom: 52px;
+  }
 }
 
-.hero__img {
-  background-color: transparent;
-}

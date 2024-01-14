@@ -1,18 +1,41 @@
 .form-comment {
-  @include list-reset();
-}
-
-.form__comment {
-  background-color: transparent;
+  grid-column: 1/-1;
 }
 
 .form-comment__title {
   @include title(24px, 26px, none);
+  margin-bottom: 38px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title(36px, 36px, none);
+    margin-bottom: 87px;
+  }
 }
 
 .form-comment__input {
-  background-color: transparent;
+  width: $mobile-wrapper;
+  min-height: 150px;
+  padding: 14px 14px 14px 15px;
+  resize: none;
+
+  &::placeholder {
+    @include title(16px, 18px);
+
+    @media (min-width: $tablet-width) {
+      @include title(20px, 30px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    min-height: 175px;
+    padding: 11px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper;
+  }
 }
 
 .form-comment__input-text {

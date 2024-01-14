@@ -48,7 +48,7 @@
   }
 
   &:active::after {
-    background-color: $color-basic-green-2;
+    background-color: $color-basic-dark-green;
     opacity: 0.6;
     transition: opacity 0.2s linear;
   }

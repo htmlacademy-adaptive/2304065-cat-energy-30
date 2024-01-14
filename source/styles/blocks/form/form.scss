@@ -1,7 +1,63 @@
 .form {
-  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 284px);
+    column-gap: 60px;
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 570px);
+      gap: 70px 80px;
+    }
+  }
 }
+
+.form__cat-info {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__result {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__comment {
+  margin: 0 0 23px;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__contacts {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__about {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 
 .form__description {
   @include main-text(14px, 16px, $color-title-text);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 16px, $color-title-text);
+    align-self: center;
+    text-align: left;
+  }
 }

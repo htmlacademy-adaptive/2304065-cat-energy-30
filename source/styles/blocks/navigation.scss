@@ -1,5 +1,5 @@
 .navigation {
-  background-color: transparent;
+  position: relative;
 }
 
 .navigation__toogle {
@@ -21,16 +21,62 @@
     opacity: 0.3;
     transition: background-color 0.2s linear;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__list {
-  background-color: transparent;
+  @include flexbox(center, center, column);
+  position: absolute;
+  top: 47px;
+  right: -21px;
+  z-index: 2;
+  width: 320px;
+  background-color: $color-title-text-white;
+
+  @media (min-width: $tablet-width) {
+    @include flexbox(flex-end, center, row);
+    position: static;
+    gap: 33px;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flexbox(flex-end, center, row);
+    position: static;
+    gap: 33px;
+    width: 580px;
+    background-color: transparent;
+  }
 }
 
 .navigation__item {
-  background-color: transparent;
+  @include flexbox(center, center);
 }
 
 .navigation__link {
   @include title;
+  display: inline-block;
+  padding: 21px 0 23px;
+
+  @media (min-width: $tablet-width) {
+    @include title (18px, 24px);
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include title (20px, normal, uppercase, $color-title-text-white);
+    padding: 0;
+  }
+
+  &--dark {
+    color: $color-special-dark-grey;
+  }
+
+  &--current {
+    background: transparent;
+  }
 }
+

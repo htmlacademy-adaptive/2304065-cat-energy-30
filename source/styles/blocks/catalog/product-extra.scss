@@ -2,31 +2,121 @@
   background-color: transparent;
 }
 
+.product-extra__wrapper {
+  width: $mobile-wrapper;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-wrapper;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 895px 245px;
+    column-gap: 80px;
+    width: $desktop-wrapper;
+    margin-bottom: 87px;
+  }
+}
+
 .product-extra__title {
   @include title(24px, 24px, none);
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    @include title(36px, 36px, none);
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .product-extra__list {
-  background-color: transparent;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin-bottom: 0;
+  }
 }
 
 .product-extra__item {
-  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  padding: 13px 0 19px;
+
+  .button {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 400px 140px 90px;
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px 80px 245px 80px 245px;
+    padding: 15px 0 17px;
+
+    .button {
+      grid-column: 5/6;
+    }
+  }
 }
 
 .product-extra__item-title {
-  @include title(16px, 16px, uppercase, $color-special-dark-grey-2);
+  @include title(16px, 16px, uppercase, $color-special-light-dark-grey);
+  grid-column: 1/-1;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, 20px, uppercase, $color-special-light-dark-grey);
+    grid-column: 1/2;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin: 0;
+    align-self: center;
+  }
 }
 
 .product-extra__description {
   @include main-text(14px, 14px);
+  margin-bottom: 15px;
   padding: 0;
-}
 
-.product-extra__description--parameter {
-  background-color: transparent;
-}
+  @media (min-width: $tablet-width) {
+    @include main-text(16px, 20px);
+  }
 
-.product-extra__description--value {
-  background-color: transparent;
+  &--parameter {
+    @media (min-width: $tablet-width) {
+      grid-column: 2/3;
+      justify-self: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 3/4;
+      justify-self: start;
+      align-self: center;
+    }
+  }
+
+  &--value {
+    justify-self: end;
+
+    @media (min-width: $desktop-width) {
+      grid-column: 4/5;
+      justify-self: start;
+      align-self: center;
+    }
+  }
 }
