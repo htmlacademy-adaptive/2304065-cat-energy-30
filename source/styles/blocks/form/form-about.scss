@@ -57,19 +57,19 @@
   }
 }
 
-.form-about__input--hidden {
-  &[type="checkbox"]:checked + .form-about__input--checkbox::before {
+.form-about__input--hidden[type="checkbox"] {
+  &:checked + .form-about__input--checkbox::before {
     @include mask-image(url("../../images/icons/stack.svg#form_icon-checkmark"), 26px 26px, $color-basic-green);
     content: "";
     width: 26px;
     height: 26px;
   }
 
-  &[type="checkbox"]:disabled ~ span {
+  &:disabled ~ span {
     opacity: 0.3;
   }
 
-  &[type="checkbox"]:checked:disabled ~ span {
+  &:checked:disabled ~ span {
     opacity: 0.3;
   }
 }

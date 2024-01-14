@@ -47,8 +47,8 @@
   }
 }
 
-.form-result__input--hidden {
-  &[type="radio"]:checked + .form-result__input--radio::before {
+.form-result__input--hidden[type="radio"] {
+  &:checked + .form-result__input--radio::before {
     content: "";
     position: absolute;
     width: 13px;
@@ -62,11 +62,11 @@
     }
   }
 
-  &[type="radio"]:disabled ~ span {
+  &:disabled ~ span {
     opacity: 0.3;
   }
 
-  &[type="radio"]:checked:disabled ~ span {
+  &:checked:disabled ~ span {
     opacity: 0.3;
   }
 }
