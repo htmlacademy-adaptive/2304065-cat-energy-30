@@ -70,6 +70,10 @@
     @include title (20px, normal, uppercase, $color-title-text-white);
     padding: 0;
   }
+
+  &--dark {
+    color: $color-special-dark-grey;
+  }
 }
 
 .navigation__link--current {
