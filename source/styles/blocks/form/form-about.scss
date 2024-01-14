@@ -2,10 +2,6 @@
   grid-column: 1/-1;
 }
 
-.form__about {
-  border: none;
-}
-
 .form-about__title {
   @include title(24px, 26px, none);
   margin-bottom: 40px;

@@ -13,11 +13,20 @@
 }
 
 .form__cat-info {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__result {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .form__comment {
-  margin-bottom: 23px;
+  margin: 0 0 23px;
+  padding: 0;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -30,6 +39,14 @@
 }
 
 .form__contacts {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__about {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 

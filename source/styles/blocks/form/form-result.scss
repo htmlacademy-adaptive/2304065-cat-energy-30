@@ -6,10 +6,6 @@
   }
 }
 
-.form__result {
-  border: none;
-}
-
 .form-result__list {
   @include flexbox(flex-start, normal, column);
   gap: 25px;
