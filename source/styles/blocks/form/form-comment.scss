@@ -29,7 +29,7 @@
 
 .form-comment__input {
   width: $mobile-wrapper;
-  height: 150px;
+  min-height: 150px;
   padding: 14px 14px 14px 15px;
   resize: none;
 
@@ -43,7 +43,7 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    height: 175px;
+    min-height: 175px;
     padding: 11px 20px;
   }
 
