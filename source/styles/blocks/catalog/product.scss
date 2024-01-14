@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include flexbox(start, center, column);
+    @include flexbox(flex-start, center, column);
     align-self: flex-end;
     padding: 50px 20px 40px;
 

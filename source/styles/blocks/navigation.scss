@@ -37,14 +37,14 @@
   background-color: $color-title-text-white;
 
   @media (min-width: $tablet-width) {
-    @include flexbox(end, center, row);
+    @include flexbox(flex-end, center, row);
     position: static;
     gap: 33px;
     width: 440px;
   }
 
   @media (min-width: $desktop-width) {
-    @include flexbox(end, center, row);
+    @include flexbox(flex-end, center, row);
     position: static;
     gap: 33px;
     width: 580px;

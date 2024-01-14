@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flexbox(start, center, column);
+    @include flexbox(flex-start, center, column);
     position: relative;
     grid-column: 2/3;
     padding: 59px 0 43px;
