@@ -1,14 +1,9 @@
 .form-cat-info {
-  @include list-reset();
   grid-column: 1/-1;
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
   }
-}
-
-.form__cat-info {
-  border: none;
 }
 
 .form-cat-info__list {
