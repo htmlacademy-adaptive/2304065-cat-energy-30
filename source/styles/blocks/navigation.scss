@@ -1,7 +1,7 @@
 .navigation {
   position: relative;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     &--closed {
       .navigation__list {
         display: none;
@@ -110,11 +110,12 @@
 
 .navigation__item {
   @include flexbox(center, center);
+  width: auto;
 }
 
 .navigation__link {
   @include title;
-  display: inline-block;
+  display: block;
   padding: 21px 0 23px;
 
   @media (min-width: $tablet-width) {
