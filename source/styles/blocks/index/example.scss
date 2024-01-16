@@ -69,11 +69,23 @@
 }
 
 .example__item {
-  background-color: transparent;
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 18px;
+    width: 87px;
+    height: 3px;
+    background-color: $color-ultra-light-grey;
+  }
 }
 
 .example__item-wrapper {
-  background-color: transparent;
+  position: relative;
 }
 
 .example__number {
@@ -87,6 +99,12 @@
 
 .example__number-description {
   @include main-text(12px, 12px);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 50%;
   margin: 0;
   text-align: center;
 
