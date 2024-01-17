@@ -1,13 +1,16 @@
 .slider {
-  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
 }
 
 .slider__wrapper-before {
-  background-color: transparent;
+  @include flexbox(flex-start, center);
+  overflow: hidden;
 }
 
 .slider__wrapper-after {
-  background-color: transparent;
+  @include flexbox(flex-end, center);
+  overflow: hidden;
 }
 
 .slider__img {
