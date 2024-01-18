@@ -86,7 +86,7 @@
     height: 3px;
     background-color: $color-ultra-light-grey;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
       background-color: $color-title-text-white;
     }
   }

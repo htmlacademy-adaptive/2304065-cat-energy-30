@@ -1,5 +1,5 @@
 .about-us {
-  background-color: transparent;
+  position: relative;
 }
 
 .about-us__wrapper {
@@ -17,8 +17,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include position(95px, 110px);
+    z-index: 1;
     width: 565px;
-    background-color: transparent;
+    background-color: $color-title-text-white;
   }
 }
 
