@@ -23,6 +23,7 @@
     display: grid;
     grid-template-columns: repeat(2, 570px);
     gap: 40px 80px;
+    margin-bottom: 71px;
   }
 }
 
@@ -257,7 +258,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 14px;
+      top: 18px;
       left: 133px;
       width: 12px;
       height: 2px;

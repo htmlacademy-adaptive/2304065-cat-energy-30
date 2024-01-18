@@ -167,6 +167,12 @@
         background-color: $color-basic-green;
       }
     }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        background-color: $color-title-text-white;
+      }
+    }
   }
 }
 
