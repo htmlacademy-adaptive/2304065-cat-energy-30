@@ -145,6 +145,16 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+    justify-self: start;
+    text-align: left;
+
+    br {
+      display: none;
+    }
+
+    .example__result-price {
+      margin-left: 63px;
+    }
   }
 }
 
