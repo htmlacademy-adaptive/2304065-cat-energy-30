@@ -176,7 +176,7 @@
   width: 227px;
   margin: 0 0 38px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width - 1px) {
     &::after {
       content: "";
       position: absolute;
@@ -243,7 +243,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 14px;
+      top: 18px;
       left: 133px;
       width: 12px;
       height: 2px;

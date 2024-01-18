@@ -1,7 +1,7 @@
 .navigation {
   position: relative;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width - 1px) {
     &--closed {
       .navigation__list {
         display: none;
@@ -112,7 +112,7 @@
   @include flexbox(center, center);
   position: relative;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width - 1px) {
     width: 320px;
 
     &::before {

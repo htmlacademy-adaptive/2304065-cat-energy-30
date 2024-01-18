@@ -18,6 +18,10 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+
+    &::before {
+      background-image: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -110,6 +114,7 @@
   @media (min-width: $tablet-width) {
     @include title(20px, 20px, uppercase, $color-title-text);
     grid-column: 2/-1;
+    width: fit-content;
     margin-bottom: 21px;
     text-align: left;
   }
