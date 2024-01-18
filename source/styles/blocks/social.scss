@@ -5,12 +5,14 @@
   width: $mobile-wrapper;
   padding: 20px 0;
 
-  &::before,
-  &::after {
-    content: "";
-    width: 280px;
-    height: 1px;
-    background-color: #d9d9d9;
+  @media (max-width: $tablet-width - 1px) {
+    &::before,
+    &::after {
+      content: "";
+      width: 280px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
   }
 
   @media (min-width: $tablet-width) {

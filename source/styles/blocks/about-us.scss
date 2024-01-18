@@ -41,6 +41,14 @@
 .about-us__description {
   margin: 0;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .about-us__map {
