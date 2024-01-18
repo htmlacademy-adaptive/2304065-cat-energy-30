@@ -38,6 +38,7 @@
 .instruction__list {
   @include flexbox(baseline, center, column);
   gap: 20px;
+  counter-reset: list;
 
   @media (min-width: $tablet-width) {
     @include flexbox(space-between, flex-start, row);
@@ -175,5 +176,15 @@
 
   @media (min-width: $tablet-width) {
     @include main-text(16px, 24px);
+
+    &::before {
+      @include title(280px, 280px, uppercase, #f2f2f2);
+      counter-increment: list;
+      content: counters(list,".");
+      position: absolute;
+      bottom: -57px;
+      right: 0;
+      z-index: -1;
+    }
   }
 }

@@ -133,6 +133,7 @@
 
   @media (min-width: $tablet-width) {
     @include title(20px, 20px);
+    justify-self: end;
     align-self: center;
     width: fit-content;
     text-align: right;
