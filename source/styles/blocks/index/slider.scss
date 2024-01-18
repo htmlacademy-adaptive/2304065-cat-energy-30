@@ -2,6 +2,12 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 140px);
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 280px);
+    grid-column: 1/-1;
+    justify-self: center;
+  }
 }
 
 .slider__wrapper-before {
@@ -35,8 +41,7 @@
   border: 2px solid $color-special-grey;
   border-radius: 50% ;
   cursor: pointer;
-  transition: background-color 0.2s linear;
-  transition: border 0.2s linear;
+  transition: background-color 0.2s linear, border 0.2s linear;
 
   &::before {
     @include position(50%, 50%);
@@ -45,6 +50,10 @@
     width: 4px;
     height: 256px;
     background-color: $color-special-grey;
+
+    @media (min-width: $tablet-width) {
+      height: 512px;
+    }
   }
 
   &::after {

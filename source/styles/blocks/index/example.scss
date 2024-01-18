@@ -1,5 +1,9 @@
 .example {
   background-color: $color-ultra-light-grey;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, $color-ultra-light-grey 462px, $color-title-text-white 462px);
+  }
 }
 
 .example__wrapper {
@@ -81,6 +85,10 @@
     width: 87px;
     height: 3px;
     background-color: $color-ultra-light-grey;
+
+    @media (min-width: $tablet-width) {
+      background-color: $color-title-text-white;
+    }
   }
 }
 
@@ -125,6 +133,5 @@
 }
 
 .example__slider {
-  grid-column: 2/3;
-  grid-row: 1/-1;
+  background-color: transparent;
 }

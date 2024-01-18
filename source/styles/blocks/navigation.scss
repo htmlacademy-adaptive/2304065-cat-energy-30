@@ -137,6 +137,7 @@
 
 .navigation__link {
   @include title;
+  position: relative;
   display: block;
   padding: 21px 0 23px;
 
@@ -155,7 +156,17 @@
   }
 
   &--current {
-    background: transparent;
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-basic-green;
+      }
+    }
   }
 }
 
