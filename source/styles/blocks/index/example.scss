@@ -127,6 +127,21 @@
   margin-bottom: 20px;
   text-align: center;
 
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include title(20px, 20px);
+    align-self: center;
+    width: fit-content;
+    text-align: right;
+
+    br {
+      display: block;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
   }
