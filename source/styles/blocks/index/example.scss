@@ -81,20 +81,6 @@
   position: relative;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: -2px;
-  //   left: 18px;
-  //   width: 87px;
-  //   height: 3px;
-  //   background-color: $color-ultra-light-grey;
-
-  //   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-  //     background-color: $color-title-text-white;
-  //   }
-  // }
 }
 
 .example__item-wrapper {
@@ -135,8 +121,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    bottom: -33px;
     width: fit-content;
-    padding: 0 4px;
+    padding: 0 14px;
     background-color: $color-ultra-light-grey;
 
     br {
