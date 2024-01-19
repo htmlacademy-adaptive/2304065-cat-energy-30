@@ -51,6 +51,10 @@
       margin-bottom: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .about-us__map {
