@@ -70,6 +70,11 @@
     grid-column: 1/2;
     gap: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 162px);
+    gap: 42px;
+  }
 }
 
 .example__item {
@@ -118,6 +123,10 @@
 
   @media (min-width: $tablet-width) {
     @include main-text(14px, 14px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
