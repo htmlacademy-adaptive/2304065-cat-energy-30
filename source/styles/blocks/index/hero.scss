@@ -1,12 +1,10 @@
 .hero {
   @include title(14px, 14px, none, $color-title-text-white);
   position: relative;
-  background-image: linear-gradient(to bottom, rgba($color-basic-green, 0.85) 302px, $color-title-text-white 302px);
 
   &::before {
-    @include position(0, 50%);
+    @include position();
     content: "";
-    transform: translateX(-50%);
     z-index: -1;
     width: 320px;
     height: 302px;
@@ -26,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     top: -126px;
-    background-image: linear-gradient(to right, rgba($color-title-text-white, 1) 50%, rgba($color-basic-green, 0.85) 50%);
+
 
     &::before {
       @include position(0, 75%);
@@ -42,11 +40,14 @@
   }
 }
 
+
 .hero__wrapper {
   position: relative;
-  margin-bottom: 20px;
+  width: $mobile-width;
+  margin: 0 0 20px;
   padding-top: 27px;
   text-align: center;
+  background-image: linear-gradient(to bottom, rgba($color-basic-green, 0.85) 302px, $color-title-text-white 302px);
 
   .button {
     margin: 0 auto;
@@ -75,6 +76,7 @@
     grid-template-rows: 224px auto auto auto 184px;
     margin: 0 auto;
     width: 1330px;
+    background-image: linear-gradient(to right, rgba($color-title-text-white, 1) 50%, rgba($color-basic-green, 0.85) 50%);
 
     .button {
       position: static;

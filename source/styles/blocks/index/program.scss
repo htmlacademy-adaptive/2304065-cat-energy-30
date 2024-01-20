@@ -1,9 +1,9 @@
 .program {
-  background-color: transparent;
+  width: inherit;
 }
 
 .program__wrapper {
-  width: 280px;
+  width: $mobile-wrapper;
   margin: 0 auto 20px;
 
   @media (min-width: $tablet-width) {
@@ -16,7 +16,7 @@
 }
 
 .program__list {
-  @include flexbox(baseline, baseline, column);
+  @include flexbox(flex-start, flex-start, column);
   gap: 20px;
 
   @media (min-width: $desktop-width) {

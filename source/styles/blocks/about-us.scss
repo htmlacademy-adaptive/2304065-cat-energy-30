@@ -1,5 +1,6 @@
 .about-us {
   position: relative;
+  width: $mobile-width;
 }
 
 .about-us__wrapper {
@@ -58,6 +59,5 @@
 }
 
 .about-us__map {
-  width: 100vw;
   height: 362px;
 }
