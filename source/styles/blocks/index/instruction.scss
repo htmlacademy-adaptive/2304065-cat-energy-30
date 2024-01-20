@@ -2,10 +2,12 @@
   position: relative;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    width: $tablet-width;
+
     &::after {
       content: "";
       display: block;
-      width: 100%;
+      width: $tablet-width;
       height: 1px;
       background-color: #e6e6e6;
     }
@@ -14,10 +16,10 @@
 
 .instruction__wrapper {
   margin: 0 auto 49px;
-  width: 280px;
+  width: $mobile-wrapper;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: $tablet-wrapper;
   }
 
   @media (min-width: $desktop-width) {
@@ -171,8 +173,10 @@
 }
 
 .instruction__description {
+  position: relative;
   width: 200px;
   margin: 0;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     @include main-text(16px, 24px);
@@ -180,7 +184,7 @@
     &::before {
       @include title(280px, 280px, uppercase, #f2f2f2);
       counter-increment: list;
-      content: counters(list,".");
+      content: counters(list, ".");
       position: absolute;
       bottom: -57px;
       right: 0;

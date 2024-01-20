@@ -1,9 +1,14 @@
 .example {
-  background-color: $color-ultra-light-grey;
   width: $mobile-width;
+  background-color: $color-ultra-light-grey;
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     background-image: linear-gradient(to top, $color-ultra-light-grey 462px, $color-title-text-white 462px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 

@@ -5,7 +5,6 @@
   &::before {
     @include position();
     content: "";
-    z-index: -1;
     width: 320px;
     height: 302px;
     background-image: url("../../images/index/index-background-mobile@1x.jpg");
@@ -15,21 +14,23 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: none;
-
     &::before {
       background-image: none;
     }
   }
 
   @media (min-width: $desktop-width) {
-    top: -126px;
-
+    top: -132px;
+    width: $desktop-width;
+    background-image: linear-gradient(to right, transparent 50%, rgba($color-basic-green, 0.85) 50%);
 
     &::before {
-      @include position(0, 75%);
       content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
       z-index: -1;
+      margin-left: auto;
       width: 720px;
       height: 694px;
       background-image: url("../../images/index/index-background-desktop@1x.png");
@@ -56,10 +57,11 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 90px 529px 90px;
+    grid-template-columns: 90px 528px 90px;
     margin: 0 auto;
     padding-top: 65px;
     width: 709px;
+    background-image: none;
 
     .button {
       position: absolute;
@@ -76,7 +78,7 @@
     grid-template-rows: 224px auto auto auto 184px;
     margin: 0 auto;
     width: 1330px;
-    background-image: linear-gradient(to right, rgba($color-title-text-white, 1) 50%, rgba($color-basic-green, 0.85) 50%);
+
 
     .button {
       position: static;
