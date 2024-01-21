@@ -38,7 +38,7 @@ async function initMap() {
     map.addChild(new YMapDefaultFeaturesLayer());
     map.addChild(new YMapMarker({coordinates: [30.323037, 59.938631]}, el));
     const parent = el.parentElement;
-    if (window.matchMedia("(min-width: 400px)").matches) {
+    if (window.matchMedia("(min-width: 768px)").matches) {
       parent.style.width = "113px";
     } else {
       parent.style.width = "57px";
