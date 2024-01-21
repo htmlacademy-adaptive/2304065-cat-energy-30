@@ -1,5 +1,19 @@
 .header {
   @include flexbox(space-between, center);
+  position: relative;
+
+  @media (max-width: $tablet-width - 1px) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: $mobile-width;
+      height: 1px;
+      padding: 0;
+      background-color: #d9d9d9;
+    }
+  }
 }
 
 .header__logo-link {
