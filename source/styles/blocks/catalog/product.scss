@@ -80,11 +80,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include flexbox(flex-start, center, column);
-    align-self: flex-end;
-    padding: 50px 20px 40px;
+    @include flexbox(flex-end, center, column);
+    padding: 0 20px 40px;
     background-color: transparent;
-    border: 2px solid $color-basic-grey;
+    outline: 2px solid $color-basic-grey;
 
     .button {
       width: 250px;
@@ -93,10 +92,9 @@
 
     &::before {
       @include mask-image(url("../../images/icons/stack.svg#catalog_icon-show-more"), 60px 60px, $color-light-grey);
+      @include position(50px, 50%);
       content: "";
-      position: relative;
-      display: block;
-      margin: 0 auto 50px;
+      transform: translateX(-50%);
       width: 60px;
       height: 60px;
     }
@@ -151,6 +149,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    grid-row: 2/3;
     width: 135px;
     margin-bottom: 23px;
   }
@@ -175,6 +174,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 82px;
+    margin-bottom: 44px;
   }
 }
