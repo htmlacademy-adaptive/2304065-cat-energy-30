@@ -46,7 +46,6 @@
   background-color: $color-special-grey;
   border: none;
   cursor: pointer;
-  // transition: background-color 0.2s linear;
 
   &::before {
     @include position(50%, 50%);
@@ -57,10 +56,6 @@
     background-color: $color-title-text-white;
     border: 2px solid $color-special-grey;
     border-radius: 50%;
-
-    // @media (min-width: $tablet-width) {
-    //   height: 512px;
-    // }
   }
 
   &::after {
@@ -92,4 +87,8 @@
     opacity: 0.6;
     transition: opacity 0.2s linear;
   }
+
+  @media (min-width: $tablet-width) {
+      height: 512px;
+    }
 }
