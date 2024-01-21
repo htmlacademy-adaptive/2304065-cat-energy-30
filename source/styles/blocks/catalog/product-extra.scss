@@ -47,12 +47,35 @@
 }
 
 .product-extra__item {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   padding: 13px 0 19px;
 
   .button {
     grid-column: 1/-1;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: $mobile-wrapper;
+      height: 1px;
+      padding: 0;
+      background-color: #cdcdcd;
+    }
+
+    &:first-child::before {
+      @include position();
+      content: "";
+      width: $mobile-wrapper;
+      height: 1px;
+      padding: 0;
+      background-color: #cdcdcd;
+    }
   }
 
   @media (min-width: $tablet-width) {
