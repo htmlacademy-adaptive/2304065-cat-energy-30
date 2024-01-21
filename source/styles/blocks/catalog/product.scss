@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 63px 80px;
+    gap: 142px 80px;
   }
 }
 
@@ -97,6 +97,12 @@
       transform: translateX(-50%);
       width: 60px;
       height: 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .button {
+      width: 169px;
     }
   }
 }
