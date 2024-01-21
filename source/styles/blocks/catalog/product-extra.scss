@@ -39,7 +39,8 @@
 
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
-    margin-bottom: 80px;
+    margin: 0 0 80px 40px;
+    box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,6 +96,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 400px 140px 90px;
     padding: 26px 38px 28px;
+    outline: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
