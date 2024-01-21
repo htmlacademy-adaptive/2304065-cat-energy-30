@@ -21,8 +21,6 @@
 
 .product-extra__title {
   @include title(24px, 24px, none);
-  display: flex;
-  gap: 20px;
   width: fit-content;
   margin-bottom: 36px;
   background-color: $color-title-text-white;
