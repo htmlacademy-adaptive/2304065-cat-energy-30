@@ -39,6 +39,18 @@
       height: 83px;
       margin: 0;
     }
+
+    &::after {
+      @include position();
+      content: "";
+      z-index: -1;
+      width: 707px;
+      height: 199px;
+      background-image: url("../../images/catalog/catalog-background-desktop@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
