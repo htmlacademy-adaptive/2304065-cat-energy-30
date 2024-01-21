@@ -40,25 +40,27 @@
 .slider__button {
   @include position(50%, 50%);
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  background-color: $color-title-text-white;
-  border: 2px solid $color-special-grey;
-  border-radius: 50% ;
+  padding: 0;
+  width: 4px;
+  height: 256px;
+  background-color: $color-special-grey;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.2s linear, border 0.2s linear;
+  // transition: background-color 0.2s linear;
 
   &::before {
     @include position(50%, 50%);
     transform: translate(-50%, -50%);
     content: "";
-    width: 4px;
-    height: 256px;
-    background-color: $color-special-grey;
+    width: 40px;
+    height: 40px;
+    background-color: $color-title-text-white;
+    border: 2px solid $color-special-grey;
+    border-radius: 50%;
 
-    @media (min-width: $tablet-width) {
-      height: 512px;
-    }
+    // @media (min-width: $tablet-width) {
+    //   height: 512px;
+    // }
   }
 
   &::after {
@@ -71,6 +73,11 @@
   }
 
   &:hover {
+    background-color: $color-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &:hover::before {
     border: 2px solid $color-basic-green;
     transition: border 0.2s linear;
   }
@@ -80,7 +87,7 @@
     transition: background-color 0.2s linear;
   }
 
-  &:active::after {
+  &:active {
     background-color: $color-basic-dark-green;
     opacity: 0.6;
     transition: opacity 0.2s linear;
