@@ -1,11 +1,26 @@
 .form-contacts {
+  position: relative;
   grid-column: 1/-1;
 }
 
 .form-contacts__title {
   @include title(24px, 26px, none);
+  width: 187px;
   margin-bottom: 35px;
   padding: 0;
+  background-color: $color-title-text-white;
+  box-shadow: 20px 0 $color-title-text-white, -20px 0 $color-title-text-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    z-index: -1;
+    width: $mobile-width;
+    height: 2px;
+    background-color: $color-basic-green;
+  }
 
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
