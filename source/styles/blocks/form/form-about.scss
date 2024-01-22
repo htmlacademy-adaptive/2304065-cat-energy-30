@@ -1,4 +1,5 @@
 .form-about {
+  position: relative;
   grid-column: 1/-1;
 }
 
@@ -6,10 +7,41 @@
   @include title(24px, 26px, none);
   margin-bottom: 40px;
   padding: 0;
+  background-color: $color-title-text-white;
+  box-shadow: 20px 0 $color-title-text-white, -20px 0 $color-title-text-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    z-index: -1;
+    width: $mobile-width;
+    height: 2px;
+    background-color: $color-basic-green;
+  }
 
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
+    width: fit-content;
     margin-bottom: 57px;
+    box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
+
+    &::before {
+      content: "";
+      left: -70px;
+      width: $tablet-width;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
+
+    &::before {
+      content: "";
+      left: -110px;
+      width: $desktop-width;
+    }
   }
 }
 

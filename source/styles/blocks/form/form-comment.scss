@@ -25,6 +25,23 @@
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
     margin-bottom: 87px;
+    box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
+
+    &::before {
+      content: "";
+      left: -70px;
+      width: $tablet-width;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
+
+    &::before {
+      content: "";
+      left: -110px;
+      width: $desktop-width;
+    }
   }
 }
 
