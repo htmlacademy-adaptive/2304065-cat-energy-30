@@ -1,10 +1,10 @@
 .form-contacts {
-  position: relative;
   grid-column: 1/-1;
 }
 
 .form-contacts__title {
   @include title(24px, 26px, none);
+  position: relative;
   width: 187px;
   margin-bottom: 35px;
   padding: 0;

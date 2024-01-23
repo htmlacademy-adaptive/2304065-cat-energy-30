@@ -1,9 +1,9 @@
 .form-about {
-  position: relative;
   grid-column: 1/-1;
 }
 
 .form-about__title {
+  position: relative;
   @include title(24px, 26px, none);
   margin-bottom: 40px;
   padding: 0;
