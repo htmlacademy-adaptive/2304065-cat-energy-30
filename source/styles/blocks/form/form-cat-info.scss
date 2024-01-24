@@ -1,5 +1,20 @@
 .form-cat-info {
+  position: relative;
   grid-column: 1/-1;
+  margin-bottom: 46px;
+
+  @media (max-width: $tablet-width - 1px) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: $mobile-width;
+      height: 1px;
+      padding: 0;
+      background-color: #d9d9d9;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
@@ -13,7 +28,6 @@
 
   @media (min-width: $tablet-width) {
     gap: 42px;
-    margin-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {

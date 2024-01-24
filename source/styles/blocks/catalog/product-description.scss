@@ -1,9 +1,23 @@
 .product-description {
-  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    border-spacing: 0 20px;
+  }
 }
 
 .product-description__row {
-  background-color: transparent;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 1px;
+      background-color: #cdcdcd;
+    }
+  }
 }
 
 .product-description__parameter {

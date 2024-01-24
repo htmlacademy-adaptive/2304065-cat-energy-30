@@ -28,7 +28,8 @@
         <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи.">
       </picture>
     </a>
-    <nav class="navigation">
+    <!-- navigation--opened и navigation--closed для переключения меню -->
+    <nav class="navigation navigation--opened navigation--nojs">
       <button class="navigation__toogle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -115,17 +116,17 @@
           <li class="example__item">
             <dl class="example__item-wrapper">
               <dt class="example__number">5 кг</dt>
-              <dd class="example__number-description">Снижение веса</dd>
+              <dd class="example__number-description">Снижение <br>веса</dd>
             </dl>
           </li>
           <li class="example__item">
             <dl class="example__item-wrapper">
               <dt class="example__number">60 дней</dt>
-              <dd class="example__number-description">Затрачено времени</dd>
+              <dd class="example__number-description">Затрачено <br>времени</dd>
             </dl>
           </li>
         </ul>
-        <p class="example__result">Затраты на питание: <span class="example__result-price">15 000 руб.</span></p>
+        <p class="example__result">Затраты на питание: <br><span class="example__result-price">15 000 руб.</span></p>
         <div class="example__slider slider">
           <div class="slider__wrapper-before">
             <picture>
@@ -155,15 +156,13 @@
     </section>
     <section class="about-us">
       <div class="about-us__wrapper">
-        <h2 class="about-us__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="about-us__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="about-us__address">
           <p class="about-us__description">ул. Большая Конюшенная, д. 19/8</p>
           <p class="about-us__description">Санкт-Петербург</p>
         </address>
       </div>
-      <div class="about-us__map">
-        <img src="#" width="320" height="362" alt="Карта города.">
-        <img class="about-us__map-point" src="#" width="113" height="106" alt="Указатель на адрес.">
+      <div class="about-us__map" id="map">
       </div>
     </section>
   </main>
@@ -192,6 +191,7 @@
       <p class="footer__logo-text">HTML Academy</p>
     </a>
   </footer>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=919a378b-0913-4cd0-b4aa-6cf70799b7b6&lang=ru_RU"></script>
 </body>
 
 </html>

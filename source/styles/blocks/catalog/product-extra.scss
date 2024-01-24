@@ -1,5 +1,5 @@
 .product-extra {
-  background-color: transparent;
+  position: relative;
 }
 
 .product-extra__wrapper {
@@ -21,11 +21,26 @@
 
 .product-extra__title {
   @include title(24px, 24px, none);
+  width: fit-content;
   margin-bottom: 36px;
+  background-color: $color-title-text-white;
+  box-shadow: 20px 0 $color-title-text-white, -20px 0 $color-title-text-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    background-color: $color-basic-green;
+  }
 
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
-    margin-bottom: 80px;
+    margin: 0 0 80px 40px;
+    box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +62,7 @@
 }
 
 .product-extra__item {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   padding: 13px 0 19px;
@@ -55,17 +71,61 @@
     grid-column: 1/-1;
   }
 
+  @media (max-width: $tablet-width - 1px) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: $mobile-wrapper;
+      height: 1px;
+      padding: 0;
+      background-color: #cdcdcd;
+    }
+
+    &:first-child::before {
+      @include position();
+      content: "";
+      width: $mobile-wrapper;
+      height: 1px;
+      padding: 0;
+      background-color: #cdcdcd;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 400px 140px 90px;
     padding: 26px 38px 28px;
+    outline: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 245px 80px 245px 80px 245px;
     padding: 15px 0 17px;
+    outline: none;
 
     .button {
       grid-column: 5/6;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 895px;
+      height: 1px;
+      padding: 0;
+      background-color: #cdcdcd;
+    }
+
+    &:first-child::before {
+      @include position();
+      content: "";
+      width: 895px;
+      height: 1px;
+      padding: 0;
+      background-color: #cdcdcd;
     }
   }
 }

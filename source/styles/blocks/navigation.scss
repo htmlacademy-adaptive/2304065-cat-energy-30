@@ -1,26 +1,82 @@
 .navigation {
   position: relative;
+
+  @media (max-width: $tablet-width - 1px) {
+    &--closed {
+      .navigation__list {
+        display: none;
+      }
+    }
+  }
+
+  &--closed .navigation__toogle::before {
+    @include position(4px);
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: $color-title-text;
+    box-shadow: 0 8px 0 0 $color-title-text, 0 16px 0 0 $color-title-text;
+  }
+
+  &--closed .navigation__toogle:hover::before,
+  &--closed .navigation__toogle:focus-visible::before {
+    background-color: $color-basic-green;
+    box-shadow: 0 8px 0 0 $color-basic-green, 0 16px 0 0 $color-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &--closed .navigation__toogle:active::before {
+    opacity: 0.3;
+    transition: opacity 0.2s linear;
+  }
+
+  &--opened .navigation__toogle::before,
+  &--opened .navigation__toogle::after {
+    content: "";
+    @include position(8px);
+    width: 24px;
+    height: 2px;
+    background-color: $color-title-text;
+  }
+
+  &--opened .navigation__toogle::before {
+    transform: rotate(45deg);
+  }
+
+  &--opened .navigation__toogle::after {
+    transform: rotate(-45deg);
+  }
+
+  &--opened .navigation__toogle:hover::before,
+  &--opened .navigation__toogle:hover::after {
+    background-color: $color-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &--opened .navigation__toogle:active::before,
+  &--opened .navigation__toogle:active::after {
+    opacity: 0.3;
+    transition: opacity 0.2s linear;
+  }
+
+  &--nojs {
+    .navigation__toogle {
+      display: none;
+    }
+
+    .navigation__list {
+      display: flex;
+    }
+  }
 }
 
 .navigation__toogle {
-  @include mask-image(url("../../images/icons/stack.svg#button-burger"), 24px 24px, $color-title-text);
   width: 24px;
   height: 24px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s linear;
-
-  &:hover,
-  &:focus-visible {
-    background-color: $color-basic-green;
-    transition: background-color 0.2s linear;
-  }
-
-  &:active {
-    background-color: $color-basic-green;
-    opacity: 0.3;
-    transition: background-color 0.2s linear;
-  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -54,11 +110,35 @@
 
 .navigation__item {
   @include flexbox(center, center);
+  position: relative;
+
+  @media (max-width: $tablet-width - 1px) {
+    width: 320px;
+
+    &::before {
+      @include position();
+      content: "";
+      width: 320px;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+
+    &:last-of-type::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 320px;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+  }
 }
 
 .navigation__link {
   @include title;
-  display: inline-block;
+  position: relative;
+  display: block;
   padding: 21px 0 23px;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +156,29 @@
   }
 
   &--current {
-    background: transparent;
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-title-text-white;
+      }
+    }
+  }
+
+  &--current-dark {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-basic-green;
+    }
   }
 }
 

@@ -1,13 +1,28 @@
 .slider {
-  background-color: transparent;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 280px);
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/-1;
+    grid-row: 1/5;
+  }
 }
 
 .slider__wrapper-before {
-  background-color: transparent;
+  @include flexbox(flex-start, center);
+  overflow: hidden;
 }
 
 .slider__wrapper-after {
-  background-color: transparent;
+  @include flexbox(flex-end, center);
+  overflow: hidden;
 }
 
 .slider__img {
@@ -23,23 +38,43 @@
 }
 
 .slider__button {
-  position: relative;
-  width: 40px;
+  @include position(50%, 50%);
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 4px;
   height: 256px;
-  background-color: transparent;
+  background-color: $color-special-grey;
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s linear;
+
+  &::before {
+    @include position(50%, 50%);
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: $color-title-text-white;
+    border: 2px solid $color-special-grey;
+    border-radius: 50%;
+  }
 
   &::after {
+    @include position(50%, 50%);
     @include mask-image(url("../../images/icons/stack.svg#index_icon-slider-button"), 24px 18px, $color-special-grey);
     content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     width: 24px;
     height: 18px;
+  }
+
+  &:hover {
+    background-color: $color-basic-green;
+    transition: background-color 0.2s linear;
+  }
+
+  &:hover::before {
+    border: 2px solid $color-basic-green;
+    transition: border 0.2s linear;
   }
 
   &:hover::after {
@@ -47,9 +82,13 @@
     transition: background-color 0.2s linear;
   }
 
-  &:active::after {
+  &:active {
     background-color: $color-basic-dark-green;
     opacity: 0.6;
     transition: opacity 0.2s linear;
   }
+
+  @media (min-width: $tablet-width) {
+      height: 512px;
+    }
 }

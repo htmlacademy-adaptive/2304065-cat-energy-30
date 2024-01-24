@@ -4,12 +4,44 @@
 
 .form-comment__title {
   @include title(24px, 26px, none);
+  position: relative;
+  width: fit-content;
   margin-bottom: 38px;
   padding: 0;
+  background-color: $color-title-text-white;
+  box-shadow: 20px 0 $color-title-text-white, -20px 0 $color-title-text-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    z-index: -1;
+    width: $mobile-width;
+    height: 2px;
+    background-color: $color-basic-green;
+  }
 
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
     margin-bottom: 87px;
+    box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
+
+    &::before {
+      content: "";
+      left: -70px;
+      width: $tablet-width;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
+
+    &::before {
+      content: "";
+      left: -110px;
+      width: $desktop-width;
+    }
   }
 }
 
@@ -17,10 +49,12 @@
   width: $mobile-wrapper;
   min-height: 150px;
   padding: 14px 14px 14px 15px;
+  color: $color-base-text;
   resize: none;
 
   &::placeholder {
     @include title(16px, 18px);
+    color: $color-base-text;
 
     @media (min-width: $tablet-width) {
       @include title(20px, 30px);

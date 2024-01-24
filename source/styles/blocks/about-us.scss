@@ -1,5 +1,18 @@
 .about-us {
-  background-color: transparent;
+  position: relative;
+  width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+
+  &--dark {
+    background-color: $color-basic-grey;
+  }
 }
 
 .about-us__wrapper {
@@ -17,8 +30,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include position(95px, 110px);
+    z-index: 1;
     width: 565px;
-    background-color: transparent;
+    background-color: $color-title-text-white;
   }
 }
 
@@ -41,12 +56,20 @@
 .about-us__description {
   margin: 0;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .about-us__map {
-  background-color: transparent;
-}
-
-.about-us__map-point {
-  background-color: transparent;
+  height: 362px;
 }

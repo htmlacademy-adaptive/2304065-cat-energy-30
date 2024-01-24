@@ -4,16 +4,16 @@
 
 .catalog__wrapper {
   width: $mobile-width;
-  margin: 0 auto;
+  margin: 0 auto 26px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-wrapper;
-    margin: 0 auto;
+    margin: 0 auto 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper;
-    margin: 0 auto;
+    margin: 0 auto 76px;
   }
 }
 
@@ -26,12 +26,12 @@
   @media (min-width: $tablet-width) {
     @include title(60px, 60px, none);
     width: $tablet-wrapper;
-    margin: 0 auto 84px;
+    margin: 0 auto 165px;
     padding: 65px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper;
-    margin: 0 auto 84px;
+    margin: 0 auto 165px;
   }
 }
