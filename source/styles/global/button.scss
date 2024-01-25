@@ -2,9 +2,15 @@
   @include button;
   display: block;
   padding: 10px 0;
+  transition: background-color 0.2s linear;
 
   &--primary {
     color: $color-title-text-white;
     background-color: $color-basic-green;
+
+    &:hover {
+      background-color: $color-basic-dark-green;
+      transition: background-color 0.2s linear;
+    }
   }
 }
