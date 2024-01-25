@@ -40,6 +40,11 @@
     transition: background-color 0.2s linear;
   }
 
+  &:focus-visible {
+    background-color: $color-basic-green;
+    transition: outline 0.2s linear;
+  }
+
   &:active {
     opacity: 0.3;
     transition: opacity 0.2s linear;

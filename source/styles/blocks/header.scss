@@ -12,6 +12,11 @@
     transition: opacity 0.2s linear;
   }
 
+  &:focus-visible {
+    opacity: 0.8;
+    transition: opacity 0.2s linear;
+  }
+
   &:active {
     opacity: 0.6;
     transition: opacity 0.2s linear;

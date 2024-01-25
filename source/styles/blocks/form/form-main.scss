@@ -9,6 +9,12 @@
   .button {
     width: 100%;
     margin-bottom: 21px;
+    transition: color 0.2s linear;
+
+    &:active {
+      color: rgba($color-title-text-white, 0.3);
+      transition: color 0.2s linear;
+    }
   }
 
   @media (min-width: $tablet-width) {

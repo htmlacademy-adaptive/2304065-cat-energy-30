@@ -21,9 +21,16 @@
 
 .footer__logo-link-icon {
   transition: opacity 0.2s linear;
+  width: fit-content;
 
   &:hover {
     opacity: 0.8;
+    transition: opacity 0.2s linear;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+    outline: none;
     transition: opacity 0.2s linear;
   }
 
@@ -38,6 +45,15 @@
   width: $mobile-wrapper;
   text-decoration: none;
   transition: opacity 0.2s linear;
+
+  &:focus-visible {
+    outline: none;
+
+    .footer__logo-text::after {
+      background-color: $color-basic-green;
+      transition: background-color 0.2s linear;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 168px;
