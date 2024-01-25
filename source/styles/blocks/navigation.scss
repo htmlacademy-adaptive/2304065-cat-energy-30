@@ -140,6 +140,17 @@
   position: relative;
   display: block;
   padding: 21px 0 23px;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.2s linear;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.2s linear;
+  }
 
   @media (min-width: $tablet-width) {
     @include title (18px, 24px);
