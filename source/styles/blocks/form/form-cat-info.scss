@@ -52,4 +52,13 @@
 
 .form-cat-info__input {
   width: 100%;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
 }
