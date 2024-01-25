@@ -44,6 +44,7 @@
 
 .form-result__label {
   @include flexbox(normal, center);
+  cursor: pointer;
 
   &:hover .form-result__input {
     border: 1px solid #bababa;
@@ -71,10 +72,11 @@
 
 .form-result__input--hidden[type="radio"] {
   &:checked + .form-result__input--radio::before {
+    @include position(50%, 50%);
     content: "";
-    position: absolute;
-    width: 13px;
-    height: 13px;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
     background-color: $color-basic-green;
     border-radius: 50%;
 
@@ -82,6 +84,11 @@
       width: 20px;
       height: 20px;
     }
+  }
+
+  &:focus-visible + .form-result__input--radio {
+    outline: 1px solid $color-title-text;
+    outline-offset: 2px;
   }
 
   &:disabled ~ span {
