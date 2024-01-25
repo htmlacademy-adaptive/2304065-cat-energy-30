@@ -18,4 +18,14 @@
       transition: color 0.2s linear;
     }
   }
+
+  &--secondary {
+    background-color: $color-basic-grey;
+
+    &:hover,
+    &:active {
+      background-color: #ebebeb;
+      transition: background-color 0.2s linear;
+    }
+  }
 }
