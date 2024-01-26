@@ -33,8 +33,7 @@
   &--opened .navigation__toogle::before,
   &--opened .navigation__toogle::after {
     content: "";
-    @include position(50%);
-    transform: translateY(-50%);
+    @include position(7px, 4px);
     width: 24px;
     height: 2px;
     background-color: $color-title-text;
@@ -87,7 +86,7 @@
 .navigation__list {
   @include flexbox(center, center, column);
   position: absolute;
-  top: 47px;
+  top: 43px;
   right: -21px;
   z-index: 2;
   width: 320px;
@@ -140,7 +139,7 @@
   @include title;
   position: relative;
   display: block;
-  padding: 21px 0 23px;
+  padding: 23px 0;
   transition: opacity 0.2s linear;
 
   &:hover {
