@@ -1,14 +1,25 @@
 .social {
   @include flexbox(center, center);
+  position: relative;
   gap: 24px;
   flex-wrap: wrap;
   width: $mobile-wrapper;
-  padding: 20px 0;
+  padding: 9px 0;
 
   @media (max-width: $tablet-width - 1px) {
-    &::before,
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      width: 280px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+
     &::after {
       content: "";
+      position: absolute;
+      bottom: -8px;
       width: 280px;
       height: 1px;
       background-color: #d9d9d9;

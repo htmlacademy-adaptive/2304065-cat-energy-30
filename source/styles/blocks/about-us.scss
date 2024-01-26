@@ -58,6 +58,10 @@
   font-style: normal;
   line-height: 21px;
 
+  &:first-of-type {
+    margin-bottom: -2px;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: right;
 
