@@ -10,7 +10,7 @@
   }
 
   &--closed .navigation__toogle::before {
-    @include position(4px);
+    @include position(1px);
     content: "";
     width: 24px;
     height: 2px;

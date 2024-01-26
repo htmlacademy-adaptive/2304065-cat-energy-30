@@ -29,7 +29,7 @@
 
 .instruction__title {
   @include title(36px, 40px, none);
-  margin-bottom: 49px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     @include title(60px, 60px, none);

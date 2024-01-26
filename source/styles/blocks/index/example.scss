@@ -15,7 +15,7 @@
 .example__wrapper {
   width: $mobile-wrapper;
   margin: 0 auto;
-  padding: 25px 0 40px;
+  padding: 25px 0 36px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -70,7 +70,7 @@
   display: grid;
   grid-template-columns: repeat(2, 124px);
   gap: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 162px);
@@ -105,7 +105,7 @@
 .example__number-description {
   @include main-text(12px, 12px);
   position: absolute;
-  bottom: -30px;
+  bottom: -33px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
