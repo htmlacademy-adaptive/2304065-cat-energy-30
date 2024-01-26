@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,6 +19,10 @@
 .program__list {
   @include flexbox(flex-start, flex-start, column);
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 29px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -34,7 +39,7 @@
   background-color: $color-basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 63px 57px 52px;
+    padding: 77px 63px 54px 52px;
     width: 708px;
   }
 
