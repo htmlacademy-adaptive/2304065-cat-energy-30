@@ -30,7 +30,6 @@
 
   &:focus-visible {
     opacity: 0.8;
-    outline: none;
     transition: opacity 0.2s linear;
   }
 
@@ -47,8 +46,6 @@
   transition: opacity 0.2s linear;
 
   &:focus-visible {
-    outline: none;
-
     .footer__logo-text::after {
       background-color: $color-basic-green;
       transition: background-color 0.2s linear;
