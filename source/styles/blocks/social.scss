@@ -52,6 +52,7 @@
   }
 
   &:focus-visible {
+    position: relative;
     background-color: $color-basic-green;
     transition: outline 0.2s linear;
   }

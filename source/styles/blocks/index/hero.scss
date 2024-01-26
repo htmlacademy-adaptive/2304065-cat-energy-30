@@ -59,16 +59,18 @@
     display: grid;
     grid-template-columns: 90px 528px 90px;
     margin: 0 auto;
-    padding-top: 65px;
+    padding-top: 51px;
     width: 709px;
     background-image: none;
 
     .button {
+      @include title(20px, 26px, uppercase, $color-title-text-white);
       position: absolute;
-      top: 295px;
+      top: 281px;
       left: 0;
       grid-column: 2/-1;
       width: 244px;
+      padding: 14px 0;
     }
   }
 
@@ -92,6 +94,10 @@
 
 .hero__wrapper-img {
   margin: 0 auto 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
