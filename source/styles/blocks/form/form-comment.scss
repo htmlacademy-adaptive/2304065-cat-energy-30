@@ -29,6 +29,7 @@
 
     &::before {
       content: "";
+      top: 21px;
       left: -70px;
       width: $tablet-width;
     }

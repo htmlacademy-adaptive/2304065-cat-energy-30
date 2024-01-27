@@ -24,11 +24,12 @@
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
     width: fit-content;
-    margin-bottom: 57px;
+    margin-bottom: 61px;
     box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
 
     &::before {
       content: "";
+      top: 21px;
       left: -70px;
       width: $tablet-width;
     }
