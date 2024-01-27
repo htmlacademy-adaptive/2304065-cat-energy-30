@@ -32,7 +32,7 @@
       z-index: -1;
       margin-left: auto;
       width: 720px;
-      height: 694px;
+      height: 100%;
       background-image: url("../../images/index/index-background-desktop@1x.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -76,8 +76,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 80px 530px 720px;
-    grid-template-rows: 224px auto auto auto 184px;
+    grid-template-columns: 134px 530px 720px;
+    grid-template-rows: 176px auto auto auto 184px;
     margin: 0 auto;
     width: 1330px;
 
@@ -101,8 +101,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 143px;
-    left: 467px;
+    top: 147px;
+    left: 501px;
   }
 }
 

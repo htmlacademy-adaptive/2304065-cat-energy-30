@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-top: -49px;
   }
 }
 
@@ -75,6 +76,7 @@
 
   @media (min-width: $desktop-width) {
     @include title(36px, 36px);
+    width: fit-content;
     margin-bottom: 39px;
 
     &::before {
@@ -202,7 +204,8 @@
 
   @media (min-width: $desktop-width) {
     @include main-text(16px, 24px, $color-title-text);
-    margin-bottom: 27px;
+    width: fit-content;
+    margin-bottom: 23px;
   }
 }
 
@@ -264,6 +267,7 @@
 
   @media (min-width: $desktop-width) {
     @include title(20px, normal);
+    margin-bottom: -4px;
 
     &::before {
       content: "";
