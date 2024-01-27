@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     width: $tablet-wrapper;
-    padding: 61px 40px;
+    padding: 60px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +50,7 @@
   @media (min-width: $tablet-width) {
     @include main-text(16px, 20px);
     width: 160px;
+    margin-top: -2px;
   }
 }
 
@@ -77,4 +78,8 @@
 
 .about-us__map {
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 399px;
+  }
 }

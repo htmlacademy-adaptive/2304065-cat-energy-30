@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(3, 226px);
     gap: 15px;
-    padding: 55px 30px;
+    padding: 58px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +53,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 162px;
     margin-left: auto;
   }
 }

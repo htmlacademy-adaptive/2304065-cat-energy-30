@@ -20,6 +20,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-wrapper;
+    margin: 0 auto 103px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,8 +44,9 @@
   counter-reset: list;
 
   @media (min-width: $tablet-width) {
-    @include flexbox(space-between, flex-start, row);
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 247px auto;
+    gap: 134px 137px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +67,6 @@
 
   @media (min-width: $tablet-width) {
     @include flexbox(flex-start, flex-start, column);
-    margin-bottom: 134px;
 
     &::before {
       @include decorative-backing(80px, 80px, 0);
@@ -151,6 +152,18 @@
 }
 
 .instruction__item--changes {
+  & .instruction__description {
+    br {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      br {
+        display: inline;
+      }
+    }
+  }
+
   &::after {
     @include flexbox(center, center);
     @include mask-image(url("../../images/icons/stack.svg#index_icon-changes"), 26px 31px, $color-title-text-white);
