@@ -247,12 +247,16 @@
   @media (min-width: $tablet-width) {
     @include title(20px, normal);
 
+    &::after {
+      margin-left: 26px;
+    }
+
     &::before {
       content: "";
       position: absolute;
       top: 18px;
-      left: 133px;
-      width: 12px;
+      left: 128px;
+      width: 15px;
       height: 2px;
       background-color: #000000;
     }
