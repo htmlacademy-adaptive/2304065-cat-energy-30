@@ -1,7 +1,6 @@
 .form-result {
   position: relative;
   grid-column: 1/-1;
-  margin-bottom: 51px;
 
   @media (max-width: $tablet-width - 1px) {
     &::after {
@@ -24,7 +23,7 @@
 .form-result__list {
   @include flexbox(flex-start, normal, column);
   gap: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     gap: 23px;

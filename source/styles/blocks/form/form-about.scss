@@ -48,7 +48,7 @@
 .form-about__list {
   @include flexbox(normal, normal, column);
   gap: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     display: grid;
