@@ -25,6 +25,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper;
+    margin: 0 auto -44px;
   }
 }
 
@@ -50,8 +51,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4, min-content);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
@@ -127,6 +130,10 @@
       height: 80px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+  }
 }
 
 .instruction__item--replacement {
@@ -148,6 +155,10 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
   }
 }
 
@@ -182,6 +193,10 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -3px;
   }
 }
 

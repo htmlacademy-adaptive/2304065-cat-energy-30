@@ -28,8 +28,9 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 570px);
-    column-gap: 80px;
+    column-gap: 86px;
     width: $desktop-wrapper;
+    padding: 11px 0 101px;
   }
 }
 
@@ -46,6 +47,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     margin-bottom: 146px;
+    padding-top: 33px;
   }
 }
 
@@ -185,5 +187,7 @@
 }
 
 .example__slider {
-  background-color: transparent;
+  @media (min-width: $desktop-width) {
+    margin-top: -29px;
+  }
 }
