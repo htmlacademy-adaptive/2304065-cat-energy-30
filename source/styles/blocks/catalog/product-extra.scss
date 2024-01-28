@@ -4,7 +4,7 @@
 
 .product-extra__wrapper {
   width: $mobile-wrapper;
-  margin: 0 auto;
+  margin: 0 auto 34px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-wrapper;
