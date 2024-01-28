@@ -7,7 +7,7 @@
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: repeat(2, 570px);
-      gap: 70px 80px;
+      column-gap: 80px;
     }
   }
 }
@@ -19,6 +19,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px;
   }
 }
 
@@ -46,6 +50,10 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .form__about {

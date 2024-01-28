@@ -80,6 +80,10 @@
     @include title(20px, normal, uppercase, $color-base-text);
     width: $tablet-wrapper;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .form-contacts__input {
@@ -117,6 +121,10 @@
     @media (min-width: $tablet-width) {
       width: 552px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 494px;
+    }
   }
 
   &--phone {
@@ -124,6 +132,10 @@
 
     @media (min-width: $tablet-width) {
       width: 530px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 472px;
     }
   }
 }
@@ -140,6 +152,10 @@
 
   @media (min-width: $tablet-width) {
     right: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
   }
 
   &--email {
