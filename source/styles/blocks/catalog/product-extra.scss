@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-wrapper;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,8 +40,12 @@
 
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
-    margin: 0 0 80px 40px;
+    margin: 0 0 78px 40px;
     box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
+
+    &::before {
+      top: 22px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -52,7 +57,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,7 +101,11 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 400px 140px 90px;
     padding: 26px 38px 28px;
-    outline: 1px solid #cdcdcd;
+    border: 1px solid #cdcdcd;
+
+    &:not(:last-of-type) {
+      margin-bottom: -1px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -155,6 +164,7 @@
 
   @media (min-width: $tablet-width) {
     @include main-text(16px, 20px);
+    padding-top: 3px;
   }
 
   &--parameter {

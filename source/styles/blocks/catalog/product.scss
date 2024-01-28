@@ -85,7 +85,7 @@
 
   @media (min-width: $tablet-width) {
     @include flexbox(flex-end, center, column);
-    padding: 0 20px 40px;
+    padding: 43px 20px 40px;
     background-color: transparent;
     outline: 2px solid $color-basic-grey;
 
@@ -96,11 +96,10 @@
 
     &::before {
       @include mask-image(url("../../images/icons/stack.svg#catalog_icon-show-more"), 60px 60px, $color-light-grey);
-      @include position(50px, 50%);
       content: "";
-      transform: translateX(-50%);
       width: 60px;
       height: 60px;
+      margin-bottom: 50px;
     }
   }
 
@@ -174,7 +173,7 @@
     grid-column: 1/-1;
     grid-row: 3/4;
     width: auto;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 }
 
@@ -184,6 +183,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 78px;
   }
 }

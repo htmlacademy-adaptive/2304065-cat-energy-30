@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     @include flexbox(space-between, center);
-    padding: 55px 125px 60px 77px;
+    padding: 55px 125px 63px 77px;
 
     &::before {
       @include mask-image(url("../../images/icons/stack.svg#catalog_icon-gift"), 78px 80px, $color-title-text-white);
@@ -92,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 10px 0 0 4px;
     text-align: left;
   }
 
