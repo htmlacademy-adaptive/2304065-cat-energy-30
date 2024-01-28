@@ -74,6 +74,10 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+
+    &:first-of-type {
+      margin-bottom: 15px;
+    }
   }
 }
 

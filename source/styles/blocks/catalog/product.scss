@@ -57,7 +57,7 @@
     display: grid;
     grid-template-rows: 161px auto;
     grid-template-columns: auto;
-    padding: 0 37px 40px;
+    padding: 0 37px 30px;
     background-color: $color-basic-grey;
 
     .button {
@@ -66,8 +66,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-rows: 142px auto;
     grid-template-columns: 169px;
     padding: 10px 38px 40px;
+
+    .button {
+      margin-top: 22px;
+    }
   }
 }
 
@@ -104,8 +109,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 47px;
+
     .button {
       width: 169px;
+    }
+
+    &::before {
+      margin-bottom: 42px;
     }
   }
 }
@@ -120,6 +131,10 @@
     transform: translateX(-50%);
     width: 200px;
     height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -79px;
   }
 }
 
@@ -147,6 +162,10 @@
     width: 150px;
     margin-bottom: 19px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -184,5 +203,9 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
   }
 }

@@ -3,6 +3,10 @@
     display: grid;
     row-gap: 13px;
   }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 12px;
+  }
 }
 
 .product-description__row {
@@ -22,6 +26,10 @@
       height: 1px;
       background-color: #cdcdcd;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 85px);
   }
 }
 

@@ -50,6 +50,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
+    margin-left: 0;
   }
 }
 
@@ -111,7 +112,8 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 245px 80px 245px 80px 245px;
     padding: 15px 0 17px;
-    outline: none;
+    border-right: none;
+    border-left: none;
 
     .button {
       grid-column: 5/6;

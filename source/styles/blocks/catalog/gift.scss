@@ -67,7 +67,7 @@
       width: 80px;
       height: 83px;
       margin: 0 auto;
-      margin-bottom: 46px;
+      margin-bottom: 36px;
     }
 
     &::after {
@@ -75,7 +75,7 @@
       content: "";
       z-index: -1;
       width: 245px;
-      height: 288px;
+      height: 100%;
       background-image: url("../../images/catalog/catalog-background-desktop@1x.png");
       background-position: center;
       background-repeat: no-repeat;
