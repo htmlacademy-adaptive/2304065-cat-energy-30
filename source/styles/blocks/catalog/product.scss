@@ -145,8 +145,8 @@
 
   @media (min-width: $tablet-width) {
     @include title(20px, 24px, uppercase, $color-special-light-dark-grey);
-    width: 100px;
-    margin-bottom: 0;
+    width: 150px;
+    margin-bottom: 19px;
     text-align: center;
   }
 }
@@ -167,7 +167,7 @@
 
 .product__description {
   @include main-text(12px, 16px);
-  border-collapse: collapse;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     @include main-text(16px, 20px);

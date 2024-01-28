@@ -6,6 +6,8 @@
 
 .product-description__row {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 70px);
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -21,9 +23,10 @@
 }
 
 .product-description__parameter {
-  background-color: transparent;
+  margin: 0;
 }
 
 .product-description__value {
+  margin: 0;
   text-align: right;
 }
