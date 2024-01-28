@@ -36,6 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 77px;
     box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
 
     &::before {
@@ -59,6 +60,7 @@
 
     @media (min-width: $tablet-width) {
       @include title(20px, 30px);
+      color: $color-base-text;
     }
   }
 
@@ -70,6 +72,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper;
+    padding: 9px 20px;
   }
 }
 
