@@ -25,18 +25,6 @@
   overflow: hidden;
 }
 
-.slider__img {
-  background-color: transparent;
-}
-
-.slider__img--before {
-  background-color: transparent;
-}
-
-.slider__img--after {
-  background-color: transparent;
-}
-
 .slider__button {
   @include position(50%, 50%);
   transform: translate(-50%, -50%);

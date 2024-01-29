@@ -37,10 +37,6 @@
   }
 }
 
-.form-result__item {
-  background-color: transparent;
-}
-
 .form-result__label {
   @include flexbox(normal, center);
   cursor: pointer;

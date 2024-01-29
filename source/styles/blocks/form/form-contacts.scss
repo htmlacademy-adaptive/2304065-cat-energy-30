@@ -65,10 +65,6 @@
   }
 }
 
-.form-contacts__item {
-  background-color: transparent;
-}
-
 .form-contacts__label {
   @include title(16px, 18px, uppercase, $color-base-text);
   position: relative;
