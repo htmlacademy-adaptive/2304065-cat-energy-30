@@ -36,6 +36,14 @@
   }
 }
 
+.social__item {
+  &:focus-within {
+    outline: 2px solid $color-title-text;
+    border-radius: 2px;
+    outline-offset: 2px;
+  }
+}
+
 .social__link {
   display: block;
   width: 28px;
@@ -50,7 +58,6 @@
   &:focus-visible {
     position: relative;
     background-color: $color-basic-green;
-    transition: outline 0.2s linear;
   }
 
   &:active {
