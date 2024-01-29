@@ -21,13 +21,13 @@ async function initMap() {
   const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker} = ymaps3;
 
   const map = new YMap(
-      document.getElementById('map'),
-      {
-          location: {
-              center: [30.323037, 59.938631],
-              zoom: 16
-          }
+    document.getElementById('map'),
+    {
+      location: {
+        center: [30.323037, 59.938631],
+        zoom: 16
       }
+    }
   );
 
   const el = document.createElement('img');
