@@ -7,7 +7,13 @@
     content: "";
     width: 320px;
     height: 302px;
-    background-image: url("../../images/index/index-background-mobile@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/index/index-background-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/index/index-background-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/index/index-background-mobile@1x.jpg") type("image/jpg") 1x,
+        url("../../images/index/index-background-mobile@2x.jpg") type("image/jpg") 2x
+      );
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -33,7 +39,13 @@
       margin-left: auto;
       width: 720px;
       height: 100%;
-      background-image: url("../../images/index/index-background-desktop@1x.jpg");
+      background-image:
+        image-set(
+          url("../../images/index/index-background-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/index/index-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/index/index-background-desktop@1x.jpg") type("image/jpg") 1x,
+          url("../../images/index/index-background-desktop@2x.jpg") type("image/jpg") 2x
+        );
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
