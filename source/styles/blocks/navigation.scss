@@ -10,6 +10,10 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+
   &--closed .navigation__toogle::before {
     @include position(9px);
     content: "";
