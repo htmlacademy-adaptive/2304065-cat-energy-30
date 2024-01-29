@@ -1,5 +1,5 @@
-let navMain = document.querySelector('.navigation');
-let navToggle = document.querySelector('.navigation__toogle');
+const navMain = document.querySelector('.navigation');
+const navToggle = document.querySelector('.navigation__toogle');
 
 navMain.classList.remove('navigation--nojs');
 
@@ -31,16 +31,16 @@ async function initMap() {
   );
 
   const el = document.createElement('img');
-    el.className = "my-marker";
-    el.src = "../images/icons/map-pin.svg";
+  el.className = "my-marker";
+  el.src = "../images/icons/map-pin.svg";
 
-    map.addChild((scheme = new YMapDefaultSchemeLayer()));
-    map.addChild(new YMapDefaultFeaturesLayer());
-    map.addChild(new YMapMarker({coordinates: [30.323037, 59.938631]}, el));
-    const parent = el.parentElement;
-    if (window.matchMedia("(min-width: 768px)").matches) {
-      parent.style.width = "113px";
-    } else {
-      parent.style.width = "57px";
-    }
+  map.addChild((scheme = new YMapDefaultSchemeLayer()));
+  map.addChild(new YMapDefaultFeaturesLayer());
+  map.addChild(new YMapMarker({coordinates: [30.323037, 59.938631]}, el));
+  const parent = el.parentElement;
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    parent.style.width = "113px";
+  } else {
+    parent.style.width = "57px";
+  }
 }
