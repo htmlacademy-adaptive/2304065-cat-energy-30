@@ -31,8 +31,8 @@ async function initMap() {
   );
 
   const el = document.createElement('img');
-  el.className = "my-marker";
-  el.src = "../images/icons/map-pin.svg";
+  el.className = 'my-marker';
+  el.src = '../images/icons/map-pin.svg';
 
   map.addChild((scheme = new YMapDefaultSchemeLayer()));
   map.addChild(new YMapDefaultFeaturesLayer());
