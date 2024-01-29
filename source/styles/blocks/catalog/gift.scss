@@ -20,7 +20,13 @@
     z-index: -1;
     width: 280px;
     height: 100%;
-    background-image: url("../../images/catalog/catalog-background-desktop@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/catalog/catalog-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/catalog/catalog-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/catalog/catalog-background-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/catalog/catalog-background-desktop@2x.jpg") type("image/jpg") 2x
+      );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +52,13 @@
       z-index: -1;
       width: 707px;
       height: 100%;
-      background-image: url("../../images/catalog/catalog-background-tablet@1x.jpg");
+      background-image:
+        image-set(
+          url("../../images/catalog/catalog-background-tablet@1x.webp") type("image/webp") 1x,
+          url("../../images/catalog/catalog-background-tablet@2x.webp") type("image/webp") 2x,
+          url("../../images/catalog/catalog-background-tablet@1x.jpg") type("image/jpg") 1x,
+          url("../../images/catalog/catalog-background-tablet@2x.jpg") type("image/jpg") 2x
+        );
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
