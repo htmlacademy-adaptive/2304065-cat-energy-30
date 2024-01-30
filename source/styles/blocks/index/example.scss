@@ -15,7 +15,7 @@
 .example__wrapper {
   width: $mobile-wrapper;
   margin: 0 auto;
-  padding: 25px 0 40px;
+  padding: 25px 0 36px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -28,8 +28,9 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 570px);
-    column-gap: 80px;
+    column-gap: 86px;
     width: $desktop-wrapper;
+    padding: 11px 0 72px;
   }
 }
 
@@ -46,6 +47,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     margin-bottom: 146px;
+    padding-top: 33px;
   }
 }
 
@@ -53,16 +55,28 @@
   @include main-text(14px, 18px);
   margin: 0 0 20px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     @include main-text(16px, 24px);
     grid-column: 1/-1;
     margin-bottom: 55px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     width: 435px;
     margin-bottom: 69px;
+
+    br {
+      display: inline;
+    }
   }
 }
 
@@ -70,16 +84,18 @@
   display: grid;
   grid-template-columns: repeat(2, 124px);
   gap: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 162px);
     grid-column: 1/2;
     gap: 43px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 42px;
+    margin-bottom: 47px;
   }
 }
 
@@ -87,6 +103,10 @@
   position: relative;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
+
+  @media (min-height: $tablet-width) {
+    min-height: 72px;
+  }
 }
 
 .example__item-wrapper {
@@ -105,7 +125,7 @@
 .example__number-description {
   @include main-text(12px, 12px);
   position: absolute;
-  bottom: -30px;
+  bottom: -33px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -113,11 +133,12 @@
   margin: 0;
   padding: 0 15px;
   text-align: center;
+  text-transform: lowercase;
   background-color: $color-ultra-light-grey;
 
   @media (min-width: $tablet-width) {
     @include main-text(14px, 14px);
-    bottom: -21px;
+    bottom: -25px;
     padding: 0 8px;
     background-color: $color-title-text-white;
 
@@ -127,8 +148,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: -33px;
-    width: fit-content;
+    bottom: -25px;
+    width: max-content;
     padding: 0 14px;
     background-color: $color-ultra-light-grey;
 
@@ -151,8 +172,10 @@
   @media (min-width: $tablet-width) {
     @include title(20px, 20px);
     justify-self: end;
-    align-self: center;
+    align-self: flex-start;
     width: fit-content;
+    padding-top: 8px;
+    line-height: 28px;
     text-align: right;
 
     br {
@@ -170,11 +193,14 @@
     }
 
     .example__result-price {
+      display: inline-block;
       margin-left: 63px;
     }
   }
 }
 
 .example__slider {
-  background-color: transparent;
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+  }
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <title>Кэт энерджи</title>
@@ -11,7 +10,6 @@
     <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
     <script src="scripts/index.js" defer></script>
   </head>
-
   <body class="page__body">
     <header class="header page__body-header">
       <a class="header__logo-link" href="index.html">
@@ -28,7 +26,7 @@
           <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи.">
         </picture>
       </a>
-      <nav class="navigation">
+      <nav class="navigation navigation--closed navigation--nojs">
         <button class="navigation__toogle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
@@ -56,17 +54,16 @@
         <h1 class="form-header__title">Подбор программы</h1>
         <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </header>
-
       <form class="form form-main__wrapper" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__cat-info form-cat-info">
           <legend class="visually-hidden">Данные кота.</legend>
           <ul class="form-cat-info__list list-reset">
             <li class="form-cat-info__item">
-              <label class="form-cat-info__label label" for="name">Имя<sup>*</sup></label>
+              <label class="form-cat-info__label label" for="name">Имя&nbsp;*</label>
               <input class="form-cat-info__input input" type="text" id="name" name="name" placeholder="Барсик" required>
             </li>
             <li class="form-cat-info__item">
-              <label class="form-cat-info__label label" for="weight">Вес&nbsp;(кг):<sup>*</sup></label>
+              <label class="form-cat-info__label label" for="weight">Вес&nbsp;(кг):*</label>
               <input class="form-cat-info__input input" type="number" id="weight" name="weight" placeholder="7" required>
             </li>
             <li class="form-cat-info__item">
@@ -85,7 +82,7 @@
                 <span class="form-result__description">Похудение</span>
               </label>
             </li>
-            <li class="form-result__label">
+            <li class="form-result__item">
               <label class="form-result__label">
                 <input class="visually-hidden form-result__input form-result__input--hidden" type="radio" value="fat" name="result">
                 <span class="form-result__input form-result__input--radio"></span>
@@ -105,14 +102,14 @@
           <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
           <ul class="form-contacts__list list-reset">
             <li class="form-contacts__item">
-              <label class="form-contacts__label">E-&nbsp;mail:<sup>*</sup>
-                <input class="form-contacts__input input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <label class="form-contacts__label">E-mail:*
+                <input class="form-contacts__input form-contacts__input--email input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 <span class="form-contacts__icon form-contacts__icon--email"></span>
               </label>
             </li>
             <li class="form-contacts__item">
-                <label class="form-contacts__label label">Телефон:<sup>*</sup>
-                  <input class="form-contacts__input input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                <label class="form-contacts__label label">Телефон:*
+                  <input class="form-contacts__input form-contacts__input--phone input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                   <span class="form-contacts__icon form-contacts__icon--phone"></span>
                 </label>
             </li>
@@ -160,7 +157,7 @@
       </form>
       <section class="about-us about-us--dark">
         <div class="about-us__wrapper">
-          <h2 class="about-us__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="about-us__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="about-us__address">
             <p class="about-us__description">ул. Большая Конюшенная, д. 19/8</p>
             <p class="about-us__description">Санкт-Петербург</p>

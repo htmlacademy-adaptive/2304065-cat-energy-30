@@ -1,5 +1,13 @@
 .form-header {
-  background-color: transparent;
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
 }
 
 .form-header__title {

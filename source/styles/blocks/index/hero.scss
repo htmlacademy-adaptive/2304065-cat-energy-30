@@ -7,7 +7,13 @@
     content: "";
     width: 320px;
     height: 302px;
-    background-image: url("../../images/index/index-background-mobile@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/index/index-background-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/index/index-background-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/index/index-background-mobile@1x.jpg") type("image/jpg") 1x,
+        url("../../images/index/index-background-mobile@2x.jpg") type("image/jpg") 2x
+      );
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -32,8 +38,14 @@
       z-index: -1;
       margin-left: auto;
       width: 720px;
-      height: 694px;
-      background-image: url("../../images/index/index-background-desktop@1x.png");
+      height: 100%;
+      background-image:
+        image-set(
+          url("../../images/index/index-background-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/index/index-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/index/index-background-desktop@1x.jpg") type("image/jpg") 1x,
+          url("../../images/index/index-background-desktop@2x.jpg") type("image/jpg") 2x
+        );
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -48,7 +60,7 @@
   margin: 0 0 20px;
   padding-top: 27px;
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba($color-basic-green, 0.85) 302px, $color-title-text-white 302px);
+  background-image: linear-gradient(to bottom, rgba($color-basic-green, 0.85) 63%, $color-title-text-white 63%);
 
   .button {
     margin: 0 auto;
@@ -59,23 +71,25 @@
     display: grid;
     grid-template-columns: 90px 528px 90px;
     margin: 0 auto;
-    padding-top: 65px;
+    padding-top: 51px;
     width: 709px;
     background-image: none;
 
     .button {
+      @include title(20px, 26px, uppercase, $color-title-text-white);
       position: absolute;
-      top: 295px;
+      top: 281px;
       left: 0;
       grid-column: 2/-1;
       width: 244px;
+      padding: 14px 0;
     }
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 80px 530px 720px;
-    grid-template-rows: 224px auto auto auto 184px;
+    grid-template-columns: 134px 530px 720px;
+    grid-template-rows: 176px auto auto auto 184px;
     margin: 0 auto;
     width: 1330px;
 
@@ -91,12 +105,16 @@
 }
 
 .hero__wrapper-img {
-  margin: 0 auto;
+  margin: 0 auto 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 143px;
-    left: 467px;
+    top: 147px;
+    left: 501px;
   }
 }
 

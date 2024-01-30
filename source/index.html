@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
   <script src="scripts/index.js" defer></script>
 </head>
-
 <body class="page__body">
   <header class="header page__body-header">
     <a class="header__logo-link" href="index.html">
@@ -28,8 +28,7 @@
         <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи.">
       </picture>
     </a>
-    <!-- navigation--opened и navigation--closed для переключения меню -->
-    <nav class="navigation navigation--opened navigation--nojs">
+    <nav class="navigation navigation--closed navigation--nojs">
       <button class="navigation__toogle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -103,7 +102,7 @@
             </p>
           </li>
           <li class="instruction__item instruction__item--changes">
-            <p class="instruction__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="instruction__description">Уже через месяц наслаждайтесь изменениями к лучшему<br>вашего питомца!</p>
           </li>
         </ol>
       </div>
@@ -111,7 +110,7 @@
     <section class="example">
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат<br>без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <ul class="example__list list-reset">
           <li class="example__item">
             <dl class="example__item-wrapper">
@@ -193,5 +192,4 @@
   </footer>
   <script src="https://api-maps.yandex.ru/v3/?apikey=919a378b-0913-4cd0-b4aa-6cf70799b7b6&lang=ru_RU"></script>
 </body>
-
 </html>

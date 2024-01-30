@@ -26,13 +26,14 @@
     display: flex;
     justify-content: space-between;
     width: $tablet-wrapper;
-    padding: 61px 40px;
+    padding: 60px 40px;
   }
 
   @media (min-width: $desktop-width) {
     @include position(95px, 110px);
     z-index: 1;
     width: 565px;
+    padding: 60px 75px 60px 80px;
     background-color: $color-title-text-white;
   }
 }
@@ -50,12 +51,18 @@
   @media (min-width: $tablet-width) {
     @include main-text(16px, 20px);
     width: 160px;
+    margin-top: -2px;
   }
 }
 
 .about-us__description {
   margin: 0;
   font-style: normal;
+  line-height: 21px;
+
+  &:first-of-type {
+    margin-bottom: -2px;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: right;
@@ -67,9 +74,17 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+
+    &:first-of-type {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .about-us__map {
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 399px;
+  }
 }

@@ -2,9 +2,30 @@
   @include button;
   display: block;
   padding: 10px 0;
+  transition: background-color 0.2s linear;
 
   &--primary {
     color: $color-title-text-white;
     background-color: $color-basic-green;
+
+    &:hover {
+      background-color: $color-basic-dark-green;
+      transition: background-color 0.2s linear;
+    }
+
+    &:active {
+      color: rgba($color-title-text-white, 0.3);
+      transition: color 0.2s linear;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-basic-grey;
+
+    &:hover,
+    &:active {
+      background-color: #ebebeb;
+      transition: background-color 0.2s linear;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .navigation {
   position: relative;
+  align-self: flex-start;
 
   @media (max-width: $tablet-width - 1px) {
     &--closed {
@@ -9,8 +10,12 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+
   &--closed .navigation__toogle::before {
-    @include position(4px);
+    @include position(9px);
     content: "";
     width: 24px;
     height: 2px;
@@ -33,7 +38,7 @@
   &--opened .navigation__toogle::before,
   &--opened .navigation__toogle::after {
     content: "";
-    @include position(8px);
+    @include position(17px, 4px);
     width: 24px;
     height: 2px;
     background-color: $color-title-text;
@@ -65,6 +70,7 @@
     }
 
     .navigation__list {
+      position: static;
       display: flex;
     }
   }
@@ -73,6 +79,7 @@
 .navigation__toogle {
   width: 24px;
   height: 24px;
+  margin-top: 5px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -86,9 +93,10 @@
 .navigation__list {
   @include flexbox(center, center, column);
   position: absolute;
-  top: 47px;
+  top: 52px;
   right: -21px;
   z-index: 2;
+  flex-wrap: wrap;
   width: 320px;
   background-color: $color-title-text-white;
 
@@ -139,7 +147,18 @@
   @include title;
   position: relative;
   display: block;
-  padding: 21px 0 23px;
+  padding: 23px 0;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.2s linear;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.2s linear;
+  }
 
   @media (min-width: $tablet-width) {
     @include title (18px, 24px);
@@ -164,20 +183,34 @@
         left: 0;
         width: 100%;
         height: 2px;
+        background-color: $color-basic-green;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
         background-color: $color-title-text-white;
       }
     }
   }
 
   &--current-dark {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $color-basic-green;
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-basic-green;
+      }
     }
   }
 }

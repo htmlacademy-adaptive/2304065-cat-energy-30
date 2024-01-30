@@ -1,14 +1,25 @@
 .social {
   @include flexbox(center, center);
+  position: relative;
   gap: 24px;
   flex-wrap: wrap;
   width: $mobile-wrapper;
-  padding: 20px 0;
+  padding: 9px 0;
 
   @media (max-width: $tablet-width - 1px) {
-    &::before,
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      width: 280px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+
     &::after {
       content: "";
+      position: absolute;
+      bottom: -8px;
       width: 280px;
       height: 1px;
       background-color: #d9d9d9;
@@ -26,7 +37,11 @@
 }
 
 .social__item {
-  background-color: transparent;
+  &:focus-within {
+    outline: 2px solid $color-title-text;
+    border-radius: 2px;
+    outline-offset: 2px;
+  }
 }
 
 .social__link {
@@ -38,6 +53,11 @@
   &:hover {
     background-color: $color-basic-green;
     transition: background-color 0.2s linear;
+  }
+
+  &:focus-visible {
+    position: relative;
+    background-color: $color-basic-green;
   }
 
   &:active {

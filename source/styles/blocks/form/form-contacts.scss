@@ -14,7 +14,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 16px;
     left: -20px;
     z-index: -1;
     width: $mobile-width;
@@ -30,6 +30,7 @@
 
     &::before {
       content: "";
+      top: 22px;
       left: -70px;
       width: $tablet-width;
     }
@@ -48,11 +49,11 @@
 
 .form-contacts__list {
   @include flexbox(flex-start, normal, column);
-  gap: 14px;
+  gap: 11px;
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 17px;
     margin-bottom: 65px;
   }
 
@@ -64,21 +65,24 @@
   }
 }
 
-.form-contacts__item {
-  background-color: transparent;
-}
-
 .form-contacts__label {
   @include title(16px, 18px, uppercase, $color-base-text);
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
+  width: $mobile-wrapper;
 
-  @include title(20px, normal, uppercase, $color-base-text);
+  @media (min-width: $tablet-width) {
+    @include title(20px, normal, uppercase, $color-base-text);
+    width: $tablet-wrapper;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .form-contacts__input {
-  width: 100%;
   margin-left: 13px;
 
   &:hover + .form-contacts__icon {
@@ -106,6 +110,30 @@
     background-color: $color-status-error;
     transition: background-color 0.2s linear;
   }
+
+  &--email {
+    width: 217px;
+
+    @media (min-width: $tablet-width) {
+      width: 552px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 494px;
+    }
+  }
+
+  &--phone {
+    width: 200px;
+
+    @media (min-width: $tablet-width) {
+      width: 530px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 472px;
+    }
+  }
 }
 
 .form-contacts__icon {
@@ -117,6 +145,14 @@
   width: 20px;
   height: 20px;
   transition: background-color 0.2s linear;
+
+  @media (min-width: $tablet-width) {
+    right: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+  }
 
   &--email {
     @include mask-image(url("../../images/icons/stack.svg#form_icon-email"), 20px 20px, $color-title-text);

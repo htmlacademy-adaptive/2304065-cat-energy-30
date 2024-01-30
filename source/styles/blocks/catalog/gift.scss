@@ -19,8 +19,14 @@
     content: "";
     z-index: -1;
     width: 280px;
-    height: 290px;
-    background-image: url("../../images/catalog/catalog-background-desktop@1x.png");
+    height: 100%;
+    background-image:
+      image-set(
+        url("../../images/catalog/catalog-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/catalog/catalog-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/catalog/catalog-background-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/catalog/catalog-background-desktop@2x.jpg") type("image/jpg") 2x
+      );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +34,7 @@
 
   @media (min-width: $tablet-width) {
     @include flexbox(space-between, center);
-    padding: 55px 125px 60px 77px;
+    padding: 55px 125px 63px 77px;
 
     &::before {
       @include mask-image(url("../../images/icons/stack.svg#catalog_icon-gift"), 78px 80px, $color-title-text-white);
@@ -45,8 +51,14 @@
       content: "";
       z-index: -1;
       width: 707px;
-      height: 198px;
-      background-image: url("../../images/catalog/catalog-background-tablet@1x.png");
+      height: 100%;
+      background-image:
+        image-set(
+          url("../../images/catalog/catalog-background-tablet@1x.webp") type("image/webp") 1x,
+          url("../../images/catalog/catalog-background-tablet@2x.webp") type("image/webp") 2x,
+          url("../../images/catalog/catalog-background-tablet@1x.jpg") type("image/jpg") 1x,
+          url("../../images/catalog/catalog-background-tablet@2x.jpg") type("image/jpg") 2x
+        );
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -67,7 +79,7 @@
       width: 80px;
       height: 83px;
       margin: 0 auto;
-      margin-bottom: 46px;
+      margin-bottom: 36px;
     }
 
     &::after {
@@ -75,8 +87,8 @@
       content: "";
       z-index: -1;
       width: 245px;
-      height: 288px;
-      background-image: url("../../images/catalog/catalog-background-desktop@1x.png");
+      height: 100%;
+      background-image: url("../../images/catalog/catalog-background-desktop@1x.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -92,6 +104,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 10px 0 0 4px;
     text-align: left;
   }
 

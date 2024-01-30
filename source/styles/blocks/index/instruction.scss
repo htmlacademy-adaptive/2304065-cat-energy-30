@@ -20,16 +20,18 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-wrapper;
+    margin: 0 auto 103px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-wrapper;
+    margin: 0 auto -44px;
   }
 }
 
 .instruction__title {
   @include title(36px, 40px, none);
-  margin-bottom: 49px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     @include title(60px, 60px, none);
@@ -43,13 +45,16 @@
   counter-reset: list;
 
   @media (min-width: $tablet-width) {
-    @include flexbox(space-between, flex-start, row);
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 247px auto;
+    gap: 134px 137px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4, min-content);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
@@ -65,7 +70,6 @@
 
   @media (min-width: $tablet-width) {
     @include flexbox(flex-start, flex-start, column);
-    margin-bottom: 134px;
 
     &::before {
       @include decorative-backing(80px, 80px, 0);
@@ -126,6 +130,10 @@
       height: 80px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+  }
 }
 
 .instruction__item--replacement {
@@ -148,9 +156,25 @@
       height: 80px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+  }
 }
 
 .instruction__item--changes {
+  & .instruction__description {
+    br {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      br {
+        display: inline;
+      }
+    }
+  }
+
   &::after {
     @include flexbox(center, center);
     @include mask-image(url("../../images/icons/stack.svg#index_icon-changes"), 26px 31px, $color-title-text-white);
@@ -169,6 +193,10 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -3px;
   }
 }
 

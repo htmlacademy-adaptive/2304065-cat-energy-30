@@ -3,8 +3,8 @@
 }
 
 .form-about__title {
-  position: relative;
   @include title(24px, 26px, none);
+  position: relative;
   margin-bottom: 40px;
   padding: 0;
   background-color: $color-title-text-white;
@@ -24,11 +24,12 @@
   @media (min-width: $tablet-width) {
     @include title(36px, 36px, none);
     width: fit-content;
-    margin-bottom: 57px;
+    margin-bottom: 61px;
     box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
 
     &::before {
       content: "";
+      top: 21px;
       left: -70px;
       width: $tablet-width;
     }
@@ -48,7 +49,7 @@
 .form-about__list {
   @include flexbox(normal, normal, column);
   gap: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -61,15 +62,13 @@
     display: grid;
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
+    margin-bottom: 66px;
   }
-}
-
-.form-about__item {
-  background-color: transparent;
 }
 
 .form-about__label {
   @include flexbox(flex-start, center);
+  cursor: pointer;
 
   &:hover .form-about__input {
     border: 1px solid #bababa;
@@ -100,6 +99,11 @@
     content: "";
     width: 26px;
     height: 26px;
+  }
+
+  &:focus-visible + .form-about__input--checkbox {
+    outline: 1px solid $color-title-text;
+    outline-offset: 2px;
   }
 
   &:disabled ~ span {
