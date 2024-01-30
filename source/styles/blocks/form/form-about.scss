@@ -3,8 +3,8 @@
 }
 
 .form-about__title {
-  position: relative;
   @include title(24px, 26px, none);
+  position: relative;
   margin-bottom: 40px;
   padding: 0;
   background-color: $color-title-text-white;
