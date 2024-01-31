@@ -2,10 +2,6 @@
   position: relative;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
-    // width: $tablet-width;
-  }
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 565px 655px 1fr;
@@ -98,24 +94,24 @@
   @media (min-width: $tablet-width) {
     height: 399px;
     background-image:
-    image-set(
-      url("../../images/location-tablet@1x.webp") type("image/webp") 1x,
-      url("../../images/location-tablet@2x.webp") type("image/webp") 2x,
-      url("../../images/location-tablet@1x.jpg") type("image/jpg") 1x,
-      url("../../images/location-tablet@2x.jpg") type("image/jpg") 2x
-    );
+      image-set(
+        url("../../images/location-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/location-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/location-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../../images/location-tablet@2x.jpg") type("image/jpg") 2x
+      );
     background-size: 768px 400px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
     background-image:
-    image-set(
-      url("../../images/location-desktop@1x.webp") type("image/webp") 1x,
-      url("../../images/location-desktop@2x.webp") type("image/webp") 2x,
-      url("../../images/location-desktop@1x.jpg") type("image/jpg") 1x,
-      url("../../images/location-desktop@2x.jpg") type("image/jpg") 2x
-    );
+      image-set(
+        url("../../images/location-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/location-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/location-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/location-desktop@2x.jpg") type("image/jpg") 2x
+      );
     background-size: 1440px 400px;
   }
 }
