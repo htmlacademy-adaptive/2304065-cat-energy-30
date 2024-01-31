@@ -1,5 +1,6 @@
 .header {
   @include flexbox(space-between, center);
+  flex-wrap: wrap;
 }
 
 .header__logo-link {
