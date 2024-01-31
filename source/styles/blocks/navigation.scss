@@ -7,6 +7,12 @@
         display: none;
       }
     }
+
+    &--nojs {
+      .navigation__list {
+        width: 320px;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -36,8 +42,8 @@
 
   &--opened .navigation__toogle::before,
   &--opened .navigation__toogle::after {
-    content: "";
     @include position(12px);
+    content: "";
     width: 24px;
     height: 2px;
     background-color: $color-title-text;
@@ -71,7 +77,6 @@
     .navigation__list {
       position: static;
       display: flex;
-      margin-left: -20px;
     }
   }
 }
@@ -95,11 +100,9 @@
   @include flexbox(center, center, column);
   position: absolute;
   top: 65px;
-  // right: -21px;
   left: 0;
   z-index: 2;
   flex-wrap: wrap;
-  // width: 320px;
   width: 100vw;
   background-color: $color-title-text-white;
 
@@ -127,7 +130,6 @@
     width: 320px;
 
     &::before {
-      // @include position();
       content: "";
       position: absolute;
       top: 0;
