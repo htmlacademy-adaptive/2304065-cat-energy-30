@@ -31,21 +31,25 @@
     &::after {
       content: "";
       position: absolute;
-      left: 0;
+      right: 0;
       bottom: 0;
-      width: $mobile-width;
+      width: 100vw;
       height: 1px;
       padding: 0;
       background-color: #ebebeb;
+      box-shadow: 100vw 0 0 #ebebeb;
     }
 
     &:first-child::before {
-      @include position();
       content: "";
-      width: $mobile-width;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vw;
       height: 1px;
       padding: 0;
       background-color: #ebebeb;
+      box-shadow: 100vw 0 0 #ebebeb;
     }
   }
 

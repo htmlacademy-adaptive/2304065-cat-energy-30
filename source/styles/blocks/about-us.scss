@@ -1,13 +1,14 @@
 .about-us {
   position: relative;
-  width: $mobile-width;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    // width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    display: grid;
+    grid-template-columns: 1fr 565px 655px 1fr;
   }
 
   &--dark {
@@ -30,7 +31,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include position(95px, 110px);
+    @include position(95px, 0);
+    grid-column: 2/3;
     z-index: 1;
     width: 565px;
     padding: 60px 75px 60px 80px;
@@ -106,6 +108,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
     background-image:
     image-set(
       url("../../images/location-desktop@1x.webp") type("image/webp") 1x,

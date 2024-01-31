@@ -14,11 +14,12 @@
     content: "";
     position: absolute;
     top: 15px;
-    left: -20px;
+    right: 0;
     z-index: -1;
-    width: $mobile-width;
+    width: 100vw;
     height: 2px;
     background-color: $color-basic-green;
+    box-shadow: 100vw 0 0 $color-basic-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -30,19 +31,11 @@
     &::before {
       content: "";
       top: 21px;
-      left: -70px;
-      width: $tablet-width;
     }
   }
 
   @media (min-width: $desktop-width) {
     box-shadow: 40px 0 $color-title-text-white, -40px 0 $color-title-text-white;
-
-    &::before {
-      content: "";
-      left: -110px;
-      width: $desktop-width;
-    }
   }
 }
 

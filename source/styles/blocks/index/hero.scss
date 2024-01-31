@@ -2,11 +2,44 @@
   @include title(14px, 14px, none, $color-title-text-white);
   position: relative;
 
+  @media (min-width: $desktop-width) {
+    top: -132px;
+    width: 100vw;
+    background-image: linear-gradient(to right, transparent 50%, rgba($color-basic-green, 0.85) 50%);
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+  min-width: 320px;
+  width: 100vw;
+  margin: 0 0 20px;
+  padding-top: 27px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba($color-basic-green, 0.85) 63%, $color-title-text-white 63%);
+
+  .button {
+    margin: 0 auto;
+    width: 280px;
+  }
+
   &::before {
-    @include position();
+    @include position(0, 0);
     content: "";
-    width: 320px;
+    z-index: -2;
+    width: 100vw;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #404042 63%, $color-title-text-white 63%);
+  }
+
+  &::after {
+    @include position(0, 50%);
+    content: "";
+    z-index: -1;
+    transform: translateX(-50%);
+    min-width: 320px;
     height: 302px;
+
     background-image:
       image-set(
         url("../../images/index/index-background-mobile@1x.webp") type("image/webp") 1x,
@@ -17,54 +50,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      background-image: none;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -132px;
-    width: $desktop-width;
-    background-image: linear-gradient(to right, transparent 50%, rgba($color-basic-green, 0.85) 50%);
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      margin-left: auto;
-      width: 720px;
-      height: 100%;
-      background-image:
-        image-set(
-          url("../../images/index/index-background-desktop@1x.webp") type("image/webp") 1x,
-          url("../../images/index/index-background-desktop@2x.webp") type("image/webp") 2x,
-          url("../../images/index/index-background-desktop@1x.jpg") type("image/jpg") 1x,
-          url("../../images/index/index-background-desktop@2x.jpg") type("image/jpg") 2x
-        );
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-}
-
-
-.hero__wrapper {
-  position: relative;
-  width: $mobile-width;
-  margin: 0 0 20px;
-  padding-top: 27px;
-  text-align: center;
-  background-image: linear-gradient(to bottom, rgba($color-basic-green, 0.85) 63%, $color-title-text-white 63%);
-
-  .button {
-    margin: 0 auto;
-    width: 280px;
   }
 
   @media (min-width: $tablet-width) {
@@ -84,6 +69,14 @@
       width: 244px;
       padding: 14px 0;
     }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -93,6 +86,35 @@
     margin: 0 auto;
     width: 1330px;
 
+    &::before {
+      content: "";
+      z-index: -2;
+      display: block;
+      width: 1330px;
+      height: 100%;
+      background-image: linear-gradient(to right, #ffffff 50%, #404042 50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: 100%;
+      margin-left: auto;
+      background-image:
+        image-set(
+          url("../../images/index/index-background-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/index/index-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/index/index-background-desktop@1x.jpg") type("image/jpg") 1x,
+          url("../../images/index/index-background-desktop@2x.jpg") type("image/jpg") 2x
+        );
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
 
     .button {
       position: static;

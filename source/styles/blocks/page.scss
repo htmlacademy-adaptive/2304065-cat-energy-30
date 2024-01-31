@@ -5,38 +5,28 @@
 .page__body {
   position: relative;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
   align-self: center;
-  width: $mobile-width;
   min-height: 100%;
   margin: 0 auto;
   overflow-x: hidden;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
 }
 
 .page__body-header {
-  position: relative;
-  margin: 0;
-  padding: 13px 21px 10px 20px;
+  margin: 0 auto;
+  padding: 13px 20px 10px 20px;
   width: 320px;
 
   @media (max-width: $tablet-width - 1px) {
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 0;
-      width: $mobile-width;
+      right: 0;
+      width: 100vw;
       height: 1px;
       padding: 0;
       background-color: #d9d9d9;
+      box-shadow: 100vw 0 0 #d9d9d9;
     }
   }
 
