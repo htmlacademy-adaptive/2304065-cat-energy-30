@@ -201,6 +201,7 @@ export function buildProd (done) {
 export function runDev (done) {
   series(
     removeBuild,
+    buildProd,
     parallel(
       processMarkup,
       processStyles,
