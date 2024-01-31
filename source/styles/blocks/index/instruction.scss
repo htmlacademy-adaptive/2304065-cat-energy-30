@@ -6,10 +6,13 @@
 
     &::after {
       content: "";
-      display: block;
-      width: $tablet-width;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
       height: 1px;
       background-color: #e6e6e6;
+      box-shadow: 100vw 0 0 #e6e6e6;
     }
   }
 }
